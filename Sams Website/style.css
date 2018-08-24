@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body {
+    background-color: #ededed;
+    color:white;
+}
+
+#form_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#form_container_bg {
+    background: url(/images/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#form_container_bg_bg {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.19);
+}
+
+#form_container_1 {
+    display: grid;
+    grid-template-columns: ;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+}
