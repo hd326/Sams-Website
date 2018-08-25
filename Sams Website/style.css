@@ -2,36 +2,216 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial';
+    font-family: 'Helvetica';
 }
 
 body {
-    background-color: #ededed;
-    color:white;
+    color: #EAEAEA;
+    transition: margin-left .5s;
 }
 
-#form_container {
-    position: relative;
+/*
+#form_container_bg {
+    background: url(/images/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+*/
+
+#form_container_bg_bg {
     height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.50);
+    top: 0;
+}
+
+#hero {
+    position: relative;
+    height: 730.5px;
+    width: 100%;
+    margin: auto;
+    background: url(/images/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 260px;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable */
+}
+
+#sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidenav #closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(125, 175, 255, 0.7);
+    height: 67.5px;
+}
+
+header #header {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#header #h_logo {
+    width: 275px;
+    height: 100%;
+
+}
+
+#header #h_logo img {
+    width: 100%;
+    height: 67.5px;
+}
+
+#header #h_menu {
+    display: grid;
+    justify-content: flex-end;
     width: 100%;
     margin: auto;
 }
 
-#form_container_bg {
-    background: url(/images/1.jpg);
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
+#header #h_menu nav ul {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr .8fr 1fr;
+    justify-content: center;
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-#form_container_bg_bg {
-    height: 100vh;
-    width: 100%;
+#header #h_menu nav ul li {
+    display: grid;
+    justify-content: flex-end;
+}
+
+#header #h_menu nav ul li span {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+#header #h_menu nav ul li:hover {
+    color: #bfbfbf;
+    transition: .2s ease-in-out;
+}
+
+#icon {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    cursor: pointer;
+}
+
+#hamburger {
+    width: 30px;
+    position: absolute;
+    background-color: #EAEAEA;
+    height: 2px;
+    top: 25%;
+    right: 0;
+    box-shadow: 0px -.5px .5px .5px #313131;
+}
+
+#hamburger:before,
+#hamburger:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #EAEAEA;
+    width: 30px;
+    left: 0;
+    box-shadow: 0px -.5px .5px .5px #313131;
+}
+
+#hamburger:before {
+    top: -10px;
+}
+
+#hamburger:after {
+    top: 10px;
+}
+
+#header #h_menu nav ul li:nth-of-type(4) {
+    display: none;
+}
+
+
+@media(max-width: 1540px) {
+    header #header {
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 1340px) {
+    header #header {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1040px) {
+    #header #h_menu nav ul {
+        width: 100%;
+        grid-gap: 33px;
+    }
+}
+
+@media(max-width: 940px) {
+    #header #h_menu nav ul li{
+        display: none;
+    }
+
+    header #header {
+        width: 90%;
+    }
+    #header #h_menu nav ul li:nth-of-type(4) {
+        display: inline-block;
+    }
 }
 
 #form_container_1 {
@@ -43,3 +223,258 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+
+#hero #form_text {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+#hero #form_text h1 {
+    font-size: 42px;
+    margin-bottom: 7.5px;
+    line-height: 52.5px;
+    font-weight: 100;
+    font-weight: 00;
+}
+
+#hero #form_text h2 {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    line-height: 37.5px;
+    font-weight: 700;
+}
+
+#form_container_1 form .slider {
+    width: 100%;
+}
+
+#form_container_1 #form_name_fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: stretch;
+}
+
+#form_container_1 #form_name_fields input {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(255, 254, 254);
+    border-radius: 5px;
+    border: none;
+    color: #414141;
+}
+
+#form_container_1 #form_name_fields input::placeholder {
+    color: #9a9a9a;
+}
+
+#form_container_1 .form__fields {
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    width: 100%;
+    margin: auto;
+}
+
+/*range decoration*/
+
+/*range decoration*/
+
+/*range decoration*/
+
+#form_container_1 .form__fields .form_input_field input[type=range] {
+    cursor: default;
+    padding: initial;
+}
+
+.slider {
+    -webkit-rtl-ordering: logical;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    color: #EAEAEA;
+    /* Full-width */
+    height: 10px;
+    /* Specified height */
+    background: rgba(211, 211, 211, 0.37);
+    /* Grey background */
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    outline: none;
+    /* Remove outline */
+    opacity: ;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-runnable-track {}
+
+/* Mouse-over effects */
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    width: 32.5px;
+    /* Set a specific slider handle width */
+    height: 32.5px;
+    /* Slider handle height */
+    background: #ffffff;
+    /* 
+    Green background */
+    color: #EAEAEA;
+    cursor: pointer;
+    /* Cursor on hover */
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.slider::-webkit-slider-thumb::before {
+    position: absolute;
+    width: 1px;
+    background-color: #EAEAEA;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #EAEAEA;
+    /* Green background */
+    color: #EAEAEA;
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+/*
+input[type=range]:focus {
+  outline: none;
+}
+*/
+
+/*range decoration*/
+
+/*range decoration*/
+
+/*range decoration*/
+
+#form_container_1 #form_occurence {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    position: relative;
+}
+
+#form_container_1 #form_occurence button {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+    background-color: rgba(64, 64, 64, 0.47);
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#form_container_1 #form_occurence button.active {
+    background-color: #5c96c1;
+}
+
+#form_container_1 #form_occurence .form_percentage {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+#form_container_1 #form_occurence .form_percentage span {
+    align-self: center;
+    font-size: 14px;
+}
+
+/*
+#form_container_1 #form_occurence button:hover {
+    background-color: #5c96c1;
+    transition: all .3s ease-in-out;
+}
+*/
+
+#form_container_1 #submit {
+    width: 100%;
+}
+
+#form_container_1 #submit button {
+    width: 100%;
+    font-size: 19px;
+    padding: 10px;
+    background-color: #EAEAEA;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#form_container_1 #submit button:hover {
+    background-color: #5c96c1;
+    color: #EAEAEA;
+    transition: .3s ease;
+}
+
+/*#5c96c1*/
+
+/*margin spacing for hero*/
+
+#hero #form_text {}
+
+#hero #form_text h1 {
+
+    margin-top: 75px;
+    margin-bottom: 25px;
+}
+
+#hero #form_text h2 {
+    margin-bottom: 25px;
+}
+
+#form_container_1 #form_name_fields {
+    margin-bottom: 25px;
+}
+
+#form_container_1 .form__fields {
+    margin-top: 50px;
+}
+
+#form_container_1 #form_occurence {
+    margin-top: 37.5px;
+}
+
+#form_container_1 #submit {
+    margin-top: 25px;
+}
+
+/*margin spacing for hero*/
+
+/*
+#75c4ff
+*/

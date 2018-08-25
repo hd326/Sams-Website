@@ -1,25 +1,131 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
+<script>
+    function sliderChange(val) {
+        document.getElementById('bed_display').innerHTML = val;
+    }
+
+
+    function sliderChange2(val) {
+        document.getElementById('bath_display').innerHTML = val;
+    }
+
+
+    function chooseService(val) {
+        document.getElementById('form_occurence');
+    }
+
+    function openNav() {
+        document.getElementById("sidenav").style.width = "260px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+    }
+</script>
 
 <body>
 
-    <div id="form_container">
+    <!-- the form -->
+    <div id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Maid Service</a>
+        <div id="closebtn"></div>
+    </div>
+
+
+    <div id="hero">
+
+        <header>
+            <div id="header">
+                <div id="h_logo"><img src="/images/logo2.jpg"></div>
+                <div id="h_menu">
+                    <nav>
+                        <ul>
+                            <li>MAID SERVICE</li>
+                            <li>CONTACT US</li>
+                            <li>BOOK MY CLEAN</li>
+                            <li><div id="icon" onclick="openNav()"><div id="hamburger"></div></div></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
         <div id="form_container_bg"></div>
         <div id="form_container_bg_bg"></div>
+        <div id="form_text">
+            <h1>Highly Rated Premier Cleaning Service in Sacramento</h1>
+            <h2>Schedule an appointment with Sacramentos premier cleaning service.</h2>
+        </div>
         <div id="form_container_1">
             <form>
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="Phone Number"> <br>
-                <label>Bedrooms: 1</label> <input type="range" min="1" max="7" value="1" class="slider" name="service_id">
+                <!--
+                <div id="form_name_fields">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                -->
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bedrooms: </span><span id="bed_display">1</span> </div>
+                    <div class="form_input_field">
+                        <input type="range" min="1" max="7" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value)">
+                    </div>
+                </div>
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bathrooms: </span><span id="bath_display">1</span>
+                    </div>
+                    <div class="form_input_field">
+                        <input type="range" min="1" max="7" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value)">
+                    </div>
+                </div>
+                <div id="form_occurence">
+                    <div class="form_percentage">
+                        <button type="button" id="one">One time cleaning</button>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button" id="two">Monthly cleaning</button><span>5% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button" id="three">Bi-weekly cleaning</button>
+                        <span>15% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button">Tri-weekly cleaning</button>
+                        <span>10% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button">Weekly cleaning</button>
+                        <span>20% Off</span></div>
+                </div>
+                <div id="submit"><button>See Price and Book In 60 seconds!</button></div>
             </form>
         </div>
     </div>
+
+    <!-- the form -->
+
 </body>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function() {
+        $('#form_occurence .form_percentage button').on('click', function() {
+            $('#form_occurence .form_percentage button').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
 </html>
