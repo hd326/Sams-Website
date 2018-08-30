@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica';
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: ;
+    color: #ededed;
+}
+
+#main_bg {
+    background: url(/images/1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+#main_ol {
+    background-color: rgba(0, 0, 0, 0.43);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: #5c96c1;
+    height: 52.5px;
+}
+
+#logo #icon {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    height: 52.5px;
+}
+
+#logo #icon img {
+    width: 50%;
+    z-index: 1;
+}
+
+#logo #icon {}
+
+#logo #hamburger {
+    background-color:
+}
+
+#hamburger {
+    width: 30px;
+    position: absolute;
+    background-color: #EAEAEA;
+    height: 2px;
+    top: 25%;
+    right: 0;
+    box-shadow: 0px -.25px .25px .25px #313131;
+    margin-top: 11.25px;
+    margin-right: 11.25px;
+}
+
+#hamburger:before,
+#hamburger:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #EAEAEA;
+    width: 30px;
+    left: 0;
+    box-shadow: 0px -.25px .25px .25px #313131;
+}
+
+#hamburger:before {
+    top: -10px;
+}
+
+#hamburger:after {
+    top: 10px;
+}
+
+#header #h_menu nav ul li:nth-of-type(4) {
+    display: none;
+}
+
+#main #ad {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 67.5%;
+    margin: auto;
+    margin-top: 75px;
+}
+
+#main #ad p {
+    padding: 25px 0px;
+}
+
+#main #ad p:nth-of-type(1) {
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    line-height: 25px;
+}
+
+#main #ad p:nth-of-type(2) {
+    width: 80%;
+    margin: auto;
+    font-size: 28px;
+}
+
+#main #ad input {
+    margin-top: 36px;
+    width: 50px;
+    height: 50px;
+}
+
+#main #ad button {
+    width: 250px;
+    padding: 0px 5px;
+    height: 90px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #387daf;
+    color: #ededed;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 37.5px;
+    font-size: 24px;
+    line-height: 35px
+}

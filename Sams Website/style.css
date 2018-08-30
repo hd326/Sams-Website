@@ -589,7 +589,7 @@ input[type=range]:focus {
 
 #about {
     position: relative;
-    height: 1250px;
+    height: 1125px;
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -623,7 +623,6 @@ input[type=range]:focus {
     height: 100%;
     position: relative;
     color: whitesmoke;
-
     text-align: center;
     top: 0;
     max-width: 1200px;
