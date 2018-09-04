@@ -33,7 +33,7 @@ body {
 
 #hero {
     position: relative;
-    height: 730.5px;
+    height: 750px;
     width: 100%;
     margin: auto;
     background: url(/images/1.jpg) no-repeat;
@@ -209,6 +209,7 @@ header #header {
     header #header {
         width: 90%;
     }
+
     #header #h_menu nav ul li:nth-of-type(4) {
         display: inline-block;
     }
@@ -288,7 +289,8 @@ header #header {
 
 #form_container_1 .form__fields .form_input_field input[type=range] {
     cursor: default;
-    padding: initial;
+    padding: 7.5px 0px;
+    /* vs initial */
 }
 
 .slider {
@@ -404,7 +406,7 @@ input[type=range]:focus {
 
 #form_container_1 #form_occurence .form_percentage {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
     text-align: center;
 }
 
@@ -427,7 +429,7 @@ input[type=range]:focus {
 #form_container_1 #submit button {
     width: 100%;
     font-size: 19px;
-    padding: 10px;
+    padding: 20px;
     background-color: #EAEAEA;
     color: black;
     border: none;
@@ -484,10 +486,10 @@ input[type=range]:focus {
     height: 775px;
     max-width: 1200px;
     margin: auto;
-    clear: both;
-    overflow: hidden;
     margin-top: 75px;
     z-index: 1;
+    /*had overflow:hidden and clear:both here... it blocked the bottom of my bottom botton... don't know why*/
+
 }
 
 #how_it_works #how_it_works_title h1 {
@@ -582,19 +584,19 @@ input[type=range]:focus {
     margin-bottom: 75px;
     border: none;
     z-index: ;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
 }
 
 #about {
     position: relative;
-    height: 1125px;
+    height: 1050px;
     width: 100%;
     margin: auto;
     overflow: hidden;
     clear: both;
-    margin-top: 75px;
+    margin-top: 62.5px;
     margin-bottom: px;
     background-color: ;
 
@@ -634,7 +636,7 @@ input[type=range]:focus {
 #about #about_sections {
     z-index: 2;
     width: 1200px;
-    
+
     /* 70% as in 70% of the absolute div */
     margin: auto;
     margin-top: 67.5px;
@@ -666,24 +668,24 @@ input[type=range]:focus {
     width: 100%;
 }
 
-#about .about_section .about_title{
-    font-weight:bold;
+#about .about_section .about_title {
+    font-weight: bold;
     letter-spacing: .1px;
     margin-top: 12.5px;
 }
 
-#about .about_section .about_desc{
+#about .about_section .about_desc {
     letter-spacing: .2px;
     width: 75%;
-    margin:auto;
+    margin: auto;
     line-height: 25px;
 }
 
-#about #learn_more{
-    color:white;
+#about #learn_more {
+    color: white;
 }
 
-#about #learn_more input{
+#about #learn_more input {
     padding: 10px;
     width: 375px;
     height: 50px;
@@ -694,8 +696,15 @@ input[type=range]:focus {
     border: none;
     border: 1px solid white;
     border-radius: 5px;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 16px;
+}
+
+#about #learn_more input:hover {
+    border: 1px solid #8b8b8b;
+    color: #8b8b8b;
+    transition: .3s ease;
+}
 
 /*  time
     shield
@@ -704,3 +713,168 @@ input[type=range]:focus {
     chat
     security
 */
+
+#mobile {
+    height: 700px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#mobile #mobile_img {
+    margin-top: 100px;
+    justify-self: flex-end;
+}
+
+#mobile #mobile_img img {
+    height: 500px;
+}
+
+#mobile #mobile_desc {
+    align-self: center;
+    color: #2b2b2b;
+}
+
+#mobile #mobile_desc h1 {
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 70px;
+}
+
+#mobile #mobile_desc p {
+    margin-top: 20px;
+    line-height: 25px;
+    font-size: 19px;
+    font-weight: 100;
+}
+
+#mobile {
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+}
+
+#testimonials {
+    height: 1050px;
+    position: relative;
+    width: 100%;
+}
+
+#testimonials_bg {
+    background: url(/images/testimonial_4.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#testimonials_bg_bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+    
+
+#testimonials_content_wrap h1 {
+    font-weight: 100;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#testimonials_content_wrap {
+    position: relative;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* begin screen slider */
+
+#testimonials_content {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#testimonials_content #testimonials_content_sliders {
+    position: relative;
+    width: 300%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: 10px;
+}
+
+#testimonials_content .testimonials_section {
+    justify-self: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.29);
+    padding: 20px;
+    margin-left: 25px;
+}
+
+#testimonials_content .testimonials_section .testimonials_text {
+    font-family: 'Helvetica';
+    font-weight: 700;
+    position: relative;
+    word-break: break-all;
+}
+
+
+
+#testimonials_content .testimonials_section .testimonials_text blockquote p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-size: 16px;
+    padding: 0px 50px 25px 50px;
+    line-height: 25px;
+
+}
+
+#testimonials_content .testimonials_section blockquote {
+    position: relative;
+}
+
+/* end screen slider */
+
+/* block quotes */
+
+#testimonials_content .testimonials_section blockquote {
+    font-family: georgia sans;
+    quotes: "\201C""\201D""\2018""\2019";
+    height: 100%;
+    width: 100%;
+
+}
+
+#testimonials_content .testimonials_section blockquote:before {
+    color: rgb(255, 255, 255);
+    content: open-quote;
+    font-size: 5em;
+    line-height: 0.1em;
+    margin-right: .2em;
+    vertical-align: -0.4em;
+    position: absolute;
+    padding-top: 20px;
+    left: 0;
+}
+
+#testimonials_content .testimonials_section blockquote:after {
+    color: rgb(255, 255, 255);
+    content: close-quote;
+    font-size: 5em;
+    line-height: 0.1em;
+    margin-right: 0em;
+    margin-left: .2em;
+    vertical-align: -.75em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*835de21136f9bb5f94565923f54798a7
+*/
+
+
+/* block quotes */
