@@ -400,7 +400,11 @@ input[type=range]:focus {
     border-radius: 5px;
 }
 
-#form_container_1 #form_occurence button.active {
+#form_container_1 #form_occurence button.active{
+    background-color: #5c96c1;
+}
+
+.active {
     background-color: #5c96c1;
 }
 
