@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<script>
+    function sliderChange(val) {
+        document.getElementById('bed_display').innerHTML = val;
+    }
+
+
+    function sliderChange2(val) {
+        document.getElementById('bath_display').innerHTML = val;
+    }
+
+
+    function chooseService(val) {
+        document.getElementById('form_occurence');
+    }
+
+    function openNav() {
+        document.getElementById("sidenav").style.width = "260px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+    }
+</script>
+
+<body>
+
+    <!-- the form -->
+    <div id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Maid Service</a>
+        <div id="closebtn"></div>
+    </div>
+
+
+    <div id="hero">
+
+        <header>
+            <div id="header">
+                <div id="h_logo"><img src="/images/logo2.jpg"></div>
+                <div id="h_menu">
+                    <nav>
+                        <ul>
+                            <li>MAID SERVICE</li>
+                            <li>CONTACT US</li>
+                            <li>BOOK MY CLEAN</li>
+                            <li>
+                                <div id="icon" onclick="openNav()">
+                                    <div id="hamburger"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="form_container_bg"></div>
+        <div id="form_container_bg_bg"></div>
+        <div id="form_text">
+            <h1>Highly Rated Premier Cleaning Service in Sacramento</h1>
+            <h2>Schedule an appointment with Sacramentos premier cleaning service.</h2>
+        </div>
+        <div id="form_container_1">
+            <form>
+                <!--
+                <div id="form_name_fields">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                -->
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bedrooms: </span><span id="bed_display">1</span> </div>
+                    <div class="form_input_field">
+                        <input type="range" min="1" max="7" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value)">
+                    </div>
+                </div>
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bathrooms: </span><span id="bath_display">1</span>
+                    </div>
+                    <div class="form_input_field">
+                        <input type="range" min="1" max="7" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value)">
+                    </div>
+                </div>
+                <div id="form_occurence">
+                    <div class="form_percentage">
+                        <button type="button" id="one">One time cleaning</button>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button" id="two">Monthly cleaning</button><span>5% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button" id="three">Bi-weekly cleaning</button>
+                        <span>15% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button">Tri-weekly cleaning</button>
+                        <span>10% Off</span>
+                    </div>
+                    <div class="form_percentage">
+                        <button type="button">Weekly cleaning</button>
+                        <span>20% Off</span></div>
+                </div>
+                <div id="submit"><button>See Price and Book In 60 seconds!</button></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- the form -->
+
+    <!-- the how -->
+
+    <div id="how_it_works">
+
+        <div id="how_it_works_title">
+            <h1>HOW IT WORKS</h1>
+        </div>
+
+        <div id="how_it_works_container">
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img"><img src="/images/how_1.jpg">
+                </div>
+                <div class="how_it_works_explanation"></div>
+                <div class="how_it_works_text">
+                    <h1>BOOK</h1>
+                    <p>Schedule an appointment online for your house cleaning</p>
+                </div>
+            </div>
+
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img"><img src="/images/how_3.jpg">
+                </div>
+                <div class="how_it_works_explanation">
+
+                </div>
+                <div class="how_it_works_text">
+                    <h1>CLEAN</h1>
+                    <p>A professional house cleaner comes over and cleans your place</p>
+                </div>
+
+            </div>
+
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img"><img src="/images/how_2.jpg">
+                </div>
+                <div class="how_it_works_explanation"></div>
+                <div class="how_it_works_text">
+                    <h1>RELAX</h1>
+                    <p>Sit back and relax, enjoy your sparkling clean home!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="how_it_works_submit">
+            <input type="button" value="BOOK APPOINTMENT">
+        </div>
+
+    </div>
+
+    <!-- the how -->
+
+    <!-- the -->
+
+    <div id="about">
+
+        <div id="about_bg"></div>
+        <div id="about_bg_ol"></div>
+        <div id="about_main">
+            <h1>YOUR TRUST IS OUR PRIORITY</h1>
+
+            <div id="about_sections">
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/time.png"></div>
+                    <div class="about_title">SAVES YOU TIME</div>
+                    <div class="about_desc">Active Clean 1 does the house work for you so you can have time to pursue the important things. </div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/shield.png"></div>
+                    <div class="about_title">SAFETY FIRST</div>
+                    <div class="about_desc">We strictly screen all of our cleaners. Employees must pass a rigorous background check, reference checks, and in-person interviews. </div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/value.png"></div>
+                    <div class="about_title">SUPERIOR SERVICE</div>
+                    <div class="about_desc">Our cleaning artists go the extra mile on every job. After they finish, you can login in and give your team anonymous feedback.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/green-tea.png"></div>
+                    <div class="about_title">EASY SETUP</div>
+                    <div class="about_desc">Select your number of bedrooms and bathrooms. Pick a convenient date and time. Then relax while our maids make your home sparkle.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/chat.png"></div>
+                    <div class="about_title">STANDBY COMMUNICATION</div>
+                    <div class="about_desc">Our user-friendly site makes it easy for you to stay in touch with Dallas Maids. Log in anytime to add, edit, or cancel bookings.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="/images/security.png"></div>
+                    <div class="about_title">SECURE PAYMENTS</div>
+                    <div class="about_desc">Pay for your maid service online — only when the cleaning is complete. (Prefer to pay with check or cash? Just call us.)</div>
+                </div>
+            </div>
+
+            <div id="learn_more">
+                <input type="button" value="LEARN MORE">
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile">
+        <div id="mobile_img"><img src="/images/iphone-v2-complete.gif"></div>
+        <div id="mobile_desc">
+            <h1>SCHEDULE YOUR HOUSECLEANING ON THE RUN</h1>
+            <p>Active Clean 1 is mobile friendly. So you can book your cleaning service on your phone just as you could on your computer. </p>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div id="testimonials_bg">
+            <div id="testimonials_bg_bg"></div>
+        </div>
+
+        <div id="testimonials_content_wrap">
+            <h1>HAPPY CUSTOMERS</h1>
+
+            <div id="testimonials_content">
+
+                <div id="testimonials_content_sliders">
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text_holder">
+                            <div class="testimonials_text">
+                                <blockquote><br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempor auctor gravida. Praesent consequat congue elit a pretium. Sed hendrerit nunc malesuada lectus blandit, sed condimentum dui sodales. Donec quis sagittis tortor. Aliquam molestie faucibus erat sed sagittis. Suspendisse non augue eget nibh euismod accumsan sit amet at tortor. Donec eget magna scelerisque, laoreet lacus at, congue lectus.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text_holder">
+                            <div class="testimonials_text">
+                                <blockquote><br>
+                                    <p>Vivamus ornare, elit eget eleifend gravida, est augue posuere turpis, at euismod mauris enim vel quam. Nulla vel tristique lacus. Aenean sollicitudin pellentesque tortor, nec efficitur erat pharetra eget. Mauris convallis fermentum purus ac laoreet. Morbi aliquam maximus metus, posuere pellentesque est suscipit ac. Suspendisse potenti. Phasellus porta turpis sit amet turpis elementum, et condimentum ligula ultrices.
+
+                                        Etiam non orci nec elit ultrices auctor. Ut magna nulla, imperdiet vitae placerat ut, eleifend ut nulla. Proin sit amet tortor est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque aliquet molestie dui, ut fermentum orci. Nunc quis nulla a libero tincidunt consequat in sed turpis. Nunc faucibus risus consequat, accumsan augue at, luctus.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text">
+                            <blockquote>
+
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text">
+                            <blockquote>
+
+                            </blockquote>
+                        </div>
+                    </div>
+
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text">
+                            <blockquote>
+
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="testimonials_section">
+                        <div class="testimonials_text">
+                            <blockquote>
+
+                            </blockquote>
+                        </div>
+                    </div>
+
+
+                    <!--
+                    <div class="testimonials_group">
+
+                        <div class="testimonials_section">
+                            <div class="testimonials_text">
+                                <blockquote>
+hi
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="testimonials_section">
+                            <div class="testimonials_text">
+                                <blockquote>
+hi
+                                </blockquote>
+                            </div>
+                        </div>
+
+                    </div>
+-->
+                </div>
+
+            </div>
+
+            <script>
+                const slider = document.querySelector('.testimonials_content');
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                slider.addEventListener('mousedown', () => {
+                    isDown = true;
+                });
+                slider.addEventListener('mouseleave', () => {
+
+                });
+                slider.addEventListener('mouseup', () => {
+
+                });
+                slider.addEventListener('mousemove', () => {
+
+                });
+            </script>
+        </div>
+    </div>
+
+</body>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function() {
+        $('#form_occurence .form_percentage button').on('click', function() {
+            $('#form_occurence .form_percentage button').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+</html>
