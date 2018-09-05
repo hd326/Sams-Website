@@ -36,7 +36,7 @@ body {
     height: 750px;
     width: 100%;
     margin: auto;
-    background: url(/images/1.jpg) no-repeat;
+    background: url(images/1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -605,7 +605,7 @@ input[type=range]:focus {
 #about_bg {
     height: 100%;
     width: 100%;
-    background: url(/images/bg.jpg);
+    background: url(images/bg.jpg);
     background-size: cover;
     position: absolute;
 
@@ -759,7 +759,7 @@ input[type=range]:focus {
 }
 
 #testimonials_bg {
-    background: url(/images/testimonial_4.jpeg) no-repeat;
+    background: url(images/testimonial_4.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
