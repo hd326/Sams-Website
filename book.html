@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="book_hero">
+        <div id="book_hero_bg"></div>
+        <header>
+            <div id="header">
+                <div id="h_logo"><img src="images/logo2.jpg"></div>
+                <div id="h_menu">
+                    <nav>
+                        <ul>
+                            <li>MAID SERVICE</li>
+                            <li>CONTACT US</li>
+                            <li>BOOK MY CLEAN</li>
+                            <li>
+                                <div id="icon" onclick="openNav()">
+                                    <div id="hamburger"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div id="book_text">
+            <h1>LET US KNOW ABOUT YOUR HOME</h1>
+            <p>WE DON'T SHARE YOUR PERSONAL INFORMATION WITH ANYONE</p>
+        </div>
+        <div id="book_steps">
+            <div class="book_steps_section">
+                <div class="img"><img src="images/book_1.png"></div>
+            </div>
+
+            <div class="book_steps_section">
+                <div class="type_1">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+                <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
+            </div>
+
+
+
+            <div class="book_steps_section">
+                <div class="img"><img src="images/book_2.png"></div>
+
+            </div>
+
+            <div class="book_steps_section">
+                <div class="type_1">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+                <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
+            </div>
+
+            <div class="book_steps_section">
+                <div class="img"><img src="images/book_3.png"></div>
+            </div>
+        </div>
+
+        <!--<div id="book_steps_guide">
+            <div class="guide">CLEANING DETAILS</div>
+            <div class="guide"></div>
+            <div class="guide">HOME LOCATION</div>
+            <div class="guide"></div>
+            <div class="guide">PAYMENT</div>
+        </div>
+        -->
+    </div>
+
+    <div id="book_wrap">
+
+        <div id="book_wrap_title">
+            <h1>YOU'RE ONE STEP CLOSER TO A LIVELY HOME</h1>
+        </div>
+
+        <div id="book_wrap_containers">
+
+            <!--main-->
+
+            <div id="main">
+
+                <div id="main_title">
+
+
+                    <h1 id="title">You're almost there.</h1>
+                    <p id="title_aide">Just a few more details and we can complete your booking.</p>
+
+                </div>
+
+                <hr>
+
+                <div id="main_type">
+
+                    <h1>Type of Cleaning</h1>
+
+                    <div id="main_type_buttons">
+                        <div class="main_type_sections">
+                            <button><i class="fas fa-home"></i></button>
+                            <div class="main_type_text">Residential</div>
+                        </div>
+                        <div class="main_type_sections">
+                            <button><i class="fas fa-building"></i></button>
+                            <div class="main_type_text">* Commerical</div>
+                        </div>
+                    </div>
+
+                    <p>* For commercial bookings, please call us at our office at (916) 704-4061</p>
+
+                </div>
+
+                <hr>
+
+                <div id="main_contact">
+
+                    <h1>Contact Information</h1>
+                    <p>This information will be used to contact you.</p>
+
+                    <div id="main_contact_inputs">
+
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        <input type="text" placeholder="Email">
+                        <input type="text" placeholder="Phone Number">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="main_address">
+
+                    <h1>Service Address</h1>
+                    <p>Where would you like us to provide our service?</p>
+
+                    <div id="main_address_inputs">
+
+                        <input type="text" placeholder="Street Address">
+                        <input type="text" placeholder="Apt/Suite #">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="Zip Code">
+
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="main_service">
+
+                    <h1>Chooose Your Service</h1>
+                    <p>Tell us about your home.</p>
+
+                    <div id="main_service_inputs">
+                        <select>
+                            <option>One Bedroom Home</option>
+                            <option>Two Bedroom Home</option>
+                            <option>Three Bedroom Home</option>
+                            <option>Four Bedroom Home</option>
+                            <option>Five Bedroom Home</option>
+                            <option>Six Bedroom Home</option>
+                            <option>Seven Bedroom Home</option>
+                        </select>
+
+                        <select>
+                            <option>One Bathroom</option>
+                            <option>Two Bathrooms</option>
+                            <option>Three Bathrooms</option>
+                            <option>Four Bathrooms</option>
+                            <option>Five Bathrooms</option>
+                            <option>Six Bathrooms</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+                <div id="main_when">
+                    <h1>When would you like us to come?</h1>
+                    <div id="main_when_inputs">
+                        <select>
+                            <option></option>
+                        </select>
+
+                        <select>
+                            <option>8:00AM - 9:00AM</option>
+                            <option>9:00AM - 10:00AM</option>
+                            <option>10:00AM - 11:00AM</option>
+                            <option>11:00AM - 12:00PM</option>
+                            <option>12:00PM - 1:00PM</option>
+                            <option>1:00PM - 2:00PM</option>
+                            <option>2:00PM - 3:00PM</option>
+                            <option>3:00PM - 4:00PM</option>
+                            <option>4:00PM - 5:00PM</option>
+                            <option>5:00PM - 6:00PM</option>
+                            <option>6:00PM - 7:00PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="main_duration">
+
+                    <h1>How Often?</h1>
+
+                    <div id="main_duration_inputs">
+
+                        <input type="button" value="Weekly">
+                        <input type="button" value="One Time">
+                        <input type="button" value="Bi-weekly">
+                        <input type="button" value="Monthly">
+                        <input type="button" value="Tri-weekly">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="main_how">
+
+                    <h1>How will we get in?</h1>
+
+                    <div id="main_how_inputs">
+
+                        <button><i class="fas fa-user"></i></button>
+                        <button><i class="fas fa-unlock"></i></button>
+                        <button><i class="fas fa-key"></i></button>
+                        <button><i class="fas fa-align-center"></i></button>
+                        <button><i class="fas fa-feather"></i></button>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="main_payment">
+
+                    <h1>Payment Details</h1>
+                    <p>Enter your payment information below. You will be charged after the service has been done.</p>
+
+                    <div id="main_payment_inputs">
+
+                        <input type="text" placeholder="Card number">
+                        <input type="text" placeholder="MM/YY">
+                        <input type="text" placeholder="CVC">
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="main_more_info">
+
+                    <h1>Comments & Additional Information</h1>
+
+                    <textarea rows="4" cols="50" placeholder="Is there anything else you would like us to know?"></textarea>
+
+                </div>
+
+            </div>
+
+            <!--main-->
+
+            <!--side-->
+
+            <div id="side">
+                <h1>Book Summary</h1>
+                <hr>
+                <div id="side_summary">
+                    <div class="side_rows"><i class="fas fa-home"></i></div>
+                    <div class="side_rows">1 Bedrooms</div>
+                    <div class="side_rows"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="side_rows">9/9/18</div>
+                    <div class="side_rows"><i class="fas fa-balance-scale"></i></div>
+                    <div class="side_rows">One-time service</div>
+                </div>
+                <hr>
+
+                <div id="side_payment">
+                    <div class="side_payment_row">
+                        <div class="total_text">SUBTOTAL</div>
+                        <div class="amount">$Amount</div>
+                    </div>
+                    <div class="side_payment_row">
+                        <div class="total_text">SALES TAX</div>
+                        <div class="amount">$Amount</div>
+                    </div>
+
+                    <div class="side_payment_row">
+                        <div class="total_text">TOTAL</div>
+                        <div class="amount">$Amount</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--side-->
+        </div>
+
+    </div>
+    
+    <footer>
+        <div id="footer_wrapper">
+            <div id="footer_contents">
+
+                <!-- first section footer -->
+
+                <div class="footer_section">
+                    <div id="footer_logo">
+                        <img src="images/logo2.jpg">
+                    </div>
+
+                    <div id="footer_links">
+                        <div class="footer_links_sections">
+                            <p class="title">ABOUT</p>
+                            <p>About Us</p>
+                            <p>Service Area</p>
+                            <p>Maid Services</p>
+                            <p>House Cleaning</p>
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">CONTACT</p>
+                            <p>Contact Us</p>
+                            <p>Get A Quote</p>
+                            <p>Join Us</p>
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">FOR YOU</p>
+                            <p>Buy Gift Cards</p>
+                            <p>Book Now</p>
+                            <p>Cleaning Tips</p>
+
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">SUPPORT</p>
+                            <p>Help</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- first section footer -->
+
+                <!-- second section footer -->
+
+                <div class="footer_section">
+
+                    <div id="footer_social">
+
+                        <div class="icons"><i class="fab fa-facebook-f"></i></div>
+
+                        <div class="icons"><i class="fab fa-twitter"></i></div>
+
+                        <div class="icons"><i class="fab fa-instagram"></i></div>
+
+                        <div class="icons"><i class="fab fa-pinterest-p"></i></div>
+
+                    </div>
+                    <div class="footer_rows">
+                        <h1>Stay Connected</h1>
+                    </div>
+
+                    <div class="footer_rows"><i class="fas fa-mobile-alt"></i> <span>916-704-4061</span></div>
+
+                    <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
+
+                    <div class="footer_rows">
+                        <h2>Subscribe to our mailing list</h2>
+                    </div>
+                    <div class="footer_rows">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+
+                    <div class="footer_rows">
+                        <input type="button" value="Subscribe">
+                    </div>
+
+                </div>
+
+                <!-- second section footer -->
+
+            </div>
+
+            <div id="footer_bottom">Copyright 2018 All Rights Reserved. Copyright Active Clean 1.</div>
+        </div>
+    </footer>
+
+
+</body>
+    
+</html>
