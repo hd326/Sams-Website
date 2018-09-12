@@ -1094,11 +1094,10 @@ input[type=range]:focus {
     margin-top: 0px;
     margin-bottom: 0px;
     border: none;
-    z-index: ;
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin-bottom:
+    margin-bottom:;
 }
 
 footer {
