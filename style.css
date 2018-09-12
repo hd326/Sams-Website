@@ -260,6 +260,8 @@ header #header {
     width: 100%;
 }
 
+
+
 /*
 
 #form_container_1 #form_name_fields {
@@ -410,7 +412,7 @@ input[type=range]:focus {
     position: relative;
 }
 
-#form_container_1 #form_occurence button {
+#form_container_1 #form_occurence .form_percentage button {
     display: grid;
     justify-self: center;
     width: 100%;
@@ -470,6 +472,44 @@ input[type=range]:focus {
     transition: .3s ease;
 }
 
+#form_container_2 {
+    z-index: 1;
+    position: relative;
+    width: 57.5%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: .8fr .8fr .8fr 1.6fr;
+}
+
+#form_container_2 select {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 67.5px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#form_container_2 input {
+    font-size: 18px;
+    background-color: rgb(92, 150, 193);
+    color: white;
+    border: none;
+}
+
+#form_container_2 {}
+
+#form_container_2 .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+}
+
+#form_container_2 .custom_select select option {
+    height: 50px;
+}
+
 /*#5c96c1*/
 
 /*margin spacing for hero*/
@@ -499,6 +539,86 @@ input[type=range]:focus {
 
 #form_container_1 #submit {
     margin-top: 15px;
+}
+
+#points {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1;
+    grid-gap: 50px;
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+#points .point {
+    display: grid;
+    justify-self: center;
+    position: relative;
+    bottom: 0;
+    transform: translateY(300%);
+    font-weight: bold;
+    grid-template-columns: .15fr 1fr;
+    letter-spacing: 1.35px;
+}
+
+#points .point .point_img {
+    width: 100%;
+    z-index: 1;
+    transform: translateY(-25%);
+}
+
+#points .point:nth-of-type(2) .point_img {
+    transform: translateY(-10%);
+}
+
+#points .point .point_img img {
+    width: 25px;
+    z-index: 1;
+}
+
+@media(max-width: 1440px) {
+    #points {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #points .point:nth-of-type(3) {
+        position: absolute;
+        bottom: -150%;
+    }
+}
+
+@media(max-width: 1240px) {
+    #points {
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 12px;
+        width: 90%;
+    }
+
+    #points .point:nth-of-type(3) {
+        position: relative;
+    }
+}
+
+@media(max-width: 1090px) {
+    #points {
+        grid-template-columns: 1fr 1fr;
+        font-size: 12px;
+        width: 90%;
+    }
+
+    #points .point:nth-of-type(3) {
+        position: absolute;
+        bottom: -150%;
+    }
+}
+
+@media(max-width: 1090px) {
+    #points {
+        display: none;
+    }
 }
 
 /*margin spacing for hero*/
@@ -1086,7 +1206,7 @@ input[type=range]:focus {
 
 /*835de21136f9bb5f94565923f54798a7
 */
-#book #book_contents input{
+#book #book_contents input {
     padding: 25px;
     width: 500px;
     background-color: #5c96c1;
@@ -1097,7 +1217,7 @@ input[type=range]:focus {
     font-weight: bold;
     font-size: 16px;
     border-radius: 5px;
-    margin-bottom:;
+    margin-bottom: ;
 }
 
 footer {
@@ -1395,6 +1515,8 @@ footer #footer_bottom {
 
 
 
+
+
 @media(max-width: 375px) {
     #how_it_works_container .how_it_works_section .how_it_works_img {
         height: 150%;
@@ -1625,6 +1747,7 @@ footer #footer_bottom {
     background-color: white;
     border: 1px solid grey;
     padding: 40px;
+    height: 800px;
 }
 
 #book_wrap_containers #main #main_type #main_type_buttons {
@@ -1867,13 +1990,14 @@ footer #footer_bottom {
 
 #side #side_payment {
     padding: 20px;
+    color: #555555;
 }
 
 #side #side_payment h2 {
     font-weight: 100;
 }
 
-#side #side_payment .side_payment_row:nth-of-type(1){
+#side #side_payment .side_payment_row:nth-of-type(1) {
     margin-top: 0px;
 }
 
@@ -1883,6 +2007,11 @@ footer #footer_bottom {
     margin-top: 20px;
 }
 
-#side #side_payment .side_payment_row .amount{
-    justify-self:right;
+#side #side_payment .side_payment_row:nth-of-type(3) .total_text {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#side #side_payment .side_payment_row .amount {
+    justify-self: right;
 }
