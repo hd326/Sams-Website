@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div class="form__fields">
+        <div class="form_text_fields">
+            <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
+        <div class="form_text_fields">
+            <span class="form_label">Cost: </span><span class="choice_display" id="bed_cost">0</span> </div>
+        <div class="form_input_field">
+            <input type="range" min="1" max="6" value="1" class="slider" id="bed_service">
+        </div>
+    </div>
+    <div class="form__fields">
+        <div class="form_text_fields">
+            <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+        </div>
+        <div class="form_text_fields">
+            <span class="form_label">Cost: </span><span class="choice_display" id="bath_cost">0</span> </div>
+        <div class="form_input_field">
+            <input type="range" min="1" max="6" value="1" class="slider" id="bath_service">
+        </div>
+    </div>
+
+    <div id="price">
+
+    </div>
+
+
+
+
+<script>
+    var basePrice = 85.00;
+    var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
+    var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
+
+    document.querySelector('#bed_service').addEventListener('change', function(evt) {
+        var value = evt.target.value;
+        // value will be a string. Coercing to a number using +value
+        var bedCost = parseInt(getBedroomCost(+value), 10).toFixed(2);
+        
+        
+
+        document.querySelector('#bed_display').innerHTML = value;
+        
+        
+        
+        document.querySelector('#bed_cost').innerHTML = bedCost;
+
+        getTotalCost();
+        
+    });
+
+
+    document.querySelector('#bath_service').addEventListener('change', function(evt) {
+        var value = evt.target.value;
+        // value will be a string. Coercing to a number using +value
+        var bathCost = parseInt(getBathroomCost(+value), 10).toFixed(2);
+        // what do we return here? 
+        // the value is 1-6
+        // we create a function to get the basePrice + the...
+        // a value in the array... -1 
+
+        document.querySelector('#bath_display').innerHTML = value;
+        document.querySelector('#bath_cost').innerHTML = bathCost;
+        
+        getTotalCost();
+    })
+
+    function getTotalCost() {
+        var bedCost = parseInt(document.querySelector('#bed_cost').innerHTML);
+        var bathCost = parseInt(document.querySelector('#bath_cost').innerHTML);
+
+        /*if (bedCost + bathCost == 170.00) {
+            document.querySelector('#price').innerHTML = 85.00;
+        } else if (bedCost + bathCost == 415.00) {
+            document.querySelector('#price').innerHTML = 415.00 - 85.00;
+        } else {    */ 
+        newPrice = basePrice;
+        
+        document.querySelector('#price').innerHTML = newPrice += parseInt(bathCost + bedCost);
+        
+    }
+
+
+    function getBedroomCost(val) {
+        
+        return bedroomCostFactor[val - 1];
+            
+    }
+
+    function getBathroomCost(val) {
+        
+        return bathroomCostFactor[val - 1];
+        
+    }
+</script>
+</html>
