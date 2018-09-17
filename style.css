@@ -491,6 +491,7 @@ input[type=range]:focus {
     border-radius: 5px;
     font-weight: bold;
     margin-top: 25px;
+    letter-spacing: 1px;
 }
 
 #form_container_1 #submit button:hover {
@@ -585,7 +586,7 @@ input[type=range]:focus {
     justify-self: center;
     position: relative;
     bottom: 0;
-    transform: translateY(175%);
+    transform: translateY(275%);
     font-weight: bold;
     grid-template-columns: .15fr 1fr;
     letter-spacing: 1.35px;
@@ -1975,7 +1976,9 @@ footer #footer_bottom {
 
 /* side container for booking */
 
-#book_wrap_containers #side {}
+#book_wrap_containers #side {
+    color: #555555;
+}
 
 #book_wrap_containers #side h1 {
     text-align: center;
@@ -2048,9 +2051,17 @@ footer #footer_bottom {
 
 #side #side_payment .side_payment_row:nth-of-type(3) .total_text {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #side #side_payment .side_payment_row .amount {
     justify-self: right;
+}
+
+#side #side_payment .amount #amount,
+#side #side_payment .side_payment_row:nth-of-type(3) .amount{
+    font-size: 34px;
+    font-weight: bold;
+    color:#ff8989;
+    letter-spacing: .5px;
 }
