@@ -303,16 +303,16 @@
                 <div id="side_payment">
                     <div class="side_payment_row">
                         <div class="total_text">SUBTOTAL</div>
-                        <div class="amount" id="subtotal">85.00</div>
+                        <div class="amount"><span id="tydollarsign">$</span><span id="subtotal">85.00</span></div>
                     </div>
                     <div class="side_payment_row">
                         <div class="total_text">SALES TAX</div>
-                        <div class="amount" id="tax">6.16</div>
+                        <div class="amount"><span id="tydollarsign">$</span><span id="tax">6.16</span></div>
                     </div>
 
                     <div class="side_payment_row">
                         <div class="total_text">TOTAL</div>
-                        <div class="amount">$Amount</div>
+                        <div class="amount"><span id="tydollarsign">$</span><span id="amount">91.16</span></div>
                     </div>
                 </div>
             </div>
@@ -329,6 +329,7 @@
     var salesTax = .0725;
     var itemPrice = document.getElementById('subtotal');
     var itemSalesTax = document.getElementById('tax');
+    var totalAmount = document.getElementById('amount');
     
     (function () {
         "use strict";
@@ -349,10 +350,12 @@
                 }
                 itemPrice.innerHTML = newPrice.toFixed(2);
                 itemSalesTax.innerHTML = (newPrice * salesTax).toFixed(2);
+                totalAmount.innerHTML = (parseFloat(itemPrice.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
             },false);
         }
     })();
-                        
+    
+        
     
     </script>
 
