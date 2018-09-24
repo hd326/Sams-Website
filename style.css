@@ -872,7 +872,7 @@ input[type=range]:focus {
     margin-top: 75px;
 }
 
-#how_it_works .how_it_works_submit input {
+#how_it_works .how_it_works_submit button {
     width: 375px;
     height: 62.5px;
     background-color: #5c96c1;
@@ -1331,7 +1331,7 @@ input[type=range]:focus {
 
 /*835de21136f9bb5f94565923f54798a7
 */
-#book #book_contents input {
+#book #book_contents button {
     padding: 25px;
     width: 500px;
     background-color: #5c96c1;
@@ -1623,7 +1623,7 @@ footer #footer_bottom {
         margin: auto;
     }
 
-    #book #book_contents input[type="button"] {
+    #book #book_contents input {
         width: 75%;
     }
 
