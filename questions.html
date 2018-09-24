@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Cabin|Karla|Lato|Montserrat|Open+Sans|PT+Sans|PT+Serif|Raleway|Rubik|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div id="h_logo"><img src="images/logo2.jpg"></div>
+            <div id="h_menu">
+                <nav>
+                    <ul>
+
+                        <!--<li><a href=account/index.php>LOGIN </a> </li>
+                        <li>HELP</li>-->
+                        <a href="index.php">
+                            <li>HOME PAGE</li>
+                        </a>
+                        <a href="book.php">
+                            <li>BOOK MY CLEAN</li>
+                        </a>
+                        <a href="contact.php">
+                            <li>CONTACT US</li>
+                        </a>
+                        <li>
+                            <div id="icon" onclick="openNav()">
+                                <div id="hamburger"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- the questions portion -->
+    <!-- the questions portion -->
+    <!-- the questions portion -->
+
+    <div id="questions">
+        <div id="questions_hero">
+            <div id="questions_hero_helper"></div>
+            <div id="questions_hero_text">
+                <h1>Questions? We're here to help.</h1>
+                <p>Can't find an answer? Call us at (916) 704-4061 or email us at r_duong89@yahoo.com</p>
+            </div>
+        </div>
+
+        <div id="questions_container">
+            <!--<div class="questions_section">
+                <div class="questions_sect">
+                    <div class="questions_lines">General</div>
+                </div>
+                <div class="questions_sect">
+                    <div class="questions_lines">
+                        <div class="text">How does Active Clean 1 work?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Do the cleaning professionals undergo background checks?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Does someone need to be present?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Is Active Clean 1 insured and bonded?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Is Active Clean 1 Pet Safe</div>
+                        <div class="button">+</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questions_section">
+                <div class="questions_sect">
+                    <div class="questions_lines">General</div>
+                </div>
+                <div class="questions_sect">
+                    <div class="questions_lines">
+                        <div class="text">How does Active Clean 1 work?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Do the cleaning professionals undergo background checks?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Does someone need to be present?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Is Active Clean 1 insured and bonded?</div>
+                        <div class="button">+</div>
+                    </div>
+                    <div class="questions_lines">
+                        <div class="text">Is Active Clean 1 Pet Safe</div>
+                        <div class="button">+</div>
+                    </div>
+                </div>
+            </div>
+        -->
+
+            <div id="questions_title">
+                <h1>Help & FAQS</h1>
+            </div>
+            <div id="questions_questions">
+                <!-- put our sections in a wrap and nothing happens -->
+                <div class="questions_section_wrap">
+                    <div class="questions_section">
+                        <div class="questions_row">
+                            <p>GENERAL</p>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">How does Active Clean 1 work?</span>
+                                </div>
+                                <div class="questions_info"><p>We Clean. You Relax</p><br>
+                                <p>Active Clean 1 is a cleaning company that has provided an easy way to book, schedule, and manage all your cleaning service needs in one place. Our cleaners are insured and bonded, and tained to deliver on Active Clean 1's 52 point checklist.</p><br>
+                                    <p>Ready to relax? You can <span id="book_here">book here</span>.Once you have booked with our services, we will send one of our cleaning professionals to make your place clean as possible.</p>
+                                </div>
+                            </div>
+
+                            <script>
+                                $(function(){
+                            
+                            
+                                
+                            $('.questions_line').on('click', function(){
+                                $('.questions_info', this).slideToggle();
+                                $('#text', this).toggleClass('q_active');
+                                $('#button', this).toggleClass('q_button_active');
+                            });
+                                
+                        });
+                        </script>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Do the cleaning professionals undergo background checks?</span></div>
+                                <div class="questions_info"><p>Without a question. We only hire cleaners based on the highest level of professionalism, clean abstract that are reliable. We understand that it makes a lot to trust someone with your house and we do absolutely all that we can to put your mind at ease. We run a strict background check on every member during the interview and vetting process.</p></div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Does someone need to be present?</span></div><div class="questions_info"><p>Whether you are home or not during the time of cleaning is up to you! When you finish a booking with us, you'll be prompted to give us entry instructions. If you have a doorman or can hide a key somewhere, there's no need for you to be home. Or, you may feel free to stay around during the cleaning. Whatever you're comfortable with is fine with us. We're here to serve you.</p><br>
+                                    <p>In any case, please don't forget about your appointments. We'll remind you with an email or text message, but if the cleaner can't get in the door by following your entry instructions, or if you aren't home when you said you would be, you'll be charged a lock-out fee.</p>
+                                </div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Is Active Clean 1 insured and bonded?</span></div><div class="questions_info"><p>Yes, Active Clean 1 is insured and bonded. We understand that it is a privilege to be in your home, and we are always careful. In the unlikely event that an object is damaged, please notify us within 48 hours of when the appointment is completed either by email (<span class="support">r_duong89@yahoo.com</span>) or by phone <span class="support">(916) 704-4061</span></p></div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Is Active Clean 1 Pet Safe</span></div><div class="questions_info"><p>Here at Active Clean 1, we love animals, but they wont always love us. If you think your pet may become overly anxious while we are there, please make temporary arrangements while we are in your home. You can leave detailed pet instructions during the online scheduling process to let us know how to proceed.</p></div>
+                            </div>
+
+                        </div>
+
+                        <div class="questions_row">
+                            <p>CLEANING</p>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Do I need to provide supplies for your service?</span></div><div class="questions_info"></div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">What if I don't have the proper tools for cleaning</span>
+                                </div><div class="questions_info"></div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">What if I just had renovation work done on my home?</span></div><div class="questions_info"></div>
+                            </div>
+
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Can I give specific instruction to the cleaners and ask for custom requests?</span></div><div class="questions_info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="questions_section_wrap">
+                    <div class="questions_section">
+                        <div class="questions_row">
+                            <p>THE #1 CLEAN GUARANTEE</p>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">What is the #1 Clean Guarantee?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">How can I request a reclean?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">How many recleans can be booked using the #1 Clean Guarantee?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">What is and is not eligible for #1 Clean Guarantee?</span></div><div class="questions_info"></div>
+                            </div>
+                        </div>
+                        <div class="questions_row">
+                            <p>BILLING AND PAYMENT</p>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">How does Active Clean 1 work?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Do the cleaning professionals undergo background checks?</span>
+                                </div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">How does Active Clean 1 work?</span></div>
+                            </div><div class="questions_info"></div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Does someone need to be present?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Is Active Clean 1 insured and bonded?</span></div><div class="questions_info"></div>
+                            </div>
+                            <div class="questions_line">
+                                <div class="questions_holder">
+                                    <span id="button">+</span>
+                                    <span id="text">Is Active Clean 1 Pet Safe</span></div><div class="questions_info"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- the questions portion -->
+    <!-- the questions portion -->
+    <!-- the questions portion -->
+
+    <footer>
+        <div id="footer_wrapper">
+            <div id="footer_contents">
+
+                <!-- first section footer -->
+
+                <div class="footer_section">
+                    <div id="footer_logo">
+                        <img src="images/logo2.jpg">
+                    </div>
+
+                    <div id="footer_links">
+                        <div class="footer_links_sections">
+                            <p class="title">ABOUT</p>
+                            <p>About Us</p>
+                            <p>Service Area</p>
+                            <p>Maid Services</p>
+                            <p>House Cleaning</p>
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">CONTACT</p>
+                            <p>Contact Us</p>
+                            <p>Get A Quote</p>
+                            <p>Join Us</p>
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">FOR YOU</p>
+                            <p>Buy Gift Cards</p>
+                            <p>Book Now</p>
+                            <p>Cleaning Tips</p>
+
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">SUPPORT</p>
+                            <p>Help</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- first section footer -->
+
+                <!-- second section footer -->
+
+                <div class="footer_section">
+
+                    <div id="footer_social">
+
+                        <div class="icons"><i class="fab fa-facebook-f"></i></div>
+
+                        <div class="icons"><i class="fab fa-twitter"></i></div>
+
+                        <div class="icons"><i class="fab fa-instagram"></i></div>
+
+                        <div class="icons"><i class="fab fa-pinterest-p"></i></div>
+
+                    </div>
+                    <div class="footer_rows">
+                        <h1>Stay Connected</h1>
+                    </div>
+
+                    <div class="footer_rows"><i class="fas fa-mobile-alt"></i> <span>916-704-4061</span></div>
+
+                    <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
+
+                    <div class="footer_rows">
+                        <h2>Subscribe to our mailing list</h2>
+                    </div>
+                    <div class="footer_rows">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+
+                    <div class="footer_rows">
+                        <input type="button" value="Subscribe">
+                    </div>
+
+                </div>
+
+                <!-- second section footer -->
+
+            </div>
+
+            <div id="footer_bottom">Copyright 2018 All Rights Reserved. Copyright Active Clean 1.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
