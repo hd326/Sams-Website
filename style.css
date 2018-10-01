@@ -1976,6 +1976,7 @@ footer #footer_bottom {
     background-size: cover;
     background-position: bottom;
     height: 700px;
+    width: 100%;
     position: relative;
 }
 
@@ -1985,7 +1986,7 @@ footer #footer_bottom {
     width: 100%;
     height: 100%;
     top: 0;
-    z-index: ;
+    z-index: 0;
 }
 
 #book_text {
