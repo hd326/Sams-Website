@@ -363,17 +363,17 @@ header #header {
     padding-top: 50px;
     font-weight: 500;
     letter-spacing: 1px;
-    color:#ededed;
+    color: #ededed;
 }
 
 #hero #form_text h1#alt-ad {
     margin-top: 0px;
-    color:#ededed;
+    color: #ededed;
     font-weight: 100;
 }
 
-#hero #form_text h2#schedule-ad{
-    font-weight: 100 ;
+#hero #form_text h2#schedule-ad {
+    font-weight: 100;
 }
 
 
@@ -1043,7 +1043,7 @@ input[type=range]:focus {
     background: url(images/.jpg);
     background-repeat: repeat-y;
     background-repeat: repeat-x;
-    background-size:auto;
+    background-size: auto;
     position: absolute;
 
 }
@@ -1070,7 +1070,7 @@ input[type=range]:focus {
     margin-top: 75px;
 }
 
-#about #about_main h1{
+#about #about_main h1 {
     font-weight: 100;
     font-size: 43px;
 }
@@ -1583,7 +1583,7 @@ input[type=range]:focus {
     transform: translateX(50%);
 }
 
-#other_holder .other_service h3.other_name{
+#other_holder .other_service h3.other_name {
     font-size: 20px;
     font-weight: 100;
     letter-spacing: 1px;
@@ -1654,12 +1654,12 @@ footer {
     overflow: hidden;
 }
 
-footer a{
-    text-decoration:none;
+footer a {
+    text-decoration: none;
     color: #eaeaea;
 }
 
-footer a:hover{
+footer a:hover {
     color: grey;
     transition: .3s ease;
 }
@@ -1780,7 +1780,7 @@ footer #footer_bottom {
     #mobile #mobile_desc h1 {
         font-size: 28px;
         margin-top: 12.5px;
-        
+
     }
 
     #mobile #mobile_desc p {
@@ -1982,7 +1982,7 @@ footer #footer_bottom {
 
 #book_hero_bg {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.375);
+    background-color: rgba(0, 0, 0, 0.18);
     width: 100%;
     height: 100%;
     top: 0;
@@ -2169,18 +2169,17 @@ footer #footer_bottom {
 }
 
 @media (max-width: 1279px) {
-    #book_wrap #book_wrap_containers{
+    #book_wrap #book_wrap_containers {
         min-width: 85%;
     }
-    #book_wrap_containers #side{
-        margin-top: 15px;
-    }
+
+    #book_wrap_containers #side {}
 }
 
 @media (max-width: 1150px) {
     #book_wrap #book_wrap_containers {
         display: block;
-        min-width: 80%;
+        min-width: 90%;
     }
 
     #book_steps {
@@ -2196,8 +2195,8 @@ footer #footer_bottom {
         position: absolute;
         transform: translateX(5%);
     }
-    
-    
+
+
 }
 
 #book_wrap #book_wrap_containers #main {
@@ -2499,13 +2498,6 @@ footer #footer_bottom {
     font-weight: bold;
 }
 
-#book_wrap_containers #main #main_how_inputs .how_input button.active {
-    background-color: rgba(73, 158, 221, 0.85);
-    /*text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white;*/
-    /*text-shadow: .25px 0 white, .25px 0 white, .25px 0 white;*/
-    color: black;
-    border: 1px solid #d1d1d1;
-}
 
 #book_wrap_containers #main #main_how_inputs .how_input {
     display: grid;
@@ -2523,11 +2515,20 @@ footer #footer_bottom {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 25px;
+    color: grey;
 }
 
-#book_wrap_containers #main #main_how_inputs button i {
+#book_wrap_containers #main #main_how_inputs button  {
     font-size: 28px;
-    color: grey;
+}
+
+#book_wrap_containers #main #main_how_inputs .how_input button.active {
+    background-color: #7bc7ff;
+    /*text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white;*/
+    /*text-shadow: .25px 0 white, .25px 0 white, .25px 0 white;*/
+    color: #ebebeb;
+    border: 1px solid grey;
+    transition: .3s ease;
 }
 
 /*#book_wrap_containers #main #main_payment p {
@@ -2586,8 +2587,8 @@ footer #footer_bottom {
 
 #book_wrap_containers #side #side_summary {}
 
-#book_wrap_containers #side #side_summary .side_sections{
-    display:grid;
+#book_wrap_containers #side #side_summary .side_sections {
+    display: grid;
     grid-template-columns: .5fr 1fr;
 }
 
@@ -2620,12 +2621,12 @@ footer #footer_bottom {
 .side_sections .side_rows:nth-of-type(2),
 .side_sections .side_rows:nth-of-type(4),
 .side_sections .side_rows:nth-of-type(6) {
-    display:grid;
-    justify-content:flex-start;
-    align-self:center;
+    display: grid;
+    justify-content: flex-start;
+    align-self: center;
     margin-bottom: 15px;
     font-size: 14px;
-    
+
 }
 
 .side_rows:nth-of-type(1) i {
@@ -2733,41 +2734,50 @@ footer #footer_bottom {
 
     #book_wrap_containers #main #main_when #main_when_inputs input {
         width: 100%;
+
+    }
+
+    #book_wrap_containers #main #main_when #main_when_inputs select {
+        margin-top: 10px
     }
 
     #book_wrap_containers #main #main_duration #main_duration_inputs {
         display: block;
         width: 100%;
     }
+
     /*this one needs the book_wrap call for some reason*/
     #book_wrap_containers #main #main_duration #main_duration_inputs button:nth-of-type(1) {
         margin-top: 0px;
     }
-    
-    #book_wrap_containers #main #main_duration #main_duration_inputs button{
+
+    #book_wrap_containers #main #main_duration #main_duration_inputs button {
         width: 100%;
         margin-top: 10px;
     }
 
-    #book_wrap_containers #main #main_payment_inputs {
-
+    /*#book_wrap_containers #main #main_payment_inputs {
         grid-template-columns: 1.2fr .4fr .4fr;
-
-
-    }
+    not yet implemented
+    }*/
 
     #book_wrap_containers #main #main_how_inputs {
-
-        grid-template-columns: 1fr 1fr;
-
+        display:block;
+    }
+    
+    #book_wrap_containers #main #main_how_inputs button{
+        margin-top: 20px;
+    }
+    
+    #book_wrap_containers #main #main_how_inputs .how_input_text{
+        margin-top: 5px;
     }
 
     #book_wrap_containers #main #main_how_inputs .how_input {
 
-        grid-template-rows: 1.8fr .2fr;
     }
-    
-    #book_wrap_containers #side{
+
+    #book_wrap_containers #side {
         margin-top: 10px;
     }
 }

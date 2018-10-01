@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="node_modules/flatpickr/dist/flatpickr.min.css">
     <script href="node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    
+
 </head>
 
 
@@ -31,7 +31,7 @@
 
     </div>
 
-    
+
 
 
     <header>
@@ -62,7 +62,7 @@
             </div>
         </div>
     </header>
-<script>
+    <script>
         function openNav() {
     document.getElementById("sidenav").style.width = "260px";
 }
@@ -406,16 +406,22 @@ function closeNav() {
 
                     <h1>How will we get in?</h1>
 
+
+
                     <div id="main_how_inputs">
 
                         <div class="how_input"><button value=""><i aria-hidden class="fas fa-user" title="Choose I'll be home"></i></button>
                             <span class="how_input_text">I'll be home</span></div>
+
                         <div class="how_input"><button value=""><i aria-hidden class="fas fa-unlock" title="Choose leave door unlocked"></i></button>
                             <span class="how_input_text">I'll leave the door unlocked</span></div>
+
                         <div class="how_input"><button value="E.g. The key is inside the gnome."><i aria-hidden class="fas fa-key" title="Choose I'll hide a key"></i></button>
                             <span class="how_input_text">I'll hide a key</span></div>
+
                         <div class="how_input"><button value="E.g. #4824"><i aria-hidden class="fas fa-align-center" title="Choose I have an alarm"></i></button>
                             <span class="how_input_text">I have an alarm</span></div>
+
                         <div class="how_input"><button value=""><i aria-hidden class="fas fa-feather" title="Choose other method of entry"></i></button>
                             <span class="how_input_text">Other</span></div>
 
@@ -463,7 +469,7 @@ function closeNav() {
 
                         $(Other).on('click', function() {
                             $('#enter_instructions').html("<div id=enter_title><h3>Instructions</h3></div><p id=enter_example></p><textarea id=enter_textarea></textarea>");
-                            $('#enter_example').html(Instructions);
+                            $('#enter_example').html("");
                         });
 
                         $('.calculate_baths').change();
@@ -472,6 +478,12 @@ function closeNav() {
                         $('#main_duration_inputs button').on('click', function() {
                             $('#main_duration_inputs button').removeClass('active_duration');
                             $(this).addClass('active_duration');
+                            // makes sense
+                        });
+                        
+                        $('#book_wrap #book_wrap_containers #main  #main_how_inputs button').on('click', function() {
+                             $('#main_how_inputs .how_input button').removeClass('active');
+                            $(this).addClass('active');
                             // makes sense
                         });
 
