@@ -85,7 +85,7 @@ body {
     width: 100%;
     position: absolute;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.29);
+    background: rgba(0, 0, 0, 0.33);
     top: 0;
 }
 
@@ -94,7 +94,7 @@ body {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url(images/help1.jpg) no-repeat;
+    background: url(images/q5.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -110,7 +110,7 @@ body {
     /* 0 width - change this with JavaScript */
     position: fixed;
     /* Stay in place */
-    z-index: 444;
+    z-index: 3;
     /* Stay on top */
     top: 0;
     /* Stay at the top */
@@ -297,6 +297,7 @@ header #header {
 
 #header #h_menu nav ul #nav_icon {
     display: none;
+    background-color: red;
 }
 
 
@@ -331,7 +332,6 @@ header #header {
 
     #header #h_menu nav ul #nav_icon {
         display: block;
-        z-index: 5555;
     }
 }
 
@@ -357,17 +357,19 @@ header #header {
 
 }
 
-#hero #form_text #main-ad {
+#hero #form_text h1#main-ad {
     font-size: 46px;
     margin-bottom: 7.5px;
     font-weight: 400;
     padding-top: 50px;
     font-weight: 600;
     letter-spacing: 1px;
+    color:#ededed;
 }
 
-#hero #form_text #alt-ad {
+#hero #form_text h1#alt-ad {
     margin-top: 0px;
+    color:#ededed;
 }
 
 
@@ -1000,8 +1002,7 @@ input[type=range]:focus {
 #how_it_works .how_it_works_submit button {
     width: 375px;
     height: 62.5px;
-    background-color: rgba(73, 158, 221, 0.85);
-    ;
+    background-color: rgba(59, 148, 214, 0.73);
     color: white;
     border: none;
     z-index: ;
@@ -1035,8 +1036,10 @@ input[type=range]:focus {
 #about_bg {
     height: 100%;
     width: 100%;
-    background: url(images/bg.jpg);
-    background-size: cover;
+    background: url(images/.jpg);
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-size:auto;
     position: absolute;
 
 }
@@ -1045,7 +1048,8 @@ input[type=range]:focus {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(59, 148, 214, 0.85);
+    background-color: rgba(23, 141, 229, 0.73);
+    /*background-color: rgba(255, 225, 125, 0.77);*/
     z-index: 1;
 }
 
@@ -1464,7 +1468,7 @@ input[type=range]:focus {
 #book #book_contents button {
     padding: 25px;
     width: 500px;
-    background-color: rgba(77, 164, 229, 0.85);
+    background-color: rgba(59, 148, 214, 0.73);
     color: white;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1518,7 +1522,7 @@ input[type=range]:focus {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(73, 158, 221, 0.85);
+    background-color: rgba(59, 148, 214, 0.73);
 }
 
 #other_holder {
@@ -1634,12 +1638,12 @@ footer {
     overflow: hidden;
 }
 
-footer a {
-    text-decoration: none;
+footer a{
+    text-decoration:none;
     color: #eaeaea;
 }
 
-footer a:hover {
+footer a:hover{
     color: grey;
     transition: .3s ease;
 }
@@ -1954,18 +1958,17 @@ footer #footer_bottom {
     background: url(images/help7.jpg);
     background-size: cover;
     background-position: bottom;
-    position: relative;
-    width: 100%;
     height: 700px;
-    margin: auto;
+    position: relative;
 }
 
 #book_hero_bg {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.19);
+    background-color: rgba(0, 0, 0, 0.375);
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: ;
 }
 
 #book_text {
@@ -1975,7 +1978,6 @@ footer #footer_bottom {
     position: relative;
     text-align: center;
     margin: auto;
-
 }
 
 #book_text h1 {
@@ -2149,11 +2151,10 @@ footer #footer_bottom {
 }
 
 @media (max-width: 1279px) {
-    #book_wrap #book_wrap_containers {
+    #book_wrap #book_wrap_containers{
         min-width: 85%;
     }
-
-    #book_wrap_containers #side {
+    #book_wrap_containers #side{
         margin-top: 15px;
     }
 }
@@ -2177,8 +2178,8 @@ footer #footer_bottom {
         position: absolute;
         transform: translateX(5%);
     }
-
-
+    
+    
 }
 
 #book_wrap #book_wrap_containers #main {
@@ -2567,8 +2568,8 @@ footer #footer_bottom {
 
 #book_wrap_containers #side #side_summary {}
 
-#book_wrap_containers #side #side_summary .side_sections {
-    display: grid;
+#book_wrap_containers #side #side_summary .side_sections{
+    display:grid;
     grid-template-columns: .5fr 1fr;
 }
 
@@ -2601,12 +2602,12 @@ footer #footer_bottom {
 .side_sections .side_rows:nth-of-type(2),
 .side_sections .side_rows:nth-of-type(4),
 .side_sections .side_rows:nth-of-type(6) {
-    display: grid;
-    justify-content: flex-start;
-    align-self: center;
+    display:grid;
+    justify-content:flex-start;
+    align-self:center;
     margin-bottom: 15px;
     font-size: 14px;
-
+    
 }
 
 .side_rows:nth-of-type(1) i {
@@ -2720,13 +2721,12 @@ footer #footer_bottom {
         display: block;
         width: 100%;
     }
-
     /*this one needs the book_wrap call for some reason*/
     #book_wrap_containers #main #main_duration #main_duration_inputs button:nth-of-type(1) {
         margin-top: 0px;
     }
-
-    #book_wrap_containers #main #main_duration #main_duration_inputs button {
+    
+    #book_wrap_containers #main #main_duration #main_duration_inputs button{
         width: 100%;
         margin-top: 10px;
     }
@@ -2748,8 +2748,8 @@ footer #footer_bottom {
 
         grid-template-rows: 1.8fr .2fr;
     }
-
-    #book_wrap_containers #side {
+    
+    #book_wrap_containers #side{
         margin-top: 10px;
     }
 }
