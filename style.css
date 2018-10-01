@@ -5,7 +5,7 @@ https://www.typewolf.com/google-fonts*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "montserrat";
+    font-family: "helvetica";
     /*'Source Sans Pro'*/
     /*vs helvetica*/
 }
@@ -360,9 +360,8 @@ header #header {
 #hero #form_text h1#main-ad {
     font-size: 46px;
     margin-bottom: 7.5px;
-    font-weight: 400;
     padding-top: 50px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
     color:#ededed;
 }
@@ -370,6 +369,11 @@ header #header {
 #hero #form_text h1#alt-ad {
     margin-top: 0px;
     color:#ededed;
+    font-weight: 100;
+}
+
+#hero #form_text h2#schedule-ad{
+    font-weight: 100 ;
 }
 
 
@@ -1002,7 +1006,7 @@ input[type=range]:focus {
 #how_it_works .how_it_works_submit button {
     width: 375px;
     height: 62.5px;
-    background-color: rgba(59, 148, 214, 0.73);
+    background-color: rgba(23, 141, 229, 0.73);
     color: white;
     border: none;
     z-index: ;
@@ -1064,6 +1068,11 @@ input[type=range]:focus {
     max-width: 1200px;
     margin: auto;
     margin-top: 75px;
+}
+
+#about #about_main h1{
+    font-weight: 100;
+    font-size: 43px;
 }
 
 
@@ -1173,7 +1182,7 @@ input[type=range]:focus {
 
 #mobile #mobile_desc {
     align-self: center;
-    color: #2b2b2b;
+    color: #404040;
 }
 
 #mobile #mobile_desc h1 {
@@ -1201,7 +1210,7 @@ input[type=range]:focus {
 }
 
 #testimonials_bg {
-    background: url(images/test3.jpg) no-repeat;
+    background: url(images/test1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -1468,7 +1477,7 @@ input[type=range]:focus {
 #book #book_contents button {
     padding: 25px;
     width: 500px;
-    background-color: rgba(59, 148, 214, 0.73);
+    background-color: rgba(23, 141, 229, 0.73);
     color: white;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1522,7 +1531,7 @@ input[type=range]:focus {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(59, 148, 214, 0.73);
+    background-color: rgba(23, 141, 229, 0.73);
 }
 
 #other_holder {
@@ -1572,6 +1581,13 @@ input[type=range]:focus {
 
 #other_holder .other_service:nth-of-type(8) {
     transform: translateX(50%);
+}
+
+#other_holder .other_service h3.other_name{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-top: 10px;
 }
 
 @media(max-width: 1200px) {
@@ -1763,7 +1779,8 @@ footer #footer_bottom {
 
     #mobile #mobile_desc h1 {
         font-size: 28px;
-        margin-top: 12.5px
+        margin-top: 12.5px;
+        
     }
 
     #mobile #mobile_desc p {
