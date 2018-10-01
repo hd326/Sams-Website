@@ -6,6 +6,15 @@ function sliderChange2(val) {
     document.getElementById('bath_display').innerHTML = val;
 }
 
+function openNav() {
+    document.getElementById("sidenav").style.width = "260px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+
 function showValue(newValue, resultDiv) {
     document.getElementById(resultDiv).innerHTML = newValue;
     updateSum();
