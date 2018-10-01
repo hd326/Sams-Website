@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
     <title></title>
 </head>
 <script>
@@ -148,11 +149,12 @@ function updateSum() {
 
     <!-- the form -->
     <div id="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Maid Service</a>
-        <div id="closebtn"></div>
-    </div>
-
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="#">HOME PAGE</a>
+    <a href="#">BOOK MY CLEAN</a>
+    <a href="#">CONTACT US</a>
+    <div id="closebtn"></div>
+</div>
 
 
 
@@ -186,110 +188,7 @@ function updateSum() {
     </header>
 
 
-    <div id="hero">
-
-        <div id="form_container_bg"></div>
-        <div id="form_container_bg_bg"></div>
-        <div id="form_text">
-            <h1>Premier Cleaning Service in Sacramento</h1>
-            <h2>Schedule an appointment to clean with Sacramentos quality cleaning service.</h2>
-        </div>
-        <!--
-        <div id="form_container_2">
-            <div class="custom_select">
-                <select>
-                    <option>1 Bedroom</option>
-                    <option>2 Bedroom</option>
-                    <option>3 Bedroom</option>
-                    <option>4 Bedroom</option>
-                    <option>5 Bedroom</option>
-                    <option>6 Bedroom</option>
-                </select>
-            </div>
-            <div class="custom_select">
-                <select>
-                    <option>1 Bathroom</option>
-                    <option>2 Bathroom</option>
-                    <option>3 Bathroom</option>
-                    <option>4 Bathroom</option>
-                    <option>5 Bathroom</option>
-                </select>
-            </div>
-            <div class="custom_select">
-                <select>
-                    <option>1 time</option>
-                    <option>Every week</option>
-                    <option>Every 2 weeks</option>
-                    <option>Every 4 weeks</option>
-                </select>
-            </div>
-            <input type="button" value="SCHEDULE AN APPOINTMENT">
-        </div>
--->
-        <div id="form_container_1">
-            <form>
-                <!--
-                <div class="form__fields">
-        <div class="form_text_fields">
-            <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
-        <div class="form_text_fields">
-            <span class="form_label">Cost: </span><span class="choice_display" id="bed_cost">0</span> </div>
-        <div class="form_input_field">
-            <input type="range" min="1" max="6" value="1" class="slider" id="bed_service">
-        </div>
-    </div>
-    <div class="form__fields">
-        <div class="form_text_fields">
-            <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
-        </div>
-        <div class="form_text_fields">
-            <span class="form_label">Cost: </span><span class="choice_display" id="bath_cost">0</span> </div>
-        <div class="form_input_field">
-            <input type="range" min="1" max="6" value="1" class="slider" id="bath_service">
-        </div>
-    </div>
-                -->
-                <div class="form__fields">
-                    <div class="form_text_fields">
-                        <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
-                    <div class="form_input_field">
-                        <input type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
-                    </div>
-                    <span id="bed_cost">0</span>
-                </div>
-                <div class="form__fields">
-                    <div class="form_text_fields">
-                        <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
-                    </div>
-                    <div class="form_input_field">
-                        <input type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
-                    </div>
-                    <span id="bath_cost">0</span>
-                </div>
-
-                <div id="form_occurence">
-                    <div class="form_percentage">
-                        <button type="button" id="one" onclick="returnPercentage(this);getTotalCost()" value="0">1 time service</button>
-                    </div>
-                    <div class="form_percentage">
-                        <button type="button" id="two" onclick="returnPercentage(this);getTotalCost()" value="5">Monthly cleaning</button><span><span id="percentage_off" onclick="returnPercentage()" value="5">5</span>% Off</span>
-                    </div>
-                    <div class="form_percentage">
-                        <button type="button" id="three" onclick="returnPercentage(this);getTotalCost()" value="15">Bi-weekly cleaning</button>
-                        <span><span id="percentage_off" onclick="returnPercentage()" value="15">15</span>% Off</span>
-                    </div>
-                    <div class="form_percentage">
-                        <button type="button" onclick="returnPercentage(this);getTotalCost()" value="10">Tri-weekly cleaning</button>
-                        <span><span id="percentage_off" onclick="returnPercentage()" value="10">10</span>% Off</span>
-                    </div>
-                    <div class="form_percentage">
-                        <button type="button" onclick="returnPercentage(this);getTotalCost()" value="20">Weekly cleaning</button>
-                        <span><span id="percentage_off" onclick="returnPercentage()" value="20">20</span>% Off</span></div>
-                </div>
-                <div id="submit"><button>See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></div>
-            </form>
-            <div id="percentage"></div>
-        </div>
+    
 
         <script>
             var basePrice = 85.00;
@@ -412,157 +311,364 @@ function updateSum() {
             
         </script>
 
-        <div id="points">
 
-            <div class="point">
-                <div class="point_img"><img src="images/star.png"></div>
-                <div class="point_txt">All Cleaners are Certified & Insured</div>
-            </div>
-            <div class="point">
-                <div class="point_img"><img src="images/check.png"></div>
-                <div class="point_txt">Trained with thorough checklist</div>
-            </div>
-            <div class="point">
-                <div class="point_img"><img src="images/award.png"></div>
-                <div class="point_txt">Bring & use quality products</div>
-            </div>
 
-        </div>
+    
+
+            <script>/*
+                const slider = document.querySelector('.testimonials_content');
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+
+                slider.addEventListener('mousedown', () => {
+                    isDown = true;
+                });
+                slider.addEventListener('mouseleave', () => {
+
+                });
+                slider.addEventListener('mouseup', () => {
+
+                });
+                slider.addEventListener('mousemove', () => {
+
+                });*/
+
+            </script>
+    <div id="hero">
+    <div role="img" alt="living room" id="form_container_bg"></div>
+    <div id="form_container_bg_bg"></div>
+    <div id="form_text">
+        <h1 id="main-ad">Fully Licensed, Bonded & Insured</h1>
+        <h1 id="alt-ad">Premier Cleaning Service in Sacramento</h1>
+        <h2>Schedule an appointment. Select your number of bedrooms and bathrooms.</h2><br>
     </div>
 
-    <!-- the form -->
-
-    <!-- the how -->
-
-    <div id="how_it_works">
-
-        <div id="how_it_works_wrapper">
-
-            <div id="how_it_works_title">
-                <h1>HOW IT WORKS</h1>
+    <div id="form_container_1">
+        <form action="book.html">
+            <div class="form__fields">
+                <div class="form_text_fields">
+                    <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
+                <div class="form_input_field">
+                    <input name="bed_range" type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
+                </div>
+                <!-- bed cost -->
+                <span id="bed_cost">0</span>
             </div>
+            <div class="form__fields">
+                <div class="form_text_fields">
+                    <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+                </div>
+                <div class="form_input_field">
+                    <input name="bath_range" type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
+                </div>
+                <!-- bath cost --> 
+                <span id="bath_cost">0</span>
+            </div>
+            <div id="form_occurence">
 
-            <div id="how_it_works_container">
+                <div class="form_percentage">
+                    <button type="button" id="one" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="0">One time cleaning</button>
 
-                <div class="how_it_works_section">
-                    <div class="how_it_works_img"><img src="images/how_1.jpg">
-                    </div>
-                    <div class="how_it_works_explanation"></div>
-                    <div class="how_it_works_text">
-                        <h1>BOOK</h1>
-                        <p>Schedule an appointment online for your house cleaning</p>
-                    </div>
                 </div>
 
-                <div class="how_it_works_section">
-                    <div class="how_it_works_img"><img src="images/how_3.jpg">
-                    </div>
-                    <div class="how_it_works_explanation"></div>
-                    <div class="how_it_works_text">
-                        <h1>CLEAN</h1>
-                        <p>A professional house cleaner comes over and cleans your place</p>
-                    </div>
+                <div class="form_percentage">
+                    <button type="button" id="two" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="5">Monthly cleaning</button>
+
+                    <span><span id="percentage_off" onclick="returnPercentage();" value="5">5</span>% Off</span>
                 </div>
 
+                <div class="form_percentage">
+                    <button type="button" id="three" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="15">Bi-weekly cleaning</button>
 
-                <div class="how_it_works_section">
-                    <div class="how_it_works_img"><img src="images/how_2.jpg">
-                    </div>
-                    <div class="how_it_works_explanation"></div>
-                    <div class="how_it_works_text">
-                        <h1>RELAX</h1>
-                        <p>Sit back and relax, enjoy your sparkling clean home!</p>
-                    </div>
+                    <span><span id="percentage_off" onclick="returnPercentage();" value="15">15</span>% Off</span>
                 </div>
 
-            </div>
+                <div class="form_percentage">
+                    <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="10">Tri-weekly cleaning</button>
 
-            <div class="how_it_works_submit">
-                <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
-            </div>
+                    <span><span id="percentage_off" onclick="returnPercentage();" value="10">10</span>% Off</span>
+                </div>
 
+                <div class="form_percentage">
+                    <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="20">Weekly cleaning</button>
+
+                    <span><span id="percentage_off" onclick="returnPercentage();" value="20">20</span>% Off</span></div>
+                <!-- percentage value -->
+                <input type="hidden" name="duration_range" id="range" value="">
+                <input type="hidden" name="percentage_range" id="percentage" value="">
+            </div>
+            
+            <div id="submit">
+
+                <a href="book.html"><button type="submit">See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></a>
+
+            </div>
+        </form>
+    </div>
+    <script>
+var basePrice = 85.00;
+var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
+var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
+var percentageFactor = [0, 5, 15, 10, 20];
+          
+
+function returnPercentage(val) {
+    //document.querySelector('#percentage').value = val.value;
+    document.querySelector('#percentage').setAttribute('value', val.value);
+}
+        
+// need the duration html, bed range can replace the other values
+        
+function returnDuration(val){
+    document.querySelector('#range').value = val.innerHTML;
+}
+
+document.querySelector('#bed_service').addEventListener('change', function (evt) {
+    var value = evt.target.value;
+    // value will be a string. Coercing to a number using +value
+    var bedCost = parseInt(getBedroomCost(+value), 10).toFixed(2);
+
+    document.querySelector('#bed_display').innerHTML = value;
+    document.querySelector('#bed_cost').innerHTML = bedCost;
+
+    getTotalCost();
+});
+
+
+document.querySelector('#bath_service').addEventListener('change', function (evt) {
+
+    var value = evt.target.value;
+    // evt[self]
+    // target[#bathservice]
+    // value[value]
+
+    // what does this amount to? 1-2-3-4-5-6
+
+    // value will be a string. Coercing to a number using +value
+
+    var bathCost = parseInt(getBathroomCost(+value), 10).toFixed(2);
+
+    // what does this amount to? getBathroomCost (val) { return bathroomCostFactor[val-1] }
+
+    // it's returning the arrays value based on the changed input
+    // evt.target.value = input.value 
+
+    document.querySelector('#bath_display').innerHTML = value;
+    document.querySelector('#bath_cost').innerHTML = bathCost;
+
+    getTotalCost();
+
+})
+
+function getTotalCost() {
+    var bedCost = parseInt(document.querySelector('#bed_cost').innerHTML);
+    var bathCost = parseInt(document.querySelector('#bath_cost').innerHTML);
+    var percentage = parseInt(document.querySelector('#percentage').value);
+    var percentageOff = percentage / 100;
+    console.log(bedCost);
+    console.log(bathCost);
+    /*these are both values that I've hidden absolutely*/
+    newPrice = basePrice;
+    newPriceVar = basePrice;
+    if (!percentage) {
+        document.querySelector('#price').innerHTML = newPrice += parseInt(bathCost + bedCost);
+    } else {
+        document.querySelector('#price').innerHTML = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);
+    }
+}
+
+function getBedroomCost(val) {
+    return bedroomCostFactor[val - 1];
+}
+
+function getBathroomCost(val) {
+    return bathroomCostFactor[val - 1];
+}
+        </script>
+
+    <div id="points">
+
+        <div class="point">
+            <div class="point_img"><img src="images/star.png" alt="Star"></div>
+            <div class="point_txt">All Cleaners are Certified & Insured</div>
+        </div>
+        <div class="point">
+            <div class="point_img"><img src="images/check.png" alt="Checkmark"></div>
+            <div class="point_txt">Trained with thorough checklist</div>
+        </div>
+        <div class="point">
+            <div class="point_img"><img src="images/award.png" alt="Award Medal"></div>
+            <div class="point_txt">Bring & use quality products</div>
         </div>
 
     </div>
 
-    <!-- the how -->
+</div>
 
-    <!-- the -->
+<!-- the form -->
 
-    <div id="about">
+<!-- the awards -->
 
-        <div id="about_bg"></div>
-        <div id="about_bg_ol"></div>
-        <div id="about_main">
-            <h1>YOUR TRUST IS OUR PRIORITY</h1>
-
-            <div id="about_sections">
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trusttime.png"></div>
-                    <div class="about_title">SAVES YOU TIME</div>
-                    <div class="about_desc">Active Clean 1 does the house work for you so you can have time to pursue the important things. </div>
-                </div>
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trustshield.png"></div>
-                    <div class="about_title">SAFETY FIRST</div>
-                    <div class="about_desc">We strictly screen all of our cleaners. Employees must pass a rigorous background check, reference checks, and in-person interviews. </div>
-                </div>
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trustdiamond.png"></div>
-                    <div class="about_title">SUPERIOR SERVICE</div>
-                    <div class="about_desc">Our cleaning specialists make sure your home is clean on every job. After they finish, you can login in and give your team anonymous feedback.</div>
-                </div>
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trustmountain2.png"></div>
-                    <div class="about_title">EASY SETUP</div>
-                    <div class="about_desc">Select your number of bedrooms and bathrooms. Pick a convenient date and time. Then relax while our we make your home sparkle.</div>
-                </div>
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trustcomm.png"></div>
-                    <div class="about_title">STANDBY COMMUNICATION</div>
-                    <div class="about_desc">Our user-friendly site makes it easy for you to stay in touch with Active Clean 1, reach out to us at any time.</div>
-                </div>
-
-                <div class="about_section">
-                    <div class="about_img"><img src="images/trustsecure.png"></div>
-                    <div class="about_title">SECURE PAYMENTS</div>
-                    <div class="about_desc">Pay for your maid service online — only when the cleaning is complete. (Prefer to pay with check or cash? Just call us.)</div>
-                </div>
+<!--<div id="awards">
+        <div id="awards_logo_h">
+            <div class="awards_logo">
+            <span id="awards_text">
+                <span class="bold">R</span><span class="normal">esidential</span><br><br>
+                <span class="space">Cleaning</span><br><br>
+                <span class="space">Mastery</span>
+            </span>
             </div>
-
-            <div id="learn_more">
-                <a href="questions.html"><input type="button" value="LEARN MORE"></a>
+            <div class="awards_logo">
+            <img src="images/awards2.png">
+            </div>
+            <div class="awards_logo">
+            <img src="images/awards2.png">
+            </div>
+            <div class="awards_logo">
+            <img src="images/awards2.png">
+            </div>
+            <div class="awards_logo">
+            <img src="images/awards2.png">
             </div>
         </div>
     </div>
+-->
+<!-- the how -->
 
-    <!-- about -->
-    <!-- mobile -->
+<div id="how_it_works">
 
-    <div id="mobile">
-        <div id="mobile_img"><img src="images/iphone-v2-complete.gif"></div>
-        <div id="mobile_desc">
-            <h1>SCHEDULE YOUR HOUSECLEANING ON THE RUN</h1>
-            <p>Active Clean 1 is mobile friendly. So you can book your cleaning service on your phone just as you could on your computer. </p>
+    <div id="how_it_works_wrapper">
+
+        <div id="how_it_works_title">
+            <h1>HOW IT WORKS</h1>
         </div>
+
+        <div id="how_it_works_container">
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img">
+                    <div class="how_it_works_img_helper"></div><img src="images/how_1.jpg" alt="Woman booking online">
+                </div>
+                <div class="how_it_works_explanation"></div>
+                <div class="how_it_works_text">
+                    <h1>BOOK</h1>
+                    <p>Schedule an appointment online for your house cleaning</p>
+                </div>
+            </div>
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img">
+                    <div class="how_it_works_img_helper"></div><img src="images/how_3.jpg" alt="Vacuum cleaning carpet">
+                </div>
+                <div class="how_it_works_explanation"></div>
+                <div class="how_it_works_text">
+                    <h1>CLEAN</h1>
+                    <p>A professional house cleaner comes over and cleans your place</p>
+                </div>
+            </div>
+
+
+            <div class="how_it_works_section">
+                <div class="how_it_works_img">
+                    <div class="how_it_works_img_helper"></div><img src="images/how_2.jpg" alt="Woman enjoying coffee">
+                </div>
+                <div class="how_it_works_explanation"></div>
+                <div class="how_it_works_text">
+                    <h1>RELAX</h1>
+                    <p>Sit back and relax, enjoy your sparkling clean home!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="how_it_works_submit">
+            <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
+        </div>
+
     </div>
 
-    <div id="testimonials">
-        <div id="testimonials_bg">
-            <div id="testimonials_bg_bg"></div>
+</div>
+
+<!-- the how -->
+
+<!-- the -->
+
+<div id="about">
+
+    <div id="about_bg"></div>
+    <div id="about_bg_ol"></div>
+    <div id="about_main">
+        <h1>YOUR TRUST IS OUR PRIORITY</h1>
+
+        <div id="about_sections">
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trusttime.png" alt="clock with dollar sign"></div>
+                <div class="about_title">SAVES YOU TIME</div>
+                <div class="about_desc">Active Clean 1 does the house work for you so you can have time to pursue the important things. </div>
+            </div>
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trustshield.png" alt="shield with check mark"></div>
+                <div class="about_title">SAFETY FIRST</div>
+                <div class="about_desc">We strictly screen all of our cleaners. Employees must pass a rigorous background check, reference checks, and in-person interviews. </div>
+            </div>
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trustdiamond.png" alt="shining diamond"></div>
+                <div class="about_title">SUPERIOR SERVICE</div>
+                <div class="about_desc">Our cleaning specialists make sure your home is clean on every job. After they finish, you can login in and give your team anonymous feedback.</div>
+            </div>
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trustmountain2.png" alt="mountain with flag"></div>
+                <div class="about_title">EASY SETUP</div>
+                <div class="about_desc">Select your number of bedrooms and bathrooms. Pick a convenient date and time. Then relax while our we make your home sparkle.</div>
+            </div>
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trustcomm.png" alt="chat boxes with text"></div>
+                <div class="about_title">STANDBY COMMUNICATION</div>
+                <div class="about_desc">Our user-friendly site makes it easy for you to stay in touch with Active Clean 1, reach out to us at any time.</div>
+            </div>
+
+            <div class="about_section">
+                <div class="about_img"><img src="images/trustsecure.png" alt="credit card with lock"></div>
+                <div class="about_title">SECURE PAYMENTS</div>
+                <div class="about_desc">Pay for your maid service online — only when the cleaning is complete. (Prefer to pay with check or cash? Just call us.)</div>
+            </div>
         </div>
 
-        <div id="testimonials_content_wrap">
-            <h1>HAPPY CUSTOMERS</h1>
+        <div id="learn_more">
+            <a href="questions.html"><input type="button" value="LEARN MORE"></a>
+        </div>
+    </div>
+</div>
 
-            <div id="testimonials_content">
+<!-- about -->
 
-                <!--<div id="testimonials_content_sliders">
+<!-- mobile -->
+
+<div id="mobile">
+    <div id="mobile_img"><a href=book.html><img src="images/iphone-v2-complete.gif" alt="iphone with front page booking screen"></a></div>
+    <div id="mobile_desc">
+        <h1>SCHEDULE YOUR HOUSECLEANING ON THE RUN</h1>
+        <p>Active Clean 1 is mobile friendly. So you can book your cleaning service on your phone just as you could on your computer. </p>
+    </div>
+</div>
+
+<div id="testimonials">
+    <div role="img" alt="living room" id="testimonials_bg">
+        <div id="testimonials_bg_bg"></div>
+    </div>
+
+    <div id="testimonials_content_wrap">
+        <h1>HAPPY CUSTOMERS</h1>
+
+        <div id="testimonials_content">
+
+            <!--<div id="testimonials_content_sliders">
 
                     <div class="testimonials_section">
                         <div class="testimonials_text_holder">
@@ -644,91 +750,112 @@ hi
                 </div>
 -->
 
-                <!-- Anew with testimonials content-->
+            <!-- Anew with testimonials content-->
 
-                <div id="testimonial_content_holder">
+            <div id="testimonial_content_holder">
 
-                    <div class="testimonial">
-                        <div class="testimonial_header">
-                            <div class="img"></div>
-                            <div class="name">Lorraine Sykes</div>
-                        </div>
-                        <div class="testimonial_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
-                        </div>
+                <div class="testimonial">
+                    <div class="testimonial_header">
+                        <div role="img" alt="Woman smiling" class="img"></div>
+                        <div class="name">Lorraine Sykes</div>
                     </div>
-                    <div class="testimonial">
-                        <div class="testimonial_header">
-                            <div class="img"></div>
-                            <div class="name">Samuel Michaels</div>
-                        </div>
-                        <div class="testimonial_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="testimonial_header">
-                            <div class="img"></div>
-                            <div class="name">Janice Stevenson</div>
-                        </div>
-                        <div class="testimonial_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
-                        </div>
+                    <div class="testimonial_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
                     </div>
                 </div>
-
-                <div id="testimonials_button"><input type="button" value="Book Now"></div>
-
+                <div class="testimonial">
+                    <div class="testimonial_header">
+                        <div role="img" alt="Man with glasses smiling" class="img"></div>
+                        <div class="name">Samuel Michaels</div>
+                    </div>
+                    <div class="testimonial_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial_header">
+                        <div role="img" alt="Woman with curly hair smiling" class="img"></div>
+                        <div class="name">Janice Stevenson</div>
+                    </div>
+                    <div class="testimonial_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                    </div>
+                </div>
             </div>
 
-            <script>/*
-                const slider = document.querySelector('.testimonials_content');
-                let isDown = false;
-                let startX;
-                let scrollLeft;
+            <div id="testimonials_button"><a href="book.html"><input type="button" value="Book Now"></a></div>
 
-                slider.addEventListener('mousedown', () => {
-                    isDown = true;
-                });
-                slider.addEventListener('mouseleave', () => {
+        </div>
 
-                });
-                slider.addEventListener('mouseup', () => {
 
-                });
-                slider.addEventListener('mousemove', () => {
+    </div>
+</div>
 
-                });*/
+<!--booking section-->
 
-            </script>
+<div id="book">
+
+    <div id="book_contents">
+        <div id="book_level">
+            <h1>BOOK A HOUSE CLEANING NOW!</h1>
+            <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
         </div>
     </div>
 
-    <!--booking section-->
+</div>
 
-    <div id="book">
+<!--booking section-->
+<!--rental,foreclosure,post-construction, move-in/out cleaning, carpet,cleaning, junk removal, interior painting-->
+<!--other services-->
 
-        <div id="book_contents">
-            <div id="book_level">
-                <h1>BOOK A HOUSE CLEANING NOW!</h1>
-                <button type="button">BOOK APPOINTMENT</button>
-            </div>
+<div id="other">
+    <div id="other_ol"></div>
+    <img id="other_services" src="images/other_services.png" alt="Skyscraper Buildings">
+    <h1>WE ALSO OFFER SERVICES FOR...</h1>
+
+
+    <div id="other_holder">
+        <div class="other_service">
+            <span class="other_img"><img src="images/rental.png" alt="Rental Home"></span>
+            <span class="other_name">Rental Homes Cleaning</span>
+        </div>
+        <div class="other_service">
+            <span class="other_img"><img src="images/foreclosure.png" alt="Foreclosure Sign"></span>
+            <span class="other_name">Foreclosure Cleaning</span>
+        </div>
+        <div class="other_service">
+            <span class="other_img"><img src="images/construction.png" alt="Hammer and Bricks"></span>
+            <span class="other_name">Post-Construction Cleaning</span>
         </div>
 
+        <div class="other_service">
+            <span class="other_img"><img src="images/regular.png" alt="Mop, Bucket, Towel"></span>
+            <span class="other_name">Regular Cleaning</span>
+        </div>
+
+        <div class="other_service">
+            <span class="other_img"><img src="images/moving.png" alt="Truck with Home in Trunk"></span>
+            <span class="other_name">Move In / Out Cleaning</span>
+        </div>
+        <div class="other_service">
+            <span class="other_img"><img src="images/carpet.png" alt="carpet"></span>
+            <span class="other_name">Carpet Cleaning</span>
+        </div>
+
+        <div class="other_service">
+            <span class="other_img"><img src="images/junk.png" alt="Trash Can"></span>
+            <span class="other_name">Junk Removal</span>
+        </div>
+        <div class="other_service">
+            <span class="other_img"><img src="images/paint.png" alt="Man with Paint Roller"></span>
+            <span class="other_name">Interior Painting</span>
+        </div>
     </div>
-
-    <!--booking section-->
-
-
+    <button type="button">Please call 24/7 for Free Estimate:<br> +1 (916) 800 - 7795</button>
+</div>
 
 
-
-
-
-
-
-
-    <!--footer-->
+    
 
     <footer>
         <div id="footer_wrapper">
@@ -745,17 +872,17 @@ hi
                     <div id="footer_links">
                         <div class="footer_links_sections">
                             <p class="title">ABOUT</p>
-                            <p>About Us</p>
+                            <p><a href="about.html">About Us</a></p>
                             <p>Service Area</p>
                             <!--<p>Rental Property Cleaning</p>-->
                             <!--<p>Foreclosures Cleaning</p>-->
                             <!--<p>Construction Cleaning</p>-->
-                            
+
                         </div>
                         <div class="footer_links_sections">
                             <p class="title">CONTACT</p>
-                            <p>Contact Us</p>
-                            <p>Get A Quote</p>
+                            <p><a href="contact.html">Contact Us</a></p>
+                            <p><a href="book.html">Get A Quote</a></p>
                             <p>Join Us</p>
                             <!-- i gotta make a registration thing :'( -->
                         </div>
@@ -763,7 +890,7 @@ hi
                             <p class="title">FOR YOU</p>
                             <!-- needs to be made-->
                             <p>Buy Gift Cards</p>
-                            <p>Book Now</p>
+                            <p><a href="book.html">Book Now</a></p>
                             <!-- needs -->
                             <p>Cleaning Tips</p>
 
@@ -771,9 +898,9 @@ hi
                         <div class="footer_links_sections">
                             <p class="title">SUPPORT</p>
                             <!-- have a page already -->
-                            <p>Help</p>
+                            <p><a href="contact.html">Help</a></p>
                             <!--<p>Terms & Conditions</p>-->
-                            <p>Privacy Policy</p>
+                            <p><a href="privacy.html">Privacy Policy</a></p>
                         </div>
                     </div>
 
@@ -805,7 +932,9 @@ hi
                     <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
 
                     <div class="footer_rows">
-                        <h2>Subscribe to our mailing list</h2>
+                        <label>
+                            <h2>Subscribe to our mailing list</h2>
+                        </label>
                     </div>
                     <div class="footer_rows">
                         <input type="text" placeholder="Enter your email">
@@ -824,7 +953,6 @@ hi
             <div id="footer_bottom">Copyright 2018 All Rights Reserved. Copyright Active Clean 1.</div>
         </div>
     </footer>
-
     <!--footer-->
 
 

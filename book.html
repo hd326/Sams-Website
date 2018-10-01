@@ -8,9 +8,20 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="node_modules/flatpickr/dist/flatpickr.min.css">
+    <script href="node_modules/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body onload="">
+    <div id="sidenav">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="#">HOME PAGE</a>
+    <a href="#">BOOK MY CLEAN</a>
+    <a href="#">CONTACT US</a>
+    <div id="closebtn"></div>
+</div>
 
     <div id="book_hero">
         <div id="book_hero_bg"></div>
@@ -43,38 +54,55 @@
             </div>
         </header>
 
-        <div id="book_text">
-            <h1>LET US KNOW ABOUT YOUR HOME</h1>
-            <p>WE DON'T SHARE YOUR PERSONAL INFORMATION WITH ANYONE</p>
-        </div>
-        <div id="book_steps">
-            <div class="book_steps_section">
-                <div class="img"><img src="images/book_1.png"></div>
+        <div id="book_hero">
+
+
+    <div role="img" alt="blue couches" id="book_hero_bg"></div>
+    <div id="book_text">
+        <h1>LET US KNOW ABOUT YOUR HOME</h1>
+        <p>WE DON'T SHARE YOUR PERSONAL INFORMATION WITH ANYONE</p>
+
+
+    </div>
+    <div id="book_steps">
+
+        <div class="book_steps_section">
+
+            <div class="img"><img src="images/book_1.png" alt="House with heart in middle"></div>
+            <div class="book_step_text">
+                CLEANING DETAILS
             </div>
 
-            <div class="book_steps_section">
-                <div class="type_1">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
-                <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
-            </div>
-
-
-
-            <div class="book_steps_section">
-                <div class="img"><img src="images/book_2.png"></div>
-
-            </div>
-
-            <div class="book_steps_section">
-                <div class="type_1">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
-                <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
-            </div>
-
-            <div class="book_steps_section">
-                <div class="img"><img src="images/book_3.png"></div>
-            </div>
         </div>
 
-        <!--<div id="book_steps_guide">
+        <div class="book_steps_section">
+            <div class="type_1">- - - - - <span class="book_steps_lines"> - - - - - - - - - - - - - - - - - - </span>- - - - -</div>
+            <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
+        </div>
+
+
+
+        <div class="book_steps_section">
+            <div class="img"><img src="images/book_2.png" alt="Map with location pointer"></div>
+            <div class="book_step_text">
+                HOME LOCATION
+            </div>
+        </div>
+
+        <div class="book_steps_section">
+            <div class="type_1">- - - - - <span class="book_steps_lines"> - - - - - - - - - - - - - - - - - - </span>- - - - -</div>
+            <div class="type_2">- - - - - - - - - - - - - - - - - -</div>
+        </div>
+
+        <div class="book_steps_section">
+            <div class="img"><img src="images/book_3.png" alt="Credit card with lock"></div>
+            <div class="book_step_text">
+                PAYMENT
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="book_steps_guide">
             <div class="guide">CLEANING DETAILS</div>
             <div class="guide"></div>
             <div class="guide">HOME LOCATION</div>
@@ -82,154 +110,243 @@
             <div class="guide">PAYMENT</div>
         </div>
         -->
+</div>
+
+<div id="book_wrap">
+
+    <div id="book_wrap_title">
+        <h1>YOU'RE ONE STEP CLOSER TO A LIVELY HOME</h1>
     </div>
 
-    <div id="book_wrap">
+    <div id="book_wrap_containers">
 
-        <div id="book_wrap_title">
-            <h1>YOU'RE ONE STEP CLOSER TO A LIVELY HOME</h1>
-        </div>
+        <!--main-->
 
-        <div id="book_wrap_containers">
+        <div id="main">
 
-            <!--main-->
-
-            <div id="main">
-
-                <div id="main_title">
+            <div id="main_title">
 
 
-                    <h1 id="title">You're almost there.</h1>
-                    <p id="title_aide">Just a few more details and we can complete your booking.</p>
+                <h1 id="title">You're almost there.</h1>
+                <p id="title_aide">Just a few more details and we can complete your booking.</p>
 
-                </div>
+            </div>
 
-                <hr>
+            <hr>
 
-                <div id="main_type">
+            <div id="main_type">
 
-                    <h1>Type of Cleaning</h1>
+                <h1>Type of Cleaning</h1>
 
-                    <div id="main_type_buttons">
-                        <div class="main_type_sections">
-                            <button><i class="fas fa-home"></i></button>
-                            <div class="main_type_text">Residential</div>
-                        </div>
-                        <div class="main_type_sections">
-                            <button><i class="fas fa-building"></i></button>
-                            <div class="main_type_text">* Commerical</div>
-                        </div>
+                <div id="main_type_buttons">
+                    <div class="main_type_sections">
+                        <button><i aria-hidden class="fas fa-home" title="Choose residential homes"></i><input id="testinput" type="button" class="fas fa-home" value="Residential" name="Type"></button>
+                        <p class="main_type_text">Residential</p>
                     </div>
+                    <div class="main_type_sections">
+                        <button><i aria-hidden class="fas fa-building" title="Choose commerical cleaning, disabled with phone number"></i></button>
 
-                    <p>* For commercial bookings, please call us at our office at (916) 704-4061</p>
-
-                </div>
-
-                <hr>
-
-                <div id="main_contact">
-
-                    <h1>Contact Information</h1>
-                    <p>This information will be used to contact you.</p>
-
-                    <div id="main_contact_inputs">
-
-                        <input type="text" placeholder="First Name**">
-                        <input type="text" placeholder="Last Name**">
-                        <input type="text" placeholder="Email**">
-                        <input type="text" placeholder="Phone Number**">
-
-                    </div>
-
-                </div>
-
-                <hr>
-
-                <div id="main_address">
-
-                    <h1>Service Address</h1>
-                    <p>Where would you like us to provide our service?</p>
-
-                    <div id="main_address_inputs">
-
-                        <input type="text" placeholder="Street Address**">
-                        <input type="text" placeholder="Apt/Suite #**">
-                        <input type="text" placeholder="City**">
-                        <input type="text" placeholder="State**">
-                        <input type="text" placeholder="Zip Code**">
-
-
-                    </div>
-
-                </div>
-
-                <hr>
-
-                <div id="main_service">
-
-                    <h1>Choose Your Service</h1>
-                    <p>Tell us about your home.</p>
-
-                    <div id="main_service_inputs">
-                        <!--<select id="bdrms" onchange="totalValue();">
-                            <option id="one_bd" value="one_bd">One Bedroom Home</option>
-                            <option id="two_bd" value="two_bd">Two Bedroom Home</option>
-                            <option id="three_bd" value="three_bd">Three Bedroom Home</option>
-                            <option id="four_bd" value="four_bd">Four Bedroom Home</option>
-                            <option id="five_bd" value="five_bd">Five Bedroom Home</option>
-                            <option id="six_bd" value="six_bd">Six Bedroom Home</option>
-                            <option id="seven_bd" value="seven_bd">Seven Bedroom Home</option>
-                        </select>
-                        -->
-
-                        <select name="bdrms" class="calculate_bdrms" id="bdrms" onchange="">
-                            <option data-summary="1 Bedroom" data-price="0.00" id="one_bd" value="one_bd">One Bedroom Home</option>
-                            <option data-summary="2 Bedrooms" data-price="10.00" id="two_bd" value="two_bd">Two Bedroom Home</option>
-                            <option data-summary="3 Bedrooms" data-price="35.00" id="three_bd" value="three_bd">Three Bedroom Home</option>
-                            <option data-summary="4 Bedrooms" data-price="69.00" id="four_bd" value="four_bd">Four Bedroom Home</option>
-                            <option data-summary="5 Bedrooms" data-price="96.00" id="five_bd" value="five_bd">Five Bedroom Home</option>
-                            <option data-summary="6 Bedrooms" data-price="122.00" id="six_bd" value="six_bd">Six Bedroom Home</option>
-                        </select>
-
-                        <select class="calculate_baths" id="baths" onchange="">
-                            <option data-price="0.00" id="one_bath" value="one_bath">One Bathroom</option>
-                            <option data-price="25.00" id="two_bath" value="two_bath">Two Bathrooms</option>
-                            <option data-price="50.00" id="three_bath" value="three_bath">Three Bathrooms</option>
-                            <option data-price="75.00" id="four_bath" value="four_bath">Four Bathrooms</option>
-                            <option data-price="100.00" id="five_bath" value="five_bath">Five Bathrooms</option>
-                            <option data-price="125.00" id="six_bath" value="six_bath">Six Bathrooms</option>
-                        </select>
-                        <script src="js/jquery-3.3.1.min.js"></script>
-
-                    </div>
-
-                </div>
-
-                <hr>
-                <div id="main_when">
-                    <h1>When would you like us to come?</h1>
-                    <div id="main_when_inputs">
-                        <select>
-                            <option></option>
-                        </select>
-
-                        <select>
-                            <option>8:00AM - 9:00AM</option>
-                            <option>9:00AM - 10:00AM</option>
-                            <option>10:00AM - 11:00AM</option>
-                            <option>11:00AM - 12:00PM</option>
-                            <option>12:00PM - 1:00PM</option>
-                            <option>1:00PM - 2:00PM</option>
-                            <option>2:00PM - 3:00PM</option>
-                            <option>3:00PM - 4:00PM</option>
-                            <option>4:00PM - 5:00PM</option>
-                            <option>5:00PM - 6:00PM</option>
-                            <option>6:00PM - 7:00PM</option>
-                        </select>
-
+                        <p class="main_type_text">** Commerical</p>
                     </div>
                 </div>
 
+
+                <p>** For commercial bookings, please call us at our office at (916) 704-4061</p>
+
+            </div>
+
+            <hr>
+
+            <div id="main_contact">
+
+                <h1>Contact Information</h1>
+                <p>This information will be used to contact you.</p>
+
+                <div id="main_contact_inputs">
+
+                    <input type="text" placeholder="First Name**">
+                    <input type="text" placeholder="Last Name**">
+                    <input type="text" placeholder="Email**">
+                    <input type="text" placeholder="Phone Number**">
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="main_address">
+
+                <h1>Service Address</h1>
+                <p>Where would you like us to provide our service?</p>
+
+                <div id="main_address_inputs">
+
+                    <input type="text" placeholder="Street Address**">
+                    <input type="text" placeholder="Apt/Suite #**">
+                    <input type="text" placeholder="City**">
+                    <input type="text" placeholder="State**">
+                    <input type="text" placeholder="Zip Code**">
+
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="main_service">
+
+                <h1>Choose Your Service</h1>
+                <p>Tell us about your home.</p>
+
+                <div id="main_service_inputs">
+
+
+
+
+                    <select name="bdrms" class="calculate_bdrms" id="bdrms">
+
+                        <option data-summary="1 Bedroom" data-price="0.00" id="one_bd" value="one_bd">One Bedroom Home</option>
+
+                        <option data-summary="2 Bedrooms" data-price="10.00" id="two_bd" value="two_bd">Two Bedroom Home</option>
+
+                        <option data-summary="3 Bedrooms" data-price="35.00" id="three_bd" value="three_bd">Three Bedroom Home</option>
+
+                        <option data-summary="4 Bedrooms" data-price="70.00" id="four_bd" value="four_bd">Four Bedroom Home</option>
+
+                        <option data-summary="5 Bedrooms" data-price="95.00" id="five_bd" value="five_bd">Five Bedroom Home</option>
+
+                        <option data-summary="6 Bedrooms" data-price="120.00" id="six_bd" value="six_bd">Six Bedroom Home</option>
+
+                    </select>
+
+                    <select class="calculate_baths" id="baths">
+                        <option data-price="0.00" id="one_bath" value="one_bath">One Bathroom</option>
+                        <option data-price="25.00" id="two_bath" value="two_bath">Two Bathrooms</option>
+                        <option data-price="50.00" id="three_bath" value="three_bath">Three Bathrooms</option>
+                        <option data-price="75.00" id="four_bath" value="four_bath">Four Bathrooms</option>
+                        <option data-price="100.00" id="five_bath" value="five_bath">Five Bathrooms</option>
+                        <option data-price="125.00" id="six_bath" value="six_bath">Six Bathrooms</option>
+                    </select>
+                    <script src="js/jquery-3.3.1.min.js"></script>
+
+                </div>
+
+
+
+
+            </div>
+
+            <hr>
+            <div id="main_when">
+                <h1>When would you like us to come?</h1>
+                <div id="main_when_inputs">
+                    <input class="calendar" placeholder="Click to Choose a Date" />
+
+
+                    <script>
+                        $(function(){
+                    
+                    flatpickr('.calendar', {
+                        "dateFormat":"Y-m-d",
+                        "allowInput":true,
+                        "onOpen": function (selectedDates,dateStr,instance) {
+                            instance.setDate(instance.input.value,false);
+                        }
+                    });
+                    
+                   $('.calendar').change(function(){
+                        var date = $('.calendar').val();
+                       $('#date_summary').html(date)
+                        if  ($.trim(date) !== '') {
+                            $.post('model/calendar.php', {date: date}, function(data) {
+                            $('#date_data').html(data);
+                        });
+                        }
+                    });
+                            
+                    /*load_data();
+                    function load_data(query){
+                        $.ajax({
+                            url:'calendar.php',
+                            method:'post',
+                            data:{query:query},
+                            success:function(data){
+                                $('#date_data').html(data);
+                            }
+                        });
+                    }*/
+                            
+                });
+                        
+                // how am i doing this? pick a calendar date, so pretty much on change, AJAX, 
+                    </script>
+
+                    <?php        
+                        // $8to9 = $appointment['8to10'];
+                        // $9to10 = $appointment['9to10'];
+                        // $10to11 = $appointment['10to11'];
+                        // $11to12 = $appointment['11to12'];
+                        // $12to1 = $appointment['12to1'];
+                        // $1to2 = $appointment['1to2'];
+                        // $2to3 = $appointment['2to3'];
+                        // $3to4 = $appointment['3to4'];
+                        // $4to5 = $appointment['4to5'];
+                        // $5to6 = $appointment['5to6'];
+                        // $6to7 = $appointment['6to7'];      
+                        
+                       // $eight_to_nine = $appointment['8to10'];
+                       // $nine_to_ten = $appointment['9to10'];
+                       // $ten_to_eleven = $appointment['10to11'];
+                       // $eleven_to_twelve = $appointment['11to12'];
+                       // $twelve_to_one = $appointment['12to1'];
+                       // $one_to_two =  $appointment['1to2'];
+                       // $two_to_three =  $appointment['2to3'];
+                       // $three_to_four =  $appointment['3to4'];
+                       // $four_to_five =  $appointment['4to5'];
+                       // $five_to_six =  $appointment['5to6'];
+                       // $six_to_seven = $appointment['6to7'];      
+                        
+                        //$eight_to_nine = "cool";
+                        //$nine_to_ten = "cool";
+                        //$ten_to_eleven = "cool";
+                        //$eleven_to_twelve = "cool";
+                        //$twelve_to_one = "cool";
+                        //$one_to_two = "cool";
+                        //$two_to_three = "cool";
+                        //$three_to_four = "cool";
+                        //$four_to_five = "cool";
+                        //$five_to_six = "cool";
+                        //$six_to_seven = "cool";
+                    
+?>
+                    <select id="date_data">
+                        
+                        
+                        
+                        <!--<option>8:00AM - 9:00AM</option>
+                        <option>9:00AM - 10:00AM</option>
+                        <option>10:00AM - 11:00AM</option>
+                        <option>11:00AM - 12:00PM</option>
+                        <option>12:00PM - 1:00PM</option>
+                        <option>1:00PM - 2:00PM</option>
+                        <option>2:00PM - 3:00PM</option>
+                        <option>3:00PM - 4:00PM</option>
+                        <option>4:00PM - 5:00PM</option>
+                        <option>5:00PM - 6:00PM</option>
+                        <option>6:00PM - 7:00PM</option>-->
+                        
+                    </select>
+
+                </div>
+            </div>
+
+
+                <script>
+
+
+                </script>
                 <hr>
 
                 <div id="main_duration">
@@ -244,11 +361,17 @@
                         <input type="button" value="Monthly">
                         <input type="button" value="Tri-weekly">-->
 
-                        <button class="summary_target" data-ssummary="One time service" type="button" value="0" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">One time service</button>
-                        <button class="summary_target" data-ssummary="Monthly service" type="button" value="5" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Monthly cleaning</button>
-                        <button class="summary_target" data-ssummary="Bi-weekly service" type="button" value="15" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Bi-weekly cleaning</button>
-                        <button class="summary_target" data-ssummary="Tri-weekly service" type="button" value="10" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Tri-weekly cleaning</button>
-                        <button class="summary_target" data-ssummary="Weekly" type="button" value="20" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Weekly cleaning</button>
+
+
+                        <button class="<?php if(isset($percentage_range) && $percentage_range == 0) echo 'active_duration'; ?>" data-ssummary="One time cleaning" type="button" value="0" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">One time service</button>
+
+                        <button class="<?php if(isset($percentage_range) && $percentage_range == 5) echo 'active_duration'; ?>" data-ssummary="Monthly service" type="button" value="5" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Monthly cleaning</button>
+
+                        <button class="<?php if(isset($percentage_range) && $percentage_range == 15) echo 'active_duration'; ?>" data-ssummary="Bi-weekly service" type="button" value="15" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Bi-weekly cleaning</button>
+
+                        <button class="<?php if(isset($percentage_range) && $percentage_range == 10) echo 'active_duration'; ?>" data-ssummary="Tri-weekly service" type="button" value="10" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Tri-weekly cleaning</button>
+
+                        <button class="<?php if(isset($percentage_range) && $percentage_range == 20) echo 'active_duration'; ?>" data-ssummary="Weekly" type="button" value="20" onclick="returnPercentage(this);getTotalCost();returnServiceSummary(this);">Weekly cleaning</button>
 
 
                     </div>
@@ -264,20 +387,76 @@
 
                     <div id="main_how_inputs">
 
-                        <div class="how_input"><button><i class="fas fa-user"></i></button>
-                            <span id="how_input_text">I'll be home</span></div>
-                        <div class="how_input"><button><i class="fas fa-unlock"></i></button>
-                            <span id="how_input_text">I'll leave the door unlocked</span></div>
-                        <div class="how_input"><button><i class="fas fa-key"></i></button>
-                            <span id="how_input_text">I'll hide a key</span></div>
-                        <div class="how_input"><button><i class="fas fa-align-center"></i></button>
-                            <span id="how_input_text">I have an alarm</span></div>
-                        <div class="how_input"><button><i class="fas fa-feather"></i></button>
-                            <span id="how_input_text">Other</span></div>
+                        <div class="how_input"><button value=""><i aria-hidden class="fas fa-user" title="Choose I'll be home"></i></button>
+                            <span class="how_input_text">I'll be home</span></div>
+                        <div class="how_input"><button value=""><i aria-hidden class="fas fa-unlock" title="Choose leave door unlocked"></i></button>
+                            <span class="how_input_text">I'll leave the door unlocked</span></div>
+                        <div class="how_input"><button value="E.g. The key is inside the gnome."><i aria-hidden class="fas fa-key" title="Choose I'll hide a key"></i></button>
+                            <span class="how_input_text">I'll hide a key</span></div>
+                        <div class="how_input"><button value="E.g. #4824"><i aria-hidden class="fas fa-align-center" title="Choose I have an alarm"></i></button>
+                            <span class="how_input_text">I have an alarm</span></div>
+                        <div class="how_input"><button value=""><i aria-hidden class="fas fa-feather" title="Choose other method of entry"></i></button>
+                            <span class="how_input_text">Other</span></div>
 
                     </div>
 
+                    <div id="enter_instructions_all">
+
+                        <div id="enter_instructions">
+                            <!-- if click , html = "" , one div -->
+
+                        </div>
+
+                    </div>
                 </div>
+
+                <!-- how to enter supplemental code -->
+
+                <script>
+                    $(function() {
+                        var Home = $('#main_how_inputs .how_input:nth-of-type(1) button');
+                        var Unlocked = $('#main_how_inputs .how_input:nth-of-type(2) button');
+                        var Key = $('#main_how_inputs .how_input:nth-of-type(3) button');
+                        var Alarm = $('#main_how_inputs .how_input:nth-of-type(4) button');
+                        var Other = $('#main_how_inputs .how_input:nth-of-type(5) button');
+
+                        $(Home).on('click', function() {
+                            $('#enter_instructions').html("");
+                        });
+
+                        $(Unlocked).on('click', function() {
+                            $('#enter_instructions').html("");
+                        });
+
+                        $(Key).on('click', function() {
+                            var Instructions = $(this).attr('value');
+                            $('#enter_instructions').html("<div id=enter_title><h3>Instructions</h3></div><p id=enter_example></p><textarea id=enter_textarea></textarea>");
+                            $('#enter_example').html(Instructions);
+                        });
+
+                        $(Alarm).on('click', function() {
+                            var Instructions = $(this).attr('value');
+                            $('#enter_instructions').html("<div id=enter_title><h3>Instructions</h3></div><p id=enter_example></p><textarea id=enter_textarea></textarea>");
+                            $('#enter_example').html(Instructions);
+                        });
+
+                        $(Other).on('click', function() {
+                            $('#enter_instructions').html("<div id=enter_title><h3>Instructions</h3></div><p id=enter_example></p><textarea id=enter_textarea></textarea>");
+                            $('#enter_example').html(Instructions);
+                        });
+
+                        $('.calculate_baths').change();
+                        $('.calculate_bdrms').change();
+
+                        $('#main_duration_inputs button').on('click', function() {
+                            $('#main_duration_inputs button').removeClass('active_duration');
+                            $(this).addClass('active_duration');
+                            // makes sense
+                        });
+
+                    });
+
+                </script>
 
                 <hr>
 
@@ -300,7 +479,7 @@
 
                 <div id="main_more_info">
 
-                    <h1>Comments & Additional Information</h1>
+                    <h1>Want to let us know anything else?</h1>
 
                     <textarea rows="4" cols="50" placeholder="Is there anything else you would like us to know?"></textarea>
 
@@ -312,16 +491,80 @@
 
             <!--side-->
 
+
+            <?php 
+        
+$bedroomCostFactor = [0, 10, 35, 70, 95, 120];
+$bathroomCostFactor = [0, 25, 50, 75, 100, 125];
+$percentageFactor = [0, 5, 15, 10, 20];    
+
+if (isset($bed_range) && !empty($bed_range)) {
+
+if ($bed_range == 1) {
+    $bed_cost = $bedroomCostFactor[0];
+} else if ($bed_range == 2){
+    $bed_cost = $bedroomCostFactor[1];
+} else if ($bed_range == 3){
+    $bed_cost = $bedroomCostFactor[2];
+} else if ($bed_range == 4){
+    $bed_cost = $bedroomCostFactor[3];
+} else if ($bed_range == 5){
+    $bed_cost = $bedroomCostFactor[4];
+} else if ($bed_range == 6){
+    $bed_cost = $bedroomCostFactor[5];
+}
+}
+    
+if(isset($bath_range) && !empty($bath_range)) {
+if ($bath_range == 1) {
+    $bath_cost = $bathroomCostFactor[0];
+} else if ($bath_range == 2){
+    $bath_cost = $bathroomCostFactor[1];
+} else if ($bath_range == 3){
+    $bath_cost = $bathroomCostFactor[2];
+} else if ($bath_range == 4){
+    $bath_cost = $bathroomCostFactor[3];
+} else if ($bath_range == 5){
+    $bath_cost = $bathroomCostFactor[4];
+} else if ($bath_range == 6){
+    $bath_cost = $bathroomCostFactor[5];
+}
+}
+
+if(isset($percentage_range) && !empty($percentage_range)) {
+                
+if ($percentage_range == 0) {
+    $percentage_cost = $percentageFactor[0];
+} else if ($percentage_range == 5){
+    $percentage_cost = $percentageFactor[1];
+} else if ($percentage_range == 15){
+    $percentage_cost = $percentageFactor[2];
+} else if ($percentage_range == 10){
+    $percentage_cost = $percentageFactor[3];
+} else if ($percentage_range == 20){
+    $percentage_cost = $percentageFactor[4];
+}
+}
+?>
+
             <div id="side">
                 <h1>Book Summary</h1>
                 <hr>
                 <div id="side_summary">
+                    <div class="side_sections">
                     <div class="side_rows"><i class="fas fa-home"></i></div>
-                    <div class="side_rows"><span id="bdrm_summary">1 Bedrooms</span></div>
+                    <div class="side_rows"><span id="bdrm_summary">
+                        <?php if(isset($bed_range)) echo $bed_range;?> Bedrooms</span></div></div>
+                        
+                        <div class="side_sections">
                     <div class="side_rows"><i class="fas fa-calendar-alt"></i></div>
-                        <div class="side_rows"><span id="date_summary">9/9/18</span></div>
+                            <div class="side_rows"><span id="date_summary">Choose service date...</span></div></div>
+                            
+                        <div class="side_sections">
                     <div class="side_rows"><i class="fas fa-balance-scale"></i></div>
-                        <div class="side_rows"><span id="duration_summary">One-time service</span></div>
+                    <div class="side_rows"><span id="duration_summary">
+                        <?php if(isset($duration_range)) { echo $duration_range; } if ($duration_range == ""){ echo "One time service"; } ?></span></div></div>
+                    
                 </div>
                 <hr>
 
@@ -339,11 +582,17 @@
                         <div class="total_text">TOTAL</div>
                         <div class="amount"><span id="tydollarsign">$</span><span id="amount">91.16</span></div>
                     </div>
-                    <div id="percentage">hello</div><br>
+                    <div id="percentage">
+                        <?php if(isset($percentage_cost)) { echo $percentage_cost; } else { echo ""; } ?>
+                    </div><br>
                     <div id="bed_display"></div><br>
-                    <div id="bed_cost">0</div><br>
+                    <div id="bed_cost">
+                        <?php if(isset($bed_cost)) { echo $bed_cost; } else { echo ""; } ?>
+                    </div><br>
                     <div id="bath_display"></div><br>
-                    <div id="bath_cost">0</div><br>
+                    <div id="bath_cost">
+                        <?php if(isset($bath_cost)) { echo $bath_cost; } else { echo ""; } ?>
+                    </div><br>
 
                 </div>
             </div>
@@ -355,137 +604,127 @@
 
     <script>
         /*
-    var basePrice = 85.00;
-    var salesTax = .0725;
-    var itemPrice = document.getElementById('subtotal');
-    var itemSalesTax = document.getElementById('tax');
-    var totalAmount = document.getElementById('amount');
-    
-    (function () {
-        "use strict";
-        var selects = document.getElementsByClassName('calculate'), select;
-        //all selects
-        //select is each of these classes of selects
-        for (var i = 0; select = selects[i]; i++) {
-            select.addEventListener('change',function (){
-                //we add an event listener to each of these selects
-                var newPrice = basePrice;
-                //initialize the new price
-                var selectedItems = document.querySelectorAll('.calculate option:checked'), selected;
-                //each select has options, we choose the once that is chosen
-                for(var x = 0; selected = selectedItems[x]; x++) {
-                    newPrice += Number(selected.getAttribute('data-price'));
-                //each each chosen has a data attr
-                    
-                }
-                itemPrice.innerHTML = newPrice.toFixed(2);
-                itemSalesTax.innerHTML = (newPrice * salesTax).toFixed(2);
-                totalAmount.innerHTML = (parseFloat(itemPrice.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
-            },false);
+                                            var basePrice = 85.00;
+                                            var salesTax = .0725;
+                                            var itemPrice = document.getElementById('subtotal');
+                                            var itemSalesTax = document.getElementById('tax');
+                                            var totalAmount = document.getElementById('amount');
+                                            
+                                            (function () {
+                                                "use strict";
+                                                var selects = document.getElementsByClassName('calculate'), select;
+                                                //all selects
+                                                //select is each of these classes of selects
+                                                for (var i = 0; select = selects[i]; i++) {
+                                                    select.addEventListener('change',function (){
+                                                        //we add an event listener to each of these selects
+                                                        var newPrice = basePrice;
+                                                        //initialize the new price
+                                                        var selectedItems = document.querySelectorAll('.calculate option:checked'), selected;
+                                                        //each select has options, we choose the once that is chosen
+                                                        for(var x = 0; selected = selectedItems[x]; x++) {
+                                                            newPrice += Number(selected.getAttribute('data-price'));
+                                                        //each each chosen has a data attr
+                                                            
+                                                        }
+                                                        itemPrice.innerHTML = newPrice.toFixed(2);
+                                                        itemSalesTax.innerHTML = (newPrice * salesTax).toFixed(2);
+                                                        totalAmount.innerHTML = (parseFloat(itemPrice.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
+                                                    },false);
+                                                }
+                                            })();
+                                            */
+        var basePrice = 85.00;
+        var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
+        var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
+        var percentageFactor = [0, 5, 15, 10, 20];
+
+        function returnPercentage(val) {
+            document.querySelector('#percentage').innerHTML = val.value;
         }
-    })();
-    */
-    var basePrice = 85.00;    
-    var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
-    var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
-    var percentageFactor = [0, 5, 15, 10, 20];
-            
-    function returnPercentage(val){
-        document.querySelector('#percentage').innerHTML = val.value;
-    }
-    
-    function returnServiceSummary(val){
-        document.querySelector('#duration_summary').innerHTML = val.dataset.ssummary;
-    }
-    
-    document.querySelector('.calculate_bdrms').addEventListener('change', function(evt) {
-        //var value = evt.target.value;
-        //var dataQuery = document.querySelector('.calculate_bdrms option:checked').getAttribute('data-price');
-        var sel = document.querySelector('.calculate_bdrms option:checked');
-        var value = parseInt(sel.dataset.price);
-        var summaryValue = sel.dataset.summary;
-        //var value = parseInt(document.querySelector('[data-price]').getAttribute('data-price'));
-        //var value = dataQuery.dataset.price;
-        //console.log(value);
-        // value will be a string. Coercing to a number using +value
-        //var bedCost = parseInt(getBedroomCost(+value), 10).toFixed(2);
-        document.querySelector('#bed_display').innerHTML = value;
-        document.querySelector('#bed_cost').innerHTML = value;
-        document.querySelector('#bdrm_summary').innerHTML = summaryValue;
-        getTotalCost();
-    });
 
-    document.querySelector('.calculate_baths').addEventListener('change', function(evt) {
-        var sel = document.querySelector('.calculate_baths option:checked');
-        var value = parseInt(sel.dataset.price);
-        //var value = evt.target.value;
-        // value will be a string. Coercing to a number using +value
-        //var bathCost = parseInt(getBathroomCost(+value), 10).toFixed(2);
-        //getBathroomCost (val) { return bathroomCostFactor[val-1] }
-        //it's returning the arrays value based on the changed input, assigned to a variable
-        //evt.target.value = input.value
-        document.querySelector('#bath_display').innerHTML = value;
-        document.querySelector('#bath_cost').innerHTML = value;
-        getTotalCost();
-    });
-        
-    var taxRate = .0725;
-    var subTotal = document.querySelector('#subtotal');
-    var itemSalesTax = document.querySelector('#tax');
-    var totalAmount = document.querySelector('#amount');
-    var bdrmSummary = document.querySelector('#bdrm_summary');
-    var dateSummary = document.querySelector('#date_summary');
-    var durSummary = document.querySelector('#duration_summary');
-    
-
-    function getTotalCost() {
-        var bedCost = parseInt(document.querySelector('#bed_cost').innerHTML);
-        var bathCost = parseInt(document.querySelector('#bath_cost').innerHTML);
-        var percentage = parseInt(document.querySelector('#percentage').innerHTML);
-        var percentageOff = percentage / 100;
-        newPrice = basePrice;
-        newPriceVar = basePrice;
-        if(!percentage){
-            //document.querySelector('#subtotal').innerHTML = newPrice += parseInt(bathCost + bedCost);
-            subTotal.innerHTML = newPrice += parseInt(bathCost + bedCost);
-            itemSalesTax.innerHTML = (subTotal.innerHTML * taxRate).toFixed(2);
-            totalAmount.innerHTML = (parseFloat(subTotal.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
-        } else {
-            //document.querySelector('#subtotal').innerHTML = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);  
-            /*
-            var basePrice = 85.00;
-            var salesTax = .0725;
-            var itemPrice = document.getElementById('subtotal');
-            var itemSalesTax = document.getElementById('tax');
-            var totalAmount = document.getElementById('amount');
-            itemPrice.innerHTML = newPrice.toFixed(2);
-            itemSalesTax.innerHTML = (newPrice * salesTax).toFixed(2);
-            totalAmount.innerHTML = (parseFloat(itemPrice.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2)
-            */
-            //var subtotal = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);
-            //document.querySelector('#subtotal').innerHTML = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);
-            /*<div class="side_rows"><span id="bdrm_summary">1 Bedrooms</span></div>
-                    <div class="side_rows"><i class="fas fa-calendar-alt"></i></div>
-                        <div class="side_rows"><span id="date_summary">9/9/18</span></div>
-                    <div class="side_rows"><i class="fas fa-balance-scale"></i></div>
-                        <div class="side_rows"><span id="duration_summary">One-time</span> service</div>*/
-            
-            subTotal.innerHTML = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);
-            itemSalesTax.innerHTML = (subTotal.innerHTML * taxRate).toFixed(2);
-            totalAmount.innerHTML = (parseFloat(subTotal.innerHTML)) + (parseFloat(itemSalesTax.innerHTML));
-            //bdrmSummary.innerHTML = document.querySelector('.calculate_bdrms option:checked').innerHTML;
-            //dateSummary.innerHTML = document.querySelector('#date_summary');
-            //durSummary.innerHTML = document.querySelector('#duration_summary');
+        function returnServiceSummary(val) {
+            document.querySelector('#duration_summary').innerHTML = val.dataset.ssummary;
         }
-    }
 
-    function getBedroomCost(val) {
-        return bedroomCostFactor[val - 1];
-    }
+        document.querySelector('.calculate_bdrms').addEventListener('change', function(evt) {
+            //var value = evt.target.value;
+            //var dataQuery = document.querySelector('.calculate_bdrms option:checked').getAttribute('data-price');
+            var sel = document.querySelector('.calculate_bdrms option:checked');
+            var value = parseInt(sel.dataset.price);
+            var summaryValue = sel.dataset.summary;
+            //var value = parseInt(document.querySelector('[data-price]').getAttribute('data-price'));
+            //var value = dataQuery.dataset.price;
+            //console.log(value);
+            // value will be a string. Coercing to a number using +value
+            //var bedCost = parseInt(getBedroomCost(+value), 10).toFixed(2);
+            document.querySelector('#bed_display').innerHTML = value;
+            document.querySelector('#bed_cost').innerHTML = value;
+            document.querySelector('#bdrm_summary').innerHTML = summaryValue;
+            getTotalCost();
+        });
 
-    function getBathroomCost(val) {
-        return bathroomCostFactor[val - 1];
-    }
+        document.querySelector('.calculate_baths').addEventListener('change', function(evt) {
+            var sel = document.querySelector('.calculate_baths option:checked');
+            var value = parseInt(sel.dataset.price);
+            //var value = evt.target.value;
+            // value will be a string. Coercing to a number using +value
+            //var bathCost = parseInt(getBathroomCost(+value), 10).toFixed(2);
+            //getBathroomCost (val) { return bathroomCostFactor[val-1] }
+            //it's returning the arrays value based on the changed input, assigned to a variable
+            //evt.target.value = input.value
+            document.querySelector('#bath_display').innerHTML = value;
+            document.querySelector('#bath_cost').innerHTML = value;
+            getTotalCost();
+        });
+
+        var taxRate = .0725;
+        var subTotal = document.querySelector('#subtotal');
+        var itemSalesTax = document.querySelector('#tax');
+        var totalAmount = document.querySelector('#amount');
+        var bdrmSummary = document.querySelector('#bdrm_summary');
+        var dateSummary = document.querySelector('#date_summary');
+        var durSummary = document.querySelector('#duration_summary');
+
+        function getTotalCost() {
+            var bedCost = parseInt(document.querySelector('#bed_cost').innerHTML);
+            var bathCost = parseInt(document.querySelector('#bath_cost').innerHTML);
+            var percentage = parseInt(document.querySelector('#percentage').innerHTML);
+            var percentageOff = percentage / 100;
+            newPrice = basePrice;
+            newPriceVar = basePrice;
+            if (!percentage || percentage == 0) {
+                //document.querySelector('#subtotal').innerHTML = newPrice += parseInt(bathCost + bedCost);
+                subTotal.innerHTML = newPrice += parseInt(bathCost + bedCost);
+
+                itemSalesTax.innerHTML = (subTotal.innerHTML * taxRate).toFixed(2);
+
+                totalAmount.innerHTML = (parseFloat(subTotal.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
+
+            } else if (isNaN(bathCost) || isNaN(bedCost) || isNaN(percentage)) {
+                subTotal.innerHTML = "85.00";
+                itemSalesTax.innerHTML = "6.16";
+                totalAmount.innerHTML = "91.16";
+                
+            } else {
+
+                subTotal.innerHTML = ((newPriceVar += parseInt(bathCost + bedCost)) - ((newPrice += parseInt(bathCost + bedCost)) * percentageOff)).toFixed(2);
+
+                itemSalesTax.innerHTML = (subTotal.innerHTML * taxRate).toFixed(2);
+
+                totalAmount.innerHTML = (parseFloat(subTotal.innerHTML) + parseFloat(itemSalesTax.innerHTML)).toFixed(2);
+
+            }
+        }
+
+        function getBedroomCost(val) {
+            return bedroomCostFactor[val - 1];
+        }
+
+        function getBathroomCost(val) {
+            return bathroomCostFactor[val - 1];
+        }
+
     </script>
 
 
@@ -501,33 +740,40 @@
                     <div id="footer_logo">
                         <img src="images/logo2.jpg">
                     </div>
+                    <!-- about us, service area(not done on sparkly), gift cards, privacy -->
 
                     <div id="footer_links">
                         <div class="footer_links_sections">
                             <p class="title">ABOUT</p>
-                            <p>About Us</p>
+                            <p><a href="about.html">About Us</a></p>
                             <p>Service Area</p>
-                            <p>Maid Services</p>
-                            <p>House Cleaning</p>
+                            <!--<p>Rental Property Cleaning</p>-->
+                            <!--<p>Foreclosures Cleaning</p>-->
+                            <!--<p>Construction Cleaning</p>-->
+
                         </div>
                         <div class="footer_links_sections">
                             <p class="title">CONTACT</p>
-                            <p>Contact Us</p>
-                            <p>Get A Quote</p>
+                            <p><a href="contact.html">Contact Us</a></p>
+                            <p><a href="book.html">Get A Quote</a></p>
                             <p>Join Us</p>
+                            <!-- i gotta make a registration thing :'( -->
                         </div>
                         <div class="footer_links_sections">
                             <p class="title">FOR YOU</p>
+                            <!-- needs to be made-->
                             <p>Buy Gift Cards</p>
-                            <p>Book Now</p>
+                            <p><a href="book.html">Book Now</a></p>
+                            <!-- needs -->
                             <p>Cleaning Tips</p>
 
                         </div>
                         <div class="footer_links_sections">
                             <p class="title">SUPPORT</p>
-                            <p>Help</p>
-                            <p>Terms & Conditions</p>
-                            <p>Privacy Policy</p>
+                            <!-- have a page already -->
+                            <p><a href="contact.html">Help</a></p>
+                            <!--<p>Terms & Conditions</p>-->
+                            <p><a href="privacy.html">Privacy Policy</a></p>
                         </div>
                     </div>
 
@@ -559,7 +805,9 @@
                     <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
 
                     <div class="footer_rows">
-                        <h2>Subscribe to our mailing list</h2>
+                        <label>
+                            <h2>Subscribe to our mailing list</h2>
+                        </label>
                     </div>
                     <div class="footer_rows">
                         <input type="text" placeholder="Enter your email">

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
     <title></title>
 </head>
 
@@ -44,7 +45,13 @@
             </div>
         </div>
     </header>
-
+<div id="sidenav">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="#">HOME PAGE</a>
+    <a href="#">BOOK MY CLEAN</a>
+    <a href="#">CONTACT US</a>
+    <div id="closebtn"></div>
+</div>
     <!--end header-->
 
     <div id="aboutus">
@@ -131,12 +138,12 @@
                     <div id="footer_logo">
                         <img src="images/logo2.jpg">
                     </div>
-                    <!-- about us, service area, gift cards, privacy -->
+                    <!-- about us, service area(not done on sparkly), gift cards, privacy -->
 
                     <div id="footer_links">
                         <div class="footer_links_sections">
                             <p class="title">ABOUT</p>
-                            <p>About Us</p>
+                            <p><a href="about.html">About Us</a></p>
                             <p>Service Area</p>
                             <!--<p>Rental Property Cleaning</p>-->
                             <!--<p>Foreclosures Cleaning</p>-->
@@ -145,8 +152,8 @@
                         </div>
                         <div class="footer_links_sections">
                             <p class="title">CONTACT</p>
-                            <p>Contact Us</p>
-                            <p>Get A Quote</p>
+                            <p><a href="contact.html">Contact Us</a></p>
+                            <p><a href="book.html">Get A Quote</a></p>
                             <p>Join Us</p>
                             <!-- i gotta make a registration thing :'( -->
                         </div>
@@ -154,7 +161,7 @@
                             <p class="title">FOR YOU</p>
                             <!-- needs to be made-->
                             <p>Buy Gift Cards</p>
-                            <p>Book Now</p>
+                            <p><a href="book.html">Book Now</a></p>
                             <!-- needs -->
                             <p>Cleaning Tips</p>
 
@@ -162,9 +169,9 @@
                         <div class="footer_links_sections">
                             <p class="title">SUPPORT</p>
                             <!-- have a page already -->
-                            <p>Help</p>
+                            <p><a href="contact.html">Help</a></p>
                             <!--<p>Terms & Conditions</p>-->
-                            <p>Privacy Policy</p>
+                            <p><a href="privacy.html">Privacy Policy</a></p>
                         </div>
                     </div>
 
@@ -196,7 +203,9 @@
                     <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
 
                     <div class="footer_rows">
-                        <h2>Subscribe to our mailing list</h2>
+                        <label>
+                            <h2>Subscribe to our mailing list</h2>
+                        </label>
                     </div>
                     <div class="footer_rows">
                         <input type="text" placeholder="Enter your email">
@@ -215,7 +224,6 @@
             <div id="footer_bottom">Copyright 2018 All Rights Reserved. Copyright Active Clean 1.</div>
         </div>
     </footer>
-
 
 
 
