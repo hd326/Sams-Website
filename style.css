@@ -160,15 +160,17 @@ body {
     margin-left: 50px;
 }
 
+
+
+
 header {
     width: 100%;
     margin: auto;
-    position: absolute;
     z-index: 1;
     /*background-color: rgba(92, 150, 193, 0.78);*/
     background-color: rgba(73, 158, 221, 0.85);
     height: 82.5px;
-    padding-bottom: 165px;
+    position:absolute;
 }
 
 header #header {
@@ -176,6 +178,9 @@ header #header {
     margin: auto;
     display: grid;
     grid-template-columns: .2fr 1fr;
+    position:absolute;
+    left:0;
+    right:0;
 }
 
 #header #h_logo {
@@ -353,6 +358,7 @@ header #header {
 #hero #form_text {
     width: 100%;
     display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     text-align: center;
     margin: auto;
