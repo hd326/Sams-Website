@@ -376,11 +376,12 @@ header #header {
 #hero #form_text h1#main-ad {
     font-size: 46px;
     margin-bottom: 25px;
-    padding-top: 50px;
+    padding-top: 100px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ededed;
     position:relative;
+    z-index: 1;
 }
 
 #hero #form_text h1#alt-ad {
