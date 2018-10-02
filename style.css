@@ -369,14 +369,13 @@ header #header {
     margin: auto;
     position:relative;
     z-index: 1;
-    padding-top: 75px;
+    padding-top: 165px;
     position:relative;
 }
 
 #hero #form_text h1#main-ad {
     font-size: 46px;
     margin-bottom: 25px;
-    padding-top: 100px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ededed;

@@ -190,7 +190,7 @@ function updateSum() {
         </div>
     </header>
 
-        
+
 
 
 
@@ -198,78 +198,78 @@ function updateSum() {
 
     <div id="hero">
         <div id="hero_container">
-        <div role="img" alt="living room" id="form_container_bg"></div>
-        <div id="form_container_bg_bg"></div>
-        <div id="form_text">
-            <h1 id="main-ad">Fully Licensed, Bonded & Insured</h1>
-            <h1 id="alt-ad">Premier Cleaning Service in Sacramento</h1>
-            <h2 id="schedule-ad">Schedule an appointment. Select your number of bedrooms and bathrooms.</h2><br>
-        </div>
+            <div role="img" alt="living room" id="form_container_bg"></div>
+            <div id="form_container_bg_bg"></div>
+            <div id="form_text">
+                <h1 id="main-ad">Fully Licensed, Bonded & Insured</h1>
+                <h1 id="alt-ad">Premier Cleaning Service in Sacramento</h1>
+                <h2 id="schedule-ad">Schedule an appointment. Select your number of bedrooms and bathrooms.</h2><br>
+            </div>
 
-        <div id="form_container_1">
-            <form action="book.html">
-                <div class="form__fields">
-                    <div class="form_text_fields">
-                        <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
-                    <div class="form_input_field">
-                        <input name="bed_range" type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
+            <div id="form_container_1">
+                <form action="book.html">
+                    <div class="form__fields">
+                        <div class="form_text_fields">
+                            <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
+                        <div class="form_input_field">
+                            <input name="bed_range" type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
+                        </div>
+                        <!-- bed cost -->
+                        <span id="bed_cost">0</span>
                     </div>
-                    <!-- bed cost -->
-                    <span id="bed_cost">0</span>
-                </div>
-                <div class="form__fields">
-                    <div class="form_text_fields">
-                        <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+                    <div class="form__fields">
+                        <div class="form_text_fields">
+                            <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+                        </div>
+                        <div class="form_input_field">
+                            <input name="bath_range" type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
+                        </div>
+                        <!-- bath cost -->
+                        <span id="bath_cost">0</span>
                     </div>
-                    <div class="form_input_field">
-                        <input name="bath_range" type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
+                    <div id="form_occurence">
+
+                        <div class="form_percentage">
+                            <button type="button" id="one" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="0">One time cleaning</button>
+
+                        </div>
+
+                        <div class="form_percentage">
+                            <button type="button" id="two" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="5">Monthly cleaning</button>
+
+                            <span><span id="percentage_off" onclick="returnPercentage();" value="5">5</span>% Off</span>
+                        </div>
+
+                        <div class="form_percentage">
+                            <button type="button" id="three" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="15">Bi-weekly cleaning</button>
+
+                            <span><span id="percentage_off" onclick="returnPercentage();" value="15">15</span>% Off</span>
+                        </div>
+
+                        <div class="form_percentage">
+                            <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="10">Tri-weekly cleaning</button>
+
+                            <span><span id="percentage_off" onclick="returnPercentage();" value="10">10</span>% Off</span>
+                        </div>
+
+                        <div class="form_percentage">
+                            <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="20">Weekly cleaning</button>
+
+                            <span><span id="percentage_off" onclick="returnPercentage();" value="20">20</span>% Off</span></div>
+                        <!-- percentage value -->
+                        <input type="hidden" name="duration_range" id="range" value="">
+                        <input type="hidden" name="percentage_range" id="percentage" value="">
                     </div>
-                    <!-- bath cost -->
-                    <span id="bath_cost">0</span>
-                </div>
-                <div id="form_occurence">
 
-                    <div class="form_percentage">
-                        <button type="button" id="one" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="0">One time cleaning</button>
+                    <div id="submit">
+
+                        <a href="book.html"><button type="submit">See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></a>
 
                     </div>
-
-                    <div class="form_percentage">
-                        <button type="button" id="two" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="5">Monthly cleaning</button>
-
-                        <span><span id="percentage_off" onclick="returnPercentage();" value="5">5</span>% Off</span>
-                    </div>
-
-                    <div class="form_percentage">
-                        <button type="button" id="three" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="15">Bi-weekly cleaning</button>
-
-                        <span><span id="percentage_off" onclick="returnPercentage();" value="15">15</span>% Off</span>
-                    </div>
-
-                    <div class="form_percentage">
-                        <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="10">Tri-weekly cleaning</button>
-
-                        <span><span id="percentage_off" onclick="returnPercentage();" value="10">10</span>% Off</span>
-                    </div>
-
-                    <div class="form_percentage">
-                        <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="20">Weekly cleaning</button>
-
-                        <span><span id="percentage_off" onclick="returnPercentage();" value="20">20</span>% Off</span></div>
-                    <!-- percentage value -->
-                    <input type="hidden" name="duration_range" id="range" value="">
-                    <input type="hidden" name="percentage_range" id="percentage" value="">
-                </div>
-
-                <div id="submit">
-
-                    <a href="book.html"><button type="submit">See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></a>
-
-                </div>
-            </form>
-        </div>
-        <script>
-            var basePrice = 85.00;
+                </form>
+            </div>
+            <script>
+                var basePrice = 85.00;
 var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
 var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
 var percentageFactor = [0, 5, 15, 10, 20];
@@ -349,24 +349,24 @@ function getBathroomCost(val) {
 }
         </script>
 
-        <div id="points">
+            <div id="points">
 
-            <div class="point">
-                <div class="point_img"><img src="images/star.png" alt="Star"></div>
-                <div class="point_txt">All Cleaners are Certified & Insured</div>
-            </div>
-            <div class="point">
-                <div class="point_img"><img src="images/check.png" alt="Checkmark"></div>
-                <div class="point_txt">Trained with thorough checklist</div>
-            </div>
-            <div class="point">
-                <div class="point_img"><img src="images/award.png" alt="Award Medal"></div>
-                <div class="point_txt">Bring & use quality products</div>
-            </div>
+                <div class="point">
+                    <div class="point_img"><img src="images/star.png" alt="Star"></div>
+                    <div class="point_txt">All Cleaners are Certified & Insured</div>
+                </div>
+                <div class="point">
+                    <div class="point_img"><img src="images/check.png" alt="Checkmark"></div>
+                    <div class="point_txt">Trained with thorough checklist</div>
+                </div>
+                <div class="point">
+                    <div class="point_img"><img src="images/award.png" alt="Award Medal"></div>
+                    <div class="point_txt">Bring & use quality products</div>
+                </div>
 
+            </div>
         </div>
-</div>
-</div>
+    </div>
 
     <!-- the form -->
 
