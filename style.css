@@ -713,6 +713,7 @@ input[type=range]:focus {
 
 #hero #form_text {
     padding-top: 75px;
+    position:relative;
 }
 
 #hero #form_text #main-ad {
