@@ -369,7 +369,7 @@ header #header {
     position: relative;
 }
 
-#hero #form_text h1#main-ad {
+#hero #form_text span#main-ad {
     font-size: 46px;
     margin-bottom: 25px;
     font-weight: 500;
