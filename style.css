@@ -366,14 +366,15 @@ header #header {
     justify-content: center;
     text-align: center;
     margin: auto;
-    padding-top: 35px;
     position:relative;
     z-index: 1;
+    padding-top: 75px;
+    position:relative;
 }
 
 #hero #form_text h1#main-ad {
     font-size: 46px;
-    margin-bottom: 7.5px;
+    margin-bottom: 25px;
     padding-top: 50px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -388,6 +389,11 @@ header #header {
 
 #hero #form_text h2#schedule-ad {
     font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 7.5px;
+    
+    letter-spacing: .2px;
+    font-size: 20px;
 }
 
 
@@ -711,23 +717,6 @@ input[type=range]:focus {
 
 /*margin spacing for hero*/
 
-#hero #form_text {
-    padding-top: 75px;
-    position:relative;
-}
-
-#hero #form_text #main-ad {
-    
-    margin-bottom: 25px;
-}
-
-#hero #form_text h2 {
-    margin-top: 25px;
-    margin-bottom: 7.5px;
-    font-weight: 1000;
-    letter-spacing: .2px;
-    font-size: 20px;
-}
 
 #form_container_1 .form__fields {
     padding: 25px 0px;
