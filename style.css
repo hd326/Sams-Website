@@ -323,7 +323,7 @@ header #header {
 }
 
 #hero {
-    position: relative;
+    position:relative;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -335,7 +335,9 @@ header #header {
 }
 
 #hero #hero_container{
-    
+    position:relative;
+    width: 100%;
+    height: 100%;
 }
 
 #form_container_bg_bg {
