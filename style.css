@@ -350,7 +350,6 @@ header #header {
     width: 100%;
     display: grid;
     justify-content: center;
-    position: relative;
     text-align: center;
     margin: auto;
     padding-top: 35px;
