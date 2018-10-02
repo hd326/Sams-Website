@@ -96,7 +96,7 @@ body {
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color: #f1f1f;
+    background-color: #3e3e3e;
     color: white;
     /* Black*/
     /* Disable */
@@ -334,14 +334,15 @@ header #header {
     height: 100%;
 }
 
-#form_container_bg{
+#form_container_bg {
     background: url(images/27.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    filter: blur(.5px);
     height: 100%;
     width: 100%;
-    position:absolute;
-    z-index:0;
+    position: absolute;
+    z-index: 0;
 }
 
 #form_container_bg_bg {
@@ -349,7 +350,7 @@ header #header {
     width: 100%;
     position: absolute;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.07);
+    background: rgba(105, 105, 105, 0.11);
     top: 0;
 }
 
