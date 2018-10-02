@@ -151,12 +151,12 @@ function updateSum() {
 
     <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
     <div id="sidenav">
-    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-    <a href="index.html">HOME PAGE</a>
-    <a href="book.html">BOOK MY CLEAN</a>
-    <a href="contact.html">CONTACT US</a>
-    <div id="closebtn"></div>
-</div>
+        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <a href="index.html">HOME PAGE</a>
+        <a href="book.html">BOOK MY CLEAN</a>
+        <a href="contact.html">CONTACT US</a>
+        <div id="closebtn"></div>
+    </div>
 
 
 
@@ -191,10 +191,10 @@ function updateSum() {
     </header>
 
 
-    
 
-        <script>
-            var basePrice = 85.00;
+
+    <script>
+        var basePrice = 85.00;
             
     var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
     var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
@@ -316,9 +316,9 @@ function updateSum() {
 
 
 
-    
 
-            <script>/*
+
+    <script>/*
                 const slider = document.querySelector('.testimonials_content');
                 let isDown = false;
                 let startX;
@@ -339,78 +339,78 @@ function updateSum() {
 
             </script>
     <div id="hero">
-    <div role="img" alt="living room" id="form_container_bg"></div>
-    <div id="form_container_bg_bg"></div>
-    <div id="form_text">
-        <h1 id="main-ad">Fully Licensed, Bonded & Insured</h1>
-        <h1 id="alt-ad">Premier Cleaning Service in Sacramento</h1>
-        <h2 id="schedule-ad">Schedule an appointment. Select your number of bedrooms and bathrooms.</h2><br>
-    </div>
+        <div role="img" alt="living room" id="form_container_bg"></div>
+        <div id="form_container_bg_bg"></div>
+        <div id="form_text">
+            <h1 id="main-ad">Fully Licensed, Bonded & Insured</h1>
+            <h1 id="alt-ad">Premier Cleaning Service in Sacramento</h1>
+            <h2 id="schedule-ad">Schedule an appointment. Select your number of bedrooms and bathrooms.</h2><br>
+        </div>
 
-    <div id="form_container_1">
-        <form action="book.html">
-            <div class="form__fields">
-                <div class="form_text_fields">
-                    <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
-                <div class="form_input_field">
-                    <input name="bed_range" type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
+        <div id="form_container_1">
+            <form action="book.html">
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bedrooms: </span><span class="choice_display" id="bed_display">1</span> </div>
+                    <div class="form_input_field">
+                        <input name="bed_range" type="range" min="1" max="6" value="1" class="slider" id="bed_service" oninput="sliderChange(this.value);">
+                    </div>
+                    <!-- bed cost -->
+                    <span id="bed_cost">0</span>
                 </div>
-                <!-- bed cost -->
-                <span id="bed_cost">0</span>
-            </div>
-            <div class="form__fields">
-                <div class="form_text_fields">
-                    <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+                <div class="form__fields">
+                    <div class="form_text_fields">
+                        <span class="form_label">Bathrooms: </span><span class="choice_display" id="bath_display">1</span>
+                    </div>
+                    <div class="form_input_field">
+                        <input name="bath_range" type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
+                    </div>
+                    <!-- bath cost -->
+                    <span id="bath_cost">0</span>
                 </div>
-                <div class="form_input_field">
-                    <input name="bath_range" type="range" min="1" max="6" value="1" class="slider" id="bath_service" oninput="sliderChange2(this.value);">
+                <div id="form_occurence">
+
+                    <div class="form_percentage">
+                        <button type="button" id="one" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="0">One time cleaning</button>
+
+                    </div>
+
+                    <div class="form_percentage">
+                        <button type="button" id="two" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="5">Monthly cleaning</button>
+
+                        <span><span id="percentage_off" onclick="returnPercentage();" value="5">5</span>% Off</span>
+                    </div>
+
+                    <div class="form_percentage">
+                        <button type="button" id="three" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="15">Bi-weekly cleaning</button>
+
+                        <span><span id="percentage_off" onclick="returnPercentage();" value="15">15</span>% Off</span>
+                    </div>
+
+                    <div class="form_percentage">
+                        <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="10">Tri-weekly cleaning</button>
+
+                        <span><span id="percentage_off" onclick="returnPercentage();" value="10">10</span>% Off</span>
+                    </div>
+
+                    <div class="form_percentage">
+                        <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="20">Weekly cleaning</button>
+
+                        <span><span id="percentage_off" onclick="returnPercentage();" value="20">20</span>% Off</span></div>
+                    <!-- percentage value -->
+                    <input type="hidden" name="duration_range" id="range" value="">
+                    <input type="hidden" name="percentage_range" id="percentage" value="">
                 </div>
-                <!-- bath cost --> 
-                <span id="bath_cost">0</span>
-            </div>
-            <div id="form_occurence">
 
-                <div class="form_percentage">
-                    <button type="button" id="one" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="0">One time cleaning</button>
+                <div id="submit">
+
+                    <a href="book.html"><button type="submit">See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></a>
 
                 </div>
-
-                <div class="form_percentage">
-                    <button type="button" id="two" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="5">Monthly cleaning</button>
-
-                    <span><span id="percentage_off" onclick="returnPercentage();" value="5">5</span>% Off</span>
-                </div>
-
-                <div class="form_percentage">
-                    <button type="button" id="three" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="15">Bi-weekly cleaning</button>
-
-                    <span><span id="percentage_off" onclick="returnPercentage();" value="15">15</span>% Off</span>
-                </div>
-
-                <div class="form_percentage">
-                    <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="10">Tri-weekly cleaning</button>
-
-                    <span><span id="percentage_off" onclick="returnPercentage();" value="10">10</span>% Off</span>
-                </div>
-
-                <div class="form_percentage">
-                    <button type="button" onclick="returnPercentage(this);getTotalCost();returnDuration(this);" value="20">Weekly cleaning</button>
-
-                    <span><span id="percentage_off" onclick="returnPercentage();" value="20">20</span>% Off</span></div>
-                <!-- percentage value -->
-                <input type="hidden" name="duration_range" id="range" value="">
-                <input type="hidden" name="percentage_range" id="percentage" value="">
-            </div>
-            
-            <div id="submit">
-
-                <a href="book.html"><button type="submit">See Price and Book In 60 seconds! <span id="tydollasign">$</span><span id="price">85</span><span id="clean">/clean</span></button></a>
-
-            </div>
-        </form>
-    </div>
-    <script>
-var basePrice = 85.00;
+            </form>
+        </div>
+        <script>
+            var basePrice = 85.00;
 var bedroomCostFactor = [0, 10, 35, 70, 95, 120];
 var bathroomCostFactor = [0, 25, 50, 75, 100, 125];
 var percentageFactor = [0, 5, 15, 10, 20];
@@ -490,30 +490,30 @@ function getBathroomCost(val) {
 }
         </script>
 
-    <div id="points">
+        <div id="points">
 
-        <div class="point">
-            <div class="point_img"><img src="images/star.png" alt="Star"></div>
-            <div class="point_txt">All Cleaners are Certified & Insured</div>
-        </div>
-        <div class="point">
-            <div class="point_img"><img src="images/check.png" alt="Checkmark"></div>
-            <div class="point_txt">Trained with thorough checklist</div>
-        </div>
-        <div class="point">
-            <div class="point_img"><img src="images/award.png" alt="Award Medal"></div>
-            <div class="point_txt">Bring & use quality products</div>
+            <div class="point">
+                <div class="point_img"><img src="images/star.png" alt="Star"></div>
+                <div class="point_txt">All Cleaners are Certified & Insured</div>
+            </div>
+            <div class="point">
+                <div class="point_img"><img src="images/check.png" alt="Checkmark"></div>
+                <div class="point_txt">Trained with thorough checklist</div>
+            </div>
+            <div class="point">
+                <div class="point_img"><img src="images/award.png" alt="Award Medal"></div>
+                <div class="point_txt">Bring & use quality products</div>
+            </div>
+
         </div>
 
     </div>
 
-</div>
+    <!-- the form -->
 
-<!-- the form -->
+    <!-- the awards -->
 
-<!-- the awards -->
-
-<!--<div id="awards">
+    <!--<div id="awards">
         <div id="awards_logo_h">
             <div class="awards_logo">
             <span id="awards_text">
@@ -537,141 +537,141 @@ function getBathroomCost(val) {
         </div>
     </div>
 -->
-<!-- the how -->
+    <!-- the how -->
 
-<div id="how_it_works">
+    <div id="how_it_works">
 
-    <div id="how_it_works_wrapper">
+        <div id="how_it_works_wrapper">
 
-        <div id="how_it_works_title">
-            <h1>HOW IT WORKS</h1>
-        </div>
-
-        <div id="how_it_works_container">
-
-            <div class="how_it_works_section">
-                <div class="how_it_works_img">
-                    <div class="how_it_works_img_helper"></div><img src="images/how_1.jpg" alt="Woman booking online">
-                </div>
-                <div class="how_it_works_explanation"></div>
-                <div class="how_it_works_text">
-                    <h1>BOOK</h1>
-                    <p>Schedule an appointment online for your house cleaning</p>
-                </div>
+            <div id="how_it_works_title">
+                <h1>HOW IT WORKS</h1>
             </div>
 
-            <div class="how_it_works_section">
-                <div class="how_it_works_img">
-                    <div class="how_it_works_img_helper"></div><img src="images/how_3.jpg" alt="Vacuum cleaning carpet">
+            <div id="how_it_works_container">
+
+                <div class="how_it_works_section">
+                    <div class="how_it_works_img">
+                        <div class="how_it_works_img_helper"></div><img src="images/how_1.jpg" alt="Woman booking online">
+                    </div>
+                    <div class="how_it_works_explanation"></div>
+                    <div class="how_it_works_text">
+                        <h1>BOOK</h1>
+                        <p>Schedule an appointment online for your house cleaning</p>
+                    </div>
                 </div>
-                <div class="how_it_works_explanation"></div>
-                <div class="how_it_works_text">
-                    <h1>CLEAN</h1>
-                    <p>A professional house cleaner comes over and cleans your place</p>
+
+                <div class="how_it_works_section">
+                    <div class="how_it_works_img">
+                        <div class="how_it_works_img_helper"></div><img src="images/how_3.jpg" alt="Vacuum cleaning carpet">
+                    </div>
+                    <div class="how_it_works_explanation"></div>
+                    <div class="how_it_works_text">
+                        <h1>CLEAN</h1>
+                        <p>A professional house cleaner comes over and cleans your place</p>
+                    </div>
                 </div>
+
+
+                <div class="how_it_works_section">
+                    <div class="how_it_works_img">
+                        <div class="how_it_works_img_helper"></div><img src="images/how_2.jpg" alt="Woman enjoying coffee">
+                    </div>
+                    <div class="how_it_works_explanation"></div>
+                    <div class="how_it_works_text">
+                        <h1>RELAX</h1>
+                        <p>Sit back and relax, enjoy your sparkling clean home!</p>
+                    </div>
+                </div>
+
             </div>
 
-
-            <div class="how_it_works_section">
-                <div class="how_it_works_img">
-                    <div class="how_it_works_img_helper"></div><img src="images/how_2.jpg" alt="Woman enjoying coffee">
-                </div>
-                <div class="how_it_works_explanation"></div>
-                <div class="how_it_works_text">
-                    <h1>RELAX</h1>
-                    <p>Sit back and relax, enjoy your sparkling clean home!</p>
-                </div>
+            <div class="how_it_works_submit">
+                <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
             </div>
 
-        </div>
-
-        <div class="how_it_works_submit">
-            <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
         </div>
 
     </div>
 
-</div>
+    <!-- the how -->
 
-<!-- the how -->
+    <!-- the -->
 
-<!-- the -->
+    <div id="about">
 
-<div id="about">
+        <div id="about_bg"></div>
+        <div id="about_bg_ol"></div>
+        <div id="about_main">
+            <h1>YOUR TRUST IS OUR PRIORITY</h1>
 
-    <div id="about_bg"></div>
-    <div id="about_bg_ol"></div>
-    <div id="about_main">
-        <h1>YOUR TRUST IS OUR PRIORITY</h1>
+            <div id="about_sections">
 
-        <div id="about_sections">
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trusttime.png" alt="clock with dollar sign"></div>
+                    <div class="about_title">SAVES YOU TIME</div>
+                    <div class="about_desc">Active Clean 1 does the house work for you so you can have time to pursue the important things. </div>
+                </div>
 
-            <div class="about_section">
-                <div class="about_img"><img src="images/trusttime.png" alt="clock with dollar sign"></div>
-                <div class="about_title">SAVES YOU TIME</div>
-                <div class="about_desc">Active Clean 1 does the house work for you so you can have time to pursue the important things. </div>
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trustshield.png" alt="shield with check mark"></div>
+                    <div class="about_title">SAFETY FIRST</div>
+                    <div class="about_desc">We strictly screen all of our cleaners. Employees must pass a rigorous background check, reference checks, and in-person interviews. </div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trustdiamond.png" alt="shining diamond"></div>
+                    <div class="about_title">SUPERIOR SERVICE</div>
+                    <div class="about_desc">Our cleaning specialists make sure your home is clean on every job. After they finish, you can login in and give your team anonymous feedback.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trustmountain2.png" alt="mountain with flag"></div>
+                    <div class="about_title">EASY SETUP</div>
+                    <div class="about_desc">Select your number of bedrooms and bathrooms. Pick a convenient date and time. Then relax while our we make your home sparkle.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trustcomm.png" alt="chat boxes with text"></div>
+                    <div class="about_title">STANDBY COMMUNICATION</div>
+                    <div class="about_desc">Our user-friendly site makes it easy for you to stay in touch with Active Clean 1, reach out to us at any time.</div>
+                </div>
+
+                <div class="about_section">
+                    <div class="about_img"><img src="images/trustsecure.png" alt="credit card with lock"></div>
+                    <div class="about_title">SECURE PAYMENTS</div>
+                    <div class="about_desc">Pay for your maid service online — only when the cleaning is complete. (Prefer to pay with check or cash? Just call us.)</div>
+                </div>
             </div>
 
-            <div class="about_section">
-                <div class="about_img"><img src="images/trustshield.png" alt="shield with check mark"></div>
-                <div class="about_title">SAFETY FIRST</div>
-                <div class="about_desc">We strictly screen all of our cleaners. Employees must pass a rigorous background check, reference checks, and in-person interviews. </div>
-            </div>
-
-            <div class="about_section">
-                <div class="about_img"><img src="images/trustdiamond.png" alt="shining diamond"></div>
-                <div class="about_title">SUPERIOR SERVICE</div>
-                <div class="about_desc">Our cleaning specialists make sure your home is clean on every job. After they finish, you can login in and give your team anonymous feedback.</div>
-            </div>
-
-            <div class="about_section">
-                <div class="about_img"><img src="images/trustmountain2.png" alt="mountain with flag"></div>
-                <div class="about_title">EASY SETUP</div>
-                <div class="about_desc">Select your number of bedrooms and bathrooms. Pick a convenient date and time. Then relax while our we make your home sparkle.</div>
-            </div>
-
-            <div class="about_section">
-                <div class="about_img"><img src="images/trustcomm.png" alt="chat boxes with text"></div>
-                <div class="about_title">STANDBY COMMUNICATION</div>
-                <div class="about_desc">Our user-friendly site makes it easy for you to stay in touch with Active Clean 1, reach out to us at any time.</div>
-            </div>
-
-            <div class="about_section">
-                <div class="about_img"><img src="images/trustsecure.png" alt="credit card with lock"></div>
-                <div class="about_title">SECURE PAYMENTS</div>
-                <div class="about_desc">Pay for your maid service online — only when the cleaning is complete. (Prefer to pay with check or cash? Just call us.)</div>
+            <div id="learn_more">
+                <a href="questions.html"><input type="button" value="LEARN MORE"></a>
             </div>
         </div>
+    </div>
 
-        <div id="learn_more">
-            <a href="questions.html"><input type="button" value="LEARN MORE"></a>
+    <!-- about -->
+
+    <!-- mobile -->
+
+    <div id="mobile">
+        <div id="mobile_img"><a href=book.html><img src="images/iphone-v2-complete.gif" alt="iphone with front page booking screen"></a></div>
+        <div id="mobile_desc">
+            <h1>SCHEDULE YOUR HOUSECLEANING ON THE RUN</h1>
+            <p>Active Clean 1 is mobile friendly. So you can book your cleaning service on your phone just as you could on your computer. </p>
         </div>
     </div>
-</div>
 
-<!-- about -->
+    <div id="testimonials">
+        <div role="img" alt="living room" id="testimonials_bg">
+            <div id="testimonials_bg_bg"></div>
+        </div>
 
-<!-- mobile -->
+        <div id="testimonials_content_wrap">
+            <h1>HAPPY CUSTOMERS</h1>
 
-<div id="mobile">
-    <div id="mobile_img"><a href=book.html><img src="images/iphone-v2-complete.gif" alt="iphone with front page booking screen"></a></div>
-    <div id="mobile_desc">
-        <h1>SCHEDULE YOUR HOUSECLEANING ON THE RUN</h1>
-        <p>Active Clean 1 is mobile friendly. So you can book your cleaning service on your phone just as you could on your computer. </p>
-    </div>
-</div>
+            <div id="testimonials_content">
 
-<div id="testimonials">
-    <div role="img" alt="living room" id="testimonials_bg">
-        <div id="testimonials_bg_bg"></div>
-    </div>
-
-    <div id="testimonials_content_wrap">
-        <h1>HAPPY CUSTOMERS</h1>
-
-        <div id="testimonials_content">
-
-            <!--<div id="testimonials_content_sliders">
+                <!--<div id="testimonials_content_sliders">
 
                     <div class="testimonials_section">
                         <div class="testimonials_text_holder">
@@ -753,112 +753,112 @@ hi
                 </div>
 -->
 
-            <!-- Anew with testimonials content-->
+                <!-- Anew with testimonials content-->
 
-            <div id="testimonial_content_holder">
+                <div id="testimonial_content_holder">
 
-                <div class="testimonial">
-                    <div class="testimonial_header">
-                        <div role="img" alt="Woman smiling" class="img"></div>
-                        <div class="name">Lorraine Sykes</div>
+                    <div class="testimonial">
+                        <div class="testimonial_header">
+                            <div role="img" alt="Woman smiling" class="img"></div>
+                            <div class="name">Lorraine Sykes</div>
+                        </div>
+                        <div class="testimonial_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                        </div>
                     </div>
-                    <div class="testimonial_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                    <div class="testimonial">
+                        <div class="testimonial_header">
+                            <div role="img" alt="Man with glasses smiling" class="img"></div>
+                            <div class="name">Samuel Michaels</div>
+                        </div>
+                        <div class="testimonial_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial_header">
+                            <div role="img" alt="Woman with curly hair smiling" class="img"></div>
+                            <div class="name">Janice Stevenson</div>
+                        </div>
+                        <div class="testimonial_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial_header">
-                        <div role="img" alt="Man with glasses smiling" class="img"></div>
-                        <div class="name">Samuel Michaels</div>
-                    </div>
-                    <div class="testimonial_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <div class="testimonial_header">
-                        <div role="img" alt="Woman with curly hair smiling" class="img"></div>
-                        <div class="name">Janice Stevenson</div>
-                    </div>
-                    <div class="testimonial_text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at egestas lectus. Maecenas viverra, odio non aliquam pretium, quam urna interdum est, sed pharetra velit nisl ut dolor. Sed sed aliquet risus. Fusce in lobortis justo, non sodales leo. Proin quis turpis vel massa molestie malesuada. Quisque aliquet fringilla tincidunt. Duis dignissim et nisi id euismod. Sed pulvinar vitae odio ut vestibulum. Nullam aliquet pellentesque urna eget finibus. Sed eget orci in mi consequat suscipit.
-                    </div>
-                </div>
+
+                <div id="testimonials_button"><a href="book.html"><input type="button" value="Book Now"></a></div>
+
             </div>
 
-            <div id="testimonials_button"><a href="book.html"><input type="button" value="Book Now"></a></div>
 
-        </div>
-
-
-    </div>
-</div>
-
-<!--booking section-->
-
-<div id="book">
-
-    <div id="book_contents">
-        <div id="book_level">
-            <h1>BOOK A HOUSE CLEANING NOW!</h1>
-            <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
         </div>
     </div>
 
-</div>
+    <!--booking section-->
 
-<!--booking section-->
-<!--rental,foreclosure,post-construction, move-in/out cleaning, carpet,cleaning, junk removal, interior painting-->
-<!--other services-->
+    <div id="book">
 
-<div id="other">
-    <div id="other_ol"></div>
-    <img id="other_services" src="images/other_services.png" alt="Skyscraper Buildings">
-    <h1>WE ALSO OFFER SERVICES FOR...</h1>
-
-
-    <div id="other_holder">
-        <div class="other_service">
-            <span class="other_img"><img src="images/rental.png" alt="Rental Home"></span>
-            <h3 class="other_name">Rental Homes Cleaning</h3>
-        </div>
-        <div class="other_service">
-            <span class="other_img"><img src="images/foreclosure.png" alt="Foreclosure Sign"></span>
-            <h3 class="other_name">Foreclosure Cleaning</h3>
-        </div>
-        <div class="other_service">
-            <span class="other_img"><img src="images/construction.png" alt="Hammer and Bricks"></span>
-            <h3 class="other_name">Post-Construction Cleaning</h3>
+        <div id="book_contents">
+            <div id="book_level">
+                <h1>BOOK A HOUSE CLEANING NOW!</h1>
+                <a href="book.html"><button type="button">BOOK APPOINTMENT</button></a>
+            </div>
         </div>
 
-        <div class="other_service">
-            <span class="other_img"><img src="images/regular.png" alt="Mop, Bucket, Towel"></span>
-            <h3 class="other_name">Regular Cleaning</h3>
-        </div>
-
-        <div class="other_service">
-            <span class="other_img"><img src="images/moving.png" alt="Truck with Home in Trunk"></span>
-            <h3 class="other_name">Move In / Out Cleaning</h3>
-        </div>
-        <div class="other_service">
-            <span class="other_img"><img src="images/carpet.png" alt="carpet"></span>
-            <h3 class="other_name">Carpet Cleaning</h3>
-        </div>
-
-        <div class="other_service">
-            <span class="other_img"><img src="images/junk.png" alt="Trash Can"></span>
-            <h3 class="other_name">Junk Removal</h3>
-        </div>
-        <div class="other_service">
-            <span class="other_img"><img src="images/paint.png" alt="Man with Paint Roller"></span>
-            <h3 class="other_name">Interior Painting</h3>
-        </div>
     </div>
-    <button type="button">Please call 24/7 for Free Estimate:<br> +1 (916) 800 - 7795</button>
-</div>
+
+    <!--booking section-->
+    <!--rental,foreclosure,post-construction, move-in/out cleaning, carpet,cleaning, junk removal, interior painting-->
+    <!--other services-->
+
+    <div id="other">
+        <div id="other_ol"></div>
+        <img id="other_services" src="images/other_services.png" alt="Skyscraper Buildings">
+        <h1>WE ALSO OFFER SERVICES FOR...</h1>
 
 
-    
+        <div id="other_holder">
+            <div class="other_service">
+                <span class="other_img"><img src="images/rental.png" alt="Rental Home"></span>
+                <h3 class="other_name">Rental Homes Cleaning</h3>
+            </div>
+            <div class="other_service">
+                <span class="other_img"><img src="images/foreclosure.png" alt="Foreclosure Sign"></span>
+                <h3 class="other_name">Foreclosure Cleaning</h3>
+            </div>
+            <div class="other_service">
+                <span class="other_img"><img src="images/construction.png" alt="Hammer and Bricks"></span>
+                <h3 class="other_name">Post-Construction Cleaning</h3>
+            </div>
+
+            <div class="other_service">
+                <span class="other_img"><img src="images/regular.png" alt="Mop, Bucket, Towel"></span>
+                <h3 class="other_name">Regular Cleaning</h3>
+            </div>
+
+            <div class="other_service">
+                <span class="other_img"><img src="images/moving.png" alt="Truck with Home in Trunk"></span>
+                <h3 class="other_name">Move In / Out Cleaning</h3>
+            </div>
+            <div class="other_service">
+                <span class="other_img"><img src="images/carpet.png" alt="carpet"></span>
+                <h3 class="other_name">Carpet Cleaning</h3>
+            </div>
+
+            <div class="other_service">
+                <span class="other_img"><img src="images/junk.png" alt="Trash Can"></span>
+                <h3 class="other_name">Junk Removal</h3>
+            </div>
+            <div class="other_service">
+                <span class="other_img"><img src="images/paint.png" alt="Man with Paint Roller"></span>
+                <h3 class="other_name">Interior Painting</h3>
+            </div>
+        </div>
+        <button type="button">Please call 24/7 for Free Estimate:<br> +1 (916) 800 - 7795</button>
+    </div>
+
+
+
 
     <footer>
         <div id="footer_wrapper">
