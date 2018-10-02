@@ -330,9 +330,10 @@ header #header {
     background: url(images/1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 0;
+    z-index: ;
     padding-bottom: 150px;
 }
+
 #hero #hero_container{
     
 }
@@ -379,6 +380,7 @@ header #header {
     font-weight: 500;
     letter-spacing: 1px;
     color: #ededed;
+    position:relative;
 }
 
 #hero #form_text h1#alt-ad {
