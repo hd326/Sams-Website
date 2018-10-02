@@ -80,26 +80,8 @@ body {
 }
 */
 
-#form_container_bg_bg {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.15);
-    top: 0;
-}
 
-#hero {
-    position:relative;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background: url(images/1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
-    padding-bottom: 150px;
-}
+
 
 #sidenav {
     height: 100%;
@@ -333,6 +315,28 @@ header #header {
         display: block;
     }
 }
+
+#hero {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url(images/1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    padding-bottom: 150px;
+}
+
+#form_container_bg_bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.21);
+    top: 0;
+}
+
 
 #form_container_1 {
     display: grid;
