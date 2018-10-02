@@ -166,7 +166,7 @@ body {
 header {
     width: 100%;
     margin: auto;
-    z-index: 2;
+    z-index: 333;
     /*background-color: rgba(92, 150, 193, 0.78);*/
     background-color: rgba(73, 158, 221, 0.85);
     height: 82.5px;
@@ -364,7 +364,7 @@ header #header {
     text-align: center;
     margin: auto;
     position: relative;
-    z-index: 333;
+    z-index: ;
     padding-top: 165px;
     position: relative;
 }
