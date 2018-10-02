@@ -323,7 +323,7 @@ header #header {
 }
 
 #hero {
-    position:relative;
+    position: relative;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -332,6 +332,9 @@ header #header {
     background-position: center;
     z-index: 0;
     padding-bottom: 150px;
+}
+#hero #hero_container{
+    
 }
 
 #form_container_bg_bg {
@@ -357,6 +360,7 @@ header #header {
 
 #hero #form_text {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
@@ -365,8 +369,6 @@ header #header {
     padding-top: 35px;
     position:relative;
     z-index: 1;
-    height: 100%;
-
 }
 
 #hero #form_text h1#main-ad {
@@ -709,10 +711,12 @@ input[type=range]:focus {
 
 /*margin spacing for hero*/
 
-#hero #form_text {}
+#hero #form_text {
+    padding-top: 75px;
+}
 
 #hero #form_text #main-ad {
-    margin-top: 75px;
+    
     margin-bottom: 25px;
 }
 
