@@ -166,11 +166,11 @@ body {
 header {
     width: 100%;
     margin: auto;
-    z-index: 1;
+    z-index: 2;
     /*background-color: rgba(92, 150, 193, 0.78);*/
     background-color: rgba(73, 158, 221, 0.85);
     height: 82.5px;
-    position:absolute;
+    position: absolute;
 }
 
 header #header {
@@ -178,9 +178,6 @@ header #header {
     margin: auto;
     display: grid;
     grid-template-columns: .2fr 1fr;
-    position:absolute;
-    left:0;
-    right:0;
 }
 
 #header #h_logo {
@@ -323,7 +320,7 @@ header #header {
 }
 
 #hero {
-    position:relative;
+    position: relative;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -334,8 +331,8 @@ header #header {
     padding-bottom: 150px;
 }
 
-#hero #hero_container{
-    position:relative;
+#hero #hero_container {
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -351,9 +348,6 @@ header #header {
 
 
 #form_container_1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
     position: relative;
     z-index: 1;
     margin: 0 auto;
@@ -369,10 +363,10 @@ header #header {
     justify-content: center;
     text-align: center;
     margin: auto;
-    position:relative;
-    z-index: 1;
+    position: relative;
+    z-index: 333;
     padding-top: 165px;
-    position:relative;
+    position: relative;
 }
 
 #hero #form_text h1#main-ad {
@@ -381,7 +375,7 @@ header #header {
     font-weight: 500;
     letter-spacing: 1px;
     color: #ededed;
-    position:relative;
+    position: relative;
     z-index: 1;
 }
 
@@ -395,7 +389,7 @@ header #header {
     font-weight: 100;
     margin-top: 25px;
     margin-bottom: 7.5px;
-    
+
     letter-spacing: .2px;
     font-size: 20px;
 }
@@ -2528,7 +2522,7 @@ footer #footer_bottom {
     color: grey;
 }
 
-#book_wrap_containers #main #main_how_inputs button  {
+#book_wrap_containers #main #main_how_inputs button {
     font-size: 28px;
 }
 
@@ -2772,20 +2766,18 @@ footer #footer_bottom {
     }*/
 
     #book_wrap_containers #main #main_how_inputs {
-        display:block;
+        display: block;
     }
-    
-    #book_wrap_containers #main #main_how_inputs button{
+
+    #book_wrap_containers #main #main_how_inputs button {
         margin-top: 20px;
     }
-    
-    #book_wrap_containers #main #main_how_inputs .how_input_text{
+
+    #book_wrap_containers #main #main_how_inputs .how_input_text {
         margin-top: 5px;
     }
 
-    #book_wrap_containers #main #main_how_inputs .how_input {
-
-    }
+    #book_wrap_containers #main #main_how_inputs .how_input {}
 
     #book_wrap_containers #side {
         margin-top: 10px;
