@@ -168,6 +168,7 @@ header {
     /*background-color: rgba(92, 150, 193, 0.78);*/
     background-color: rgba(73, 158, 221, 0.85);
     height: 82.5px;
+    padding-bottom: 165px;
 }
 
 header #header {
