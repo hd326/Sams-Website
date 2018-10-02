@@ -96,7 +96,7 @@ body {
     top: 0;
     /* Stay at the top */
     right: 0;
-    background-color: #1f1f1f;
+    background-color: #f1f1f;
     color: white;
     /* Black*/
     /* Disable */
@@ -324,9 +324,6 @@ header #header {
     height: 100%;
     width: 100%;
     margin: auto;
-    background: url(images/1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
     z-index: ;
     padding-bottom: 150px;
 }
@@ -337,12 +334,22 @@ header #header {
     height: 100%;
 }
 
+#form_container_bg{
+    background: url(images/27.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    z-index:0;
+}
+
 #form_container_bg_bg {
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.21);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.07);
     top: 0;
 }
 
@@ -383,6 +390,8 @@ header #header {
     margin-top: 0px;
     color: #ededed;
     font-weight: 100;
+    position: relative;
+    z-index: 1;
 }
 
 #hero #form_text h2#schedule-ad {
@@ -392,6 +401,8 @@ header #header {
 
     letter-spacing: .2px;
     font-size: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 
