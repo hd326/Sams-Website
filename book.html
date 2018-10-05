@@ -53,7 +53,7 @@
                             <li>CONTACT US</li>
                         </a>
                         <li id="nav_icon">
-                            <div id="icon" onclick="openNav();">
+                            <div id="icon" onclick="">
                                 <div id="hamburger"></div>
                             </div>
                         </li>
@@ -63,7 +63,7 @@
         </div>
     </header>
     <script>
-        function openNav() {
+function openNav() {
     document.getElementById("sidenav").style.width = "260px";
 }
 
@@ -304,44 +304,6 @@ function closeNav() {
                 // how am i doing this? pick a calendar date, so pretty much on change, AJAX, 
                     </script>
 
-                        <?php        
-                        // $8to9 = $appointment['8to10'];
-                        // $9to10 = $appointment['9to10'];
-                        // $10to11 = $appointment['10to11'];
-                        // $11to12 = $appointment['11to12'];
-                        // $12to1 = $appointment['12to1'];
-                        // $1to2 = $appointment['1to2'];
-                        // $2to3 = $appointment['2to3'];
-                        // $3to4 = $appointment['3to4'];
-                        // $4to5 = $appointment['4to5'];
-                        // $5to6 = $appointment['5to6'];
-                        // $6to7 = $appointment['6to7'];      
-                        
-                       // $eight_to_nine = $appointment['8to10'];
-                       // $nine_to_ten = $appointment['9to10'];
-                       // $ten_to_eleven = $appointment['10to11'];
-                       // $eleven_to_twelve = $appointment['11to12'];
-                       // $twelve_to_one = $appointment['12to1'];
-                       // $one_to_two =  $appointment['1to2'];
-                       // $two_to_three =  $appointment['2to3'];
-                       // $three_to_four =  $appointment['3to4'];
-                       // $four_to_five =  $appointment['4to5'];
-                       // $five_to_six =  $appointment['5to6'];
-                       // $six_to_seven = $appointment['6to7'];      
-                        
-                        //$eight_to_nine = "cool";
-                        //$nine_to_ten = "cool";
-                        //$ten_to_eleven = "cool";
-                        //$eleven_to_twelve = "cool";
-                        //$twelve_to_one = "cool";
-                        //$one_to_two = "cool";
-                        //$two_to_three = "cool";
-                        //$three_to_four = "cool";
-                        //$four_to_five = "cool";
-                        //$five_to_six = "cool";
-                        //$six_to_seven = "cool";
-                    
-?>
                         <select id="date_data">
 
 
@@ -523,62 +485,6 @@ function closeNav() {
             <!--main-->
 
             <!--side-->
-
-
-            <?php 
-        
-$bedroomCostFactor = [0, 10, 35, 70, 95, 120];
-$bathroomCostFactor = [0, 25, 50, 75, 100, 125];
-$percentageFactor = [0, 5, 15, 10, 20];    
-
-if (isset($bed_range) && !empty($bed_range)) {
-
-if ($bed_range == 1) {
-    $bed_cost = $bedroomCostFactor[0];
-} else if ($bed_range == 2){
-    $bed_cost = $bedroomCostFactor[1];
-} else if ($bed_range == 3){
-    $bed_cost = $bedroomCostFactor[2];
-} else if ($bed_range == 4){
-    $bed_cost = $bedroomCostFactor[3];
-} else if ($bed_range == 5){
-    $bed_cost = $bedroomCostFactor[4];
-} else if ($bed_range == 6){
-    $bed_cost = $bedroomCostFactor[5];
-}
-}
-    
-if(isset($bath_range) && !empty($bath_range)) {
-if ($bath_range == 1) {
-    $bath_cost = $bathroomCostFactor[0];
-} else if ($bath_range == 2){
-    $bath_cost = $bathroomCostFactor[1];
-} else if ($bath_range == 3){
-    $bath_cost = $bathroomCostFactor[2];
-} else if ($bath_range == 4){
-    $bath_cost = $bathroomCostFactor[3];
-} else if ($bath_range == 5){
-    $bath_cost = $bathroomCostFactor[4];
-} else if ($bath_range == 6){
-    $bath_cost = $bathroomCostFactor[5];
-}
-}
-
-if(isset($percentage_range) && !empty($percentage_range)) {
-                
-if ($percentage_range == 0) {
-    $percentage_cost = $percentageFactor[0];
-} else if ($percentage_range == 5){
-    $percentage_cost = $percentageFactor[1];
-} else if ($percentage_range == 15){
-    $percentage_cost = $percentageFactor[2];
-} else if ($percentage_range == 10){
-    $percentage_cost = $percentageFactor[3];
-} else if ($percentage_range == 20){
-    $percentage_cost = $percentageFactor[4];
-}
-}
-?>
 
             <div id="side">
                 <h1>Book Summary</h1>
