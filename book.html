@@ -5,63 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Archivo|Cabin|Karla|Lato|Montserrat|Open+Sans|PT+Sans|PT+Serif|Raleway|Rubik|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
-    <title></title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="node_modules/flatpickr/dist/flatpickr.min.css">
     <script href="node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+    <title></title>
 </head>
 
-
-<body>
-
-
-    <!-- the form -->
-
-    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-    <div id="sidenav">
-        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-        <a href="index.html">HOME PAGE</a>
-        <a href="book.html">BOOK MY CLEAN</a>
-        <a href="contact.html">CONTACT US</a>
-        <div id="closebtn"></div>
-
-    </div>
-
-
-
-
-    <header>
-        <div id="header">
-            <div id="h_logo"><img src="images/logo2.jpg"></div>
-            <div id="h_menu">
-                <nav>
-                    <ul>
-
-                        <!--<li><a href=account/index.php>LOGIN </a> </li>
-                        <li>HELP</li>-->
-                        <a href="index.html">
-                            <li>HOME PAGE</li>
-                        </a>
-                        <a href="book.html">
-                            <li>BOOK MY CLEAN</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>CONTACT US</li>
-                        </a>
-                        <li id="nav_icon">
-                            <div id="icon" onclick="">
-                                <div id="hamburger"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
     <script>
 function openNav() {
     document.getElementById("sidenav").style.width = "260px";
@@ -73,6 +28,55 @@ function closeNav() {
 }
     </script>
 
+
+<body>
+
+
+    <!-- the form -->
+
+<!-- the form -->
+
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <div id="sidenav">
+        <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <a href="index.html">HOME PAGE</a>
+        <a href="book.html">BOOK MY CLEAN</a>
+        <a href="contact.html">CONTACT US</a>
+        <div id="closebtn"></div>
+    </div>
+
+
+
+
+     <header>
+        <div id="header">
+            <div id="h_logo"><img src="images/logo2.jpg"></div>
+            <div id="h_menu">
+                <nav>
+                    <ul>
+
+                        <!--<li><a href=account/indexhtmlphp>LOGIN </a> </li>
+                        <li>HELP</li>-->
+                        <a href="index.html">
+                            <li>HOME PAGE</li>
+                        </a>
+                        <a href="book.html">
+                            <li>BOOK MY CLEAN</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>CONTACT US</li>
+                        </a>
+                        <li id="nav_icon">
+                            <div id="icon" onclick="openNav()">
+                                <div id="hamburger"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
 
 
     <div id="book_hero">
@@ -250,7 +254,7 @@ function closeNav() {
                             <option data-price="100.00" id="five_bath" value="five_bath">Five Bathrooms</option>
                             <option data-price="125.00" id="six_bath" value="six_bath">Six Bathrooms</option>
                         </select>
-                        <script src="js/jquery-3.3.1.min.js"></script>
+                        
 
                     </div>
 
@@ -308,7 +312,7 @@ function closeNav() {
 
 
 
-                            <!--<option>8:00AM - 9:00AM</option>
+                        <!--<option>8:00AM - 9:00AM</option>
                         <option>9:00AM - 10:00AM</option>
                         <option>10:00AM - 11:00AM</option>
                         <option>11:00AM - 12:00PM</option>
@@ -326,10 +330,6 @@ function closeNav() {
                 </div>
 
 
-                <script>
-
-
-                </script>
                 <hr>
 
                 <div id="main_duration">
