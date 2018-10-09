@@ -12,13 +12,15 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
+    <!--
     <script href="node_modules/flatpickr/dist/flatpickr.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+-->
     <title></title>
 </head>
 
-    <script>
-function openNav() {
+<script>
+    function openNav() {
     document.getElementById("sidenav").style.width = "260px";
 }
 
@@ -34,7 +36,7 @@ function closeNav() {
 
     <!-- the form -->
 
-<!-- the form -->
+    <!-- the form -->
 
     <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
     <div id="sidenav">
@@ -48,7 +50,7 @@ function closeNav() {
 
 
 
-     <header>
+    <header>
         <div id="header">
             <div id="h_logo"><img src="images/logo2.jpg"></div>
             <div id="h_menu">
@@ -76,7 +78,7 @@ function closeNav() {
             </div>
         </div>
     </header>
-    
+
 
 
     <div id="book_hero">
@@ -84,7 +86,7 @@ function closeNav() {
 
         <div role="img" alt="blue couches" id="book_hero_bg"></div>
         <div id="book_text">
-            <h1>LET US KNOW ABOUT YOUR HOME</h1>
+            <h1>TELL US ABOUT YOUR HOME</h1>
             <p>WE DON'T SHARE YOUR PERSONAL INFORMATION WITH ANYONE</p>
 
 
@@ -254,7 +256,7 @@ function closeNav() {
                             <option data-price="100.00" id="five_bath" value="five_bath">Five Bathrooms</option>
                             <option data-price="125.00" id="six_bath" value="six_bath">Six Bathrooms</option>
                         </select>
-                        
+
 
                     </div>
 
@@ -312,7 +314,7 @@ function closeNav() {
 
 
 
-                        <!--<option>8:00AM - 9:00AM</option>
+                            <!--<option>8:00AM - 9:00AM</option>
                         <option>9:00AM - 10:00AM</option>
                         <option>10:00AM - 11:00AM</option>
                         <option>11:00AM - 12:00PM</option>
@@ -487,56 +489,128 @@ function closeNav() {
             <!--side-->
 
             <div id="side">
-                <h1>Book Summary</h1>
-                <hr>
-                <div id="side_summary">
-                    <div class="side_sections">
-                        <div class="side_rows"><i class="fas fa-home"></i></div>
-                        <div class="side_rows"><span id="bdrm_summary">
-                                <?php if(isset($bed_range)) echo $bed_range;?> Bedrooms</span></div>
+                <div id="side_section">
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/clockb.png"></div>
+                        <h3>SAVES YOU TIME</h3>
+                        <p>Our service helps you live smarter, giving you time to focus on what's most important.</p>
                     </div>
-
-                    <div class="side_sections">
-                        <div class="side_rows"><i class="fas fa-calendar-alt"></i></div>
-                        <div class="side_rows"><span id="date_summary">Choose service date...</span></div>
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/shield2b.png"></div>
+                        <h3>SAFETY FIRST</h3>
+                        <p>We rigorously vet all of our Cleaners, who undergo identity checks as well as in-person interviews.</p>
                     </div>
-
-                    <div class="side_sections">
-                        <div class="side_rows"><i class="fas fa-balance-scale"></i></div>
-                        <div class="side_rows"><span id="duration_summary">
-                                <?php if(isset($duration_range)) { echo $duration_range; } if ($duration_range == ""){ echo "One time service"; } ?></span></div>
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/thumbsb.png"></div>
+                        <h3>ONLY THE BEST QUALITY</h3>
+                        <p>Our skilled professionals go above and beyond on every job. Cleaners are rated and reviewed after each task.</p>
                     </div>
-
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/leafb.png"></div>
+                        <h3>EASY TO GET HELP</h3>
+                        <p>Select your ZIP code, number of bedrooms and bathrooms, date and relax while we take care of your home.</p>
+                    </div>
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/commsb.png"></div>
+                        <h3>SEAMLESS COMMUNICATION</h3>
+                        <p>Online communication makes it easy for you to stay in touch with your Cleaners.</p>
+                    </div>
+                    <div class="side_section_adv">
+                        <div class="side_book_adv"><img src="images/visab.png"></div>
+                        <h3>CASH FREE PAYMENT</h3>
+                        <p>Pay securely online only when the cleaning is complete.</p>
+                    </div>
                 </div>
-                <hr>
 
-                <div id="side_payment">
-                    <div class="side_payment_row">
-                        <div class="total_text">SUBTOTAL</div>
-                        <div class="amount"><span id="tydollarsign">$</span><span id="subtotal">85.00</span></div>
-                    </div>
-                    <div class="side_payment_row">
-                        <div class="total_text">SALES TAX</div>
-                        <div class="amount"><span id="tydollarsign">$</span><span id="tax">6.16</span></div>
-                    </div>
+                <div id="side_section">
+                    <div id="side_section_c">
+                        <h1>Book Summary</h1>
+                        <hr>
+                        <div id="side_summary">
+                            <div class="side_sections">
+                                <div class="side_rows"><i class="fas fa-home"></i></div>
+                                <div class="side_rows"><span id="bdrm_summary">
+                                        <?php if(isset($bed_range)) echo $bed_range;?> Bedrooms</span></div>
+                            </div>
 
-                    <div class="side_payment_row">
-                        <div class="total_text">TOTAL</div>
-                        <div class="amount"><span id="tydollarsign">$</span><span id="amount">91.16</span></div>
-                    </div>
-                    <div id="percentage">
-                        <?php if(isset($percentage_cost)) { echo $percentage_cost; } else { echo ""; } ?>
-                    </div><br>
-                    <div id="bed_display"></div><br>
-                    <div id="bed_cost">
-                        <?php if(isset($bed_cost)) { echo $bed_cost; } else { echo ""; } ?>
-                    </div><br>
-                    <div id="bath_display"></div><br>
-                    <div id="bath_cost">
-                        <?php if(isset($bath_cost)) { echo $bath_cost; } else { echo ""; } ?>
-                    </div><br>
+                            <div class="side_sections">
+                                <div class="side_rows"><i class="fas fa-calendar-alt"></i></div>
+                                <div class="side_rows"><span id="date_summary">Choose service date...</span></div>
+                            </div>
 
+                            <div class="side_sections">
+                                <div class="side_rows"><i class="fas fa-balance-scale"></i></div>
+                                <div class="side_rows"><span id="duration_summary">
+                                        <?php if(isset($duration_range)) { echo $duration_range; } if ($duration_range == ""){ echo "One time service"; } ?></span></div>
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <div id="side_payment">
+                            <div class="side_payment_row">
+                                <div class="total_text">SUBTOTAL</div>
+                                <div class="amount"><span id="tydollarsign">$</span><span id="subtotal">85.00</span></div>
+                            </div>
+                            <div class="side_payment_row">
+                                <div class="total_text">SALES TAX</div>
+                                <div class="amount"><span id="tydollarsign">$</span><span id="tax">6.16</span></div>
+                            </div>
+
+                            <div class="side_payment_row">
+                                <div class="total_text">TOTAL</div>
+                                <div class="amount"><span id="tydollarsign">$</span><span id="amount">91.16</span></div>
+                            </div>
+                            <div id="percentage">
+                                <?php if(isset($percentage_cost)) { echo $percentage_cost; } else { echo ""; } ?>
+                            </div><br>
+                            <div id="bed_display"></div><br>
+                            <div id="bed_cost">
+                                <?php if(isset($bed_cost)) { echo $bed_cost; } else { echo ""; } ?>
+                            </div><br>
+                            <div id="bath_display"></div><br>
+                            <div id="bath_cost">
+                                <?php if(isset($bath_cost)) { echo $bath_cost; } else { echo ""; } ?>
+                            </div><br>
+
+                        </div>
+                    </div>
                 </div>
+                <script>
+                    var sB = $('#side_section:nth-of-type(2)');
+                    var sideScroll = $('#side_section:nth-of-type(2)').offset().top;
+                    var sideScrollHeight = $('#side_section:nth-of-type(2)').height();
+                    
+                    //var endSide = $('#main').offset().top;
+                    
+                        $(window).scroll(function() {
+                            var currentScroll = $(window).scrollTop();
+                            var endScroll = ($('#main').offset().top + $('#main').outerHeight(true)) - '515';
+                            if (currentScroll >= sideScroll) {
+                                $('#side_section:nth-of-type(2)').css({
+                                    position: 'fixed',
+                                    top: '0',
+                                    width: '367px'
+                                }); 
+                                
+                            } else {
+                                $('#side_section:nth-of-type(2)').css({
+                                    position: 'static',
+                                    width: '100%'
+                                });
+                            }
+                            
+                            if (currentScroll >= endScroll){
+                                var diff = endScroll - currentScroll;
+                                $('#side_section:nth-of-type(2)').css({
+                                    top: diff,
+                                });
+                                } 
+                            
+                            console.log(endScroll);
+                            
+                        });
+                </script>
             </div>
 
             <!--side-->

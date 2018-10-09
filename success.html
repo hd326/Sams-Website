@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Cabin|Karla|Lato|Montserrat|Open+Sans|PT+Sans|PT+Serif|Raleway|Rubik|Source+Sans+Pro|Source+Serif+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <title></title>
+</head>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div id="h_logo"><img src="images/logo2.jpg"></div>
+            <div id="h_menu">
+                <nav>
+                    <ul>
+
+                        <!--<li><a href=account/index.php>LOGIN </a> </li>
+                        <li>HELP</li>-->
+                        <a href="index.html">
+                            <li>HOME PAGE</li>
+                        </a>
+                        <a href="book.html">
+                            <li>BOOK MY CLEAN</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>CONTACT US</li>
+                        </a>
+                        <li id="nav_icon">
+                            <div id="icon" onclick="openNav()">
+                                <div id="hamburger"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+<div id="sidenav">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="index.html">HOME PAGE</a>
+    <a href="book.html">BOOK MY CLEAN</a>
+    <a href="contact.html">CONTACT US</a>
+    <div id="closebtn"></div>
+</div>
+    
+
+    <div id="success">
+    <h1>Thank you for scheduling our service.</h1>
+    <hr>
+    <h3>Your transaction ID is <?php echo $tid; ?>.</h3>
+    <br>
+    <p>Please check your email for more information</p>
+</div>
+    
+    
+<footer>
+        <div id="footer_wrapper">
+            <div id="footer_contents">
+
+                <!-- first section footer -->
+
+                <div class="footer_section">
+                    <div id="footer_logo">
+                        <img src="images/logo2.jpg">
+                    </div>
+                    <!-- about us, service area(not done on sparkly), gift cards, privacy -->
+
+                    <div id="footer_links">
+                        <div class="footer_links_sections">
+                            <p class="title">ABOUT</p>
+                            <p><a href="about.html">About Us</a></p>
+                            <p>Service Area</p>
+                            <!--<p>Rental Property Cleaning</p>-->
+                            <!--<p>Foreclosures Cleaning</p>-->
+                            <!--<p>Construction Cleaning</p>-->
+
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">CONTACT</p>
+                            <p><a href="contact.html">Contact Us</a></p>
+                            <p><a href="book.html">Get A Quote</a></p>
+                            <p>Join Us</p>
+                            <!-- i gotta make a registration thing :'( -->
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">FOR YOU</p>
+                            <!-- needs to be made-->
+                            <p>Buy Gift Cards</p>
+                            <p><a href="book.html">Book Now</a></p>
+                            <!-- needs -->
+                            <p>Cleaning Tips</p>
+
+                        </div>
+                        <div class="footer_links_sections">
+                            <p class="title">SUPPORT</p>
+                            <!-- have a page already -->
+                            <p><a href="contact.html">Help</a></p>
+                            <!--<p>Terms & Conditions</p>-->
+                            <p><a href="privacy.html">Privacy Policy</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- first section footer -->
+
+                <!-- second section footer -->
+
+                <div class="footer_section">
+
+                    <div id="footer_social">
+
+                        <div class="icons"><i class="fab fa-facebook-f"></i></div>
+
+                        <div class="icons"><i class="fab fa-twitter"></i></div>
+
+                        <div class="icons"><i class="fab fa-instagram"></i></div>
+
+                        <div class="icons"><i class="fab fa-pinterest-p"></i></div>
+
+                    </div>
+                    <div class="footer_rows">
+                        <h1>Stay Connected</h1>
+                    </div>
+
+                    <div class="footer_rows"><i class="fas fa-mobile-alt"></i> <span>916-704-4061</span></div>
+
+                    <div class="footer_rows"><i class="far fa-envelope"></i> <span>r_duong89@yahoo.com</span></div>
+
+                    <div class="footer_rows">
+                        <label>
+                            <h2>Subscribe to our mailing list</h2>
+                        </label>
+                    </div>
+                    <div class="footer_rows">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+
+                    <div class="footer_rows">
+                        <input type="button" value="Subscribe">
+                    </div>
+
+                </div>
+
+                <!-- second section footer -->
+
+            </div>
+
+            <div id="footer_bottom">Copyright 2018 All Rights Reserved. Copyright Active Clean 1.</div>
+        </div>
+    </footer>

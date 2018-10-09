@@ -10,13 +10,36 @@ https://www.typewolf.com/google-fonts*/
     /*vs helvetica*/
 }
 
+
+/*
+$type = filter_input(INPUT_POST, 'type');
+$first_name = filter_input(INPUT_POST, 'first_name');
+$last_name = filter_input(INPUT_POST, 'last_name');
+$email = filter_input(INPUT_POST, 'email');
+$phone_number = filter_input(INPUT_POST, 'phone_number');
+$st_address = filter_input(INPUT_POST, 'st_address');
+$apt_num = filter_input(INPUT_POST, 'apt_num');
+$city = filter_input(INPUT_POST, 'city');
+$state = filter_input(INPUT_POST, 'state');
+$zip = filter_input(INPUT_POST, 'zip');
+$bdrms = filter_input(INPUT_POST, 'bdrms');
+$baths = filter_input(INPUT_POST, 'baths');
+$date = filter_input(INPUT_POST, 'date');
+$time = filter_input(INPUT_POST, 'time');
+$duration = filter_input(INPUT_POST, 'duration');
+$enter = filter_input(INPUT_POST, 'enter');
+$enter_instructions = filter_input(INPUT_POST, 'enter_instructions');
+$more_information = filter_input(INPUT_POST, 'more_information');
+*/
 input:focus {
     outline: none !important;
     box-shadow: 0 0 7.5px #719ECE;
 }
 
 button:focus {
-    background-color: red;
+    background-color: rgba(73, 158, 221, 0.85);
+    border: none;
+    color: #ededed;
 }
 
 body {
@@ -66,7 +89,50 @@ body {
 
 #side_payment #bath_display {
     opacity: 0;
+    position: absolute;
 }
+
+#percentage_range {
+    opacity: 0;
+    position: absolute;
+}
+
+#main_duration .data_value {
+    opacity: 0;
+    position: absolute;
+
+}
+
+#main_type .data_value {
+    opacity: 0;
+    position: absolute;
+}
+
+#main_how .data_value:nth-of-type(1) {
+    opacity: 0;
+    position: absolute;
+}
+
+#main_how .data_value:nth-of-type(2) {
+    opacity: 0;
+    position: absolute;
+}
+
+#subtotal_db {
+    opacity: 0;
+    position: absolute;
+}
+
+#item_sales_tax_db {
+    opacity: 0;
+    position: absolute;
+}
+
+#total_amount_db {
+    opacity: 0;
+    position: absolute;
+}
+
 
 /*
 #form_container_bg {
@@ -166,9 +232,11 @@ body {
 header {
     width: 100%;
     margin: auto;
-    z-index: 33;
+    z-index: 333;
     /*background-color: rgba(92, 150, 193, 0.78);*/
     background-color: rgba(73, 158, 221, 0.85);
+    background-color: #4baaf0;
+    background-color: rgba(75, 170, 240, 0.86);
     height: 82.5px;
     position: absolute;
 }
@@ -338,7 +406,7 @@ header #header {
     background: url(images/27.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(.5px);
+    filter: blur(1.25px);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -350,7 +418,7 @@ header #header {
     width: 100%;
     position: absolute;
     z-index: 1;
-    background: rgba(105, 105, 105, 0.11);
+    background: rgba(105, 105, 105, 0.19);
     top: 0;
 }
 
@@ -375,16 +443,18 @@ header #header {
     z-index: ;
     padding-top: 165px;
     position: relative;
+    color: #f7f7f7;
 }
 
-#hero #form_text span#main-ad {
-    font-size: 46px;
+#hero #form_text h1#main-ad {
+    font-size: 48px;
     margin-bottom: 25px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #ededed;
     position: relative;
     z-index: 1;
+    color: #f7f7f7;
 }
 
 #hero #form_text h1#alt-ad {
@@ -393,6 +463,7 @@ header #header {
     font-weight: 100;
     position: relative;
     z-index: 1;
+    color: #f7f7f7;
 }
 
 #hero #form_text h2#schedule-ad {
@@ -2189,7 +2260,7 @@ footer #footer_bottom {
         min-width: 85%;
     }
 
-    #book_wrap_containers #side {}
+
 }
 
 @media (max-width: 1150px) {
@@ -2211,6 +2282,8 @@ footer #footer_bottom {
         position: absolute;
         transform: translateX(5%);
     }
+
+
 
 
 }
@@ -2239,15 +2312,6 @@ footer #footer_bottom {
     margin-bottom: 45px;
     border-color: #c9c9c9;
     border: .5px solid #e2e2e2;
-}
-
-#book_wrap #book_wrap_containers #side {
-    background-color: white;
-    box-shadow: 0px 0px 5px 2.5px #dbdbdb;
-    padding: 20px;
-    padding-top: 37.5px;
-    height: 515px;
-    width: 100%;
 }
 
 #book_wrap_containers #main #main_type #main_type_buttons {
@@ -2357,6 +2421,21 @@ footer #footer_bottom {
     margin-top: 20px;
 }
 
+/* this for both main fields */
+
+#book_wrap_containers #main .main_field {
+    position: relative;
+}
+
+#book_wrap_containers #main .main_field i {
+    position: absolute;
+    top: 35%;
+    right: 4.25%;
+    color: #ff5656;
+    font-size: 12px;
+}
+
+
 #book_wrap_containers #main #main_contact_inputs input {
     width: 100%;
     padding: 10px;
@@ -2364,6 +2443,12 @@ footer #footer_bottom {
     border-radius: 2.5px;
     border: 1px solid #b2b2b2;
 }
+
+#book_wrap_containers #main #main_contact_inputs input.error {
+    border: 1px solid #ff7272;
+}
+
+/* i got it... all i needed to do was to call it correctly, cuz its php */
 
 #book_wrap_containers #main #main_address p {
     margin-top: 25px;
@@ -2388,6 +2473,11 @@ footer #footer_bottom {
     border-radius: 2.5px;
     border: 1px solid #b2b2b2;
 }
+
+#book_wrap_containers #main #main_address_inputs input.error {
+    border: 1px solid #ff7272;
+}
+
 
 #book_wrap_containers #main #main_service {}
 
@@ -2434,6 +2524,14 @@ footer #footer_bottom {
     color: grey;
 }
 
+#book_wrap_containers #main #main_when #main_when_inputs .main_field select.error {
+    border: 1px solid #ff7272;
+}
+
+.error {
+    color: red;
+}
+
 #book_wrap_containers #main #main_when #main_when_inputs input {
     border-radius: 5px;
     padding: 10px;
@@ -2443,6 +2541,10 @@ footer #footer_bottom {
     border-radius: 2.5px;
     border: 1px solid #b2b2b2;
     color: grey;
+}
+
+#book_wrap_containers #main #main_when #main_when_inputs .main_field input#error {
+    border: 1px solid #ff7272;
 }
 
 #book_wrap_containers #main #main_how_inputs {
@@ -2575,26 +2677,94 @@ footer #footer_bottom {
     margin-top: 25px;
     padding: 20px;
     font-size: 14px;
-
 }
+
+
 
 /* side container for booking */
 
-#book_wrap_containers #side {
-    color: #555555;
+#book_wrap #book_wrap_containers #side_section {
+    background-color: white;
+    box-shadow: 0px 0px 5px 2.5px #dbdbdb;
+    padding: 20px;
+    padding-top: 37.5px;
+    height: 515px;
+    width: 100%;
 }
 
-#book_wrap_containers #side h1 {
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) {
+    margin-bottom: 35px;
+    padding: 30px;
+    padding-top: 50px;
+    height: 1100px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv:nth-of-type(1) h3 {
+    margin-top: 0px;
+
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv .side_book_adv {
+    width: 27.5px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv:nth-of-type(2) .side_book_adv {
+    width: 23.5px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv:nth-of-type(6) .side_book_adv {
+    width: 32.5px;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) .side_section_adv .side_book_adv img {
+    width: 100%;
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) h3 {
+    margin-top: 20px;
+    font-size: 15px
+}
+
+#book_wrap #book_wrap_containers #side_section:nth-of-type(1) p {
+    color: #a0a0a0;
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+#book_wrap_containers #side #side_section:nth-of-type(2) {
+    color: #555555;
+    position: relative;
+}
+
+/*#book_wrap_containers #side #side_section:nth-of-type(2) #side_section_c {
+    position: fixed;
+    
+}
+*/
+
+#book_wrap_containers #side_section:nth-of-type(2) h1 {
     text-align: center;
     font-size: 24px;
     font-weight: 100;
 }
 
-#book_wrap_containers #side .total_text {
+#book_wrap_containers #side_section:nth-of-type(2) .total_text {
     font-size: 14px;
 }
 
-#book_wrap_containers #side hr {
+#book_wrap_containers #side_section:nth-of-type(2) hr {
     margin-top: 25px;
     margin-bottom: 25px;
     border-color: #c9c9c9;
@@ -2603,7 +2773,7 @@ footer #footer_bottom {
 
 #book_wrap_containers #side #side_summary {}
 
-#book_wrap_containers #side #side_summary .side_sections {
+#book_wrap_containers #side_section #side_summary .side_sections {
     display: grid;
     grid-template-columns: .5fr 1fr;
 }
@@ -2683,6 +2853,42 @@ footer #footer_bottom {
     color: #ff8989;
     letter-spacing: .5px;
 }
+
+
+#main #total_submit {
+    width: 100%;
+    margin-top: 25px;
+    height: 50px;
+    border: none;
+    background-color: rgba(73, 158, 221, 0.85);
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#main #main_tip h1 {
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+#main #main_tip input {
+    margin-top: 10px;
+    border-color: 1px solid grey;
+    padding: 5px;
+}
+
+
+#main #main_payment h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#main #main_payment p {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+
+
 
 @media (max-width: 834px) {
     #book_steps {
@@ -4145,4 +4351,33 @@ footer #footer_bottom {
     .aboutus_whyus_sect:nth-of-type(2) nav ul li {
         margin-top: 20px;
     }
+}
+
+#success {
+    height: 700px;
+    position: relative;
+    padding-top: 165px;
+    color: #2b2b2b;
+    text-align: center;
+}
+
+#success hr {
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+#success h3 {
+    margin-top: 10px;
+}
+
+#success p {
+    margin-top: 10px;
+}
+
+#success a {
+    margin-top: 20px;
+    display: inline-block;
 }
